@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: _site
+
+format:
+  revealjs:
+    theme: dark
+    footer: "The Developers Guide to GenAI • Bauke Brenninkmeijer"
+    slideNumber: true
+    preview-links: auto
+    view-distance: 3
+    mobile-view-distance: 2
+    transition: none
+    background-transition: none
+    auto-animate: true
+    slide-level: 2
+
+react:
+  components: _components
+  resources: _components 

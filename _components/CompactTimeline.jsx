@@ -1,5 +1,14 @@
 import React from 'react';
-import { milestones } from './timelineData';
+
+const milestones = [
+  { year: 2012, title: "AlexNet", color: "#4285F4" },
+  { year: 2017, title: "Transformers", color: "#EA4335" },
+  { year: 2018, title: "BERT", color: "#FBBC05" },
+  { year: 2020, title: "GPT-3", color: "#34A853" },
+  { year: 2021, title: "Diffusion", color: "#4285F4" },
+  { year: 2022, title: "Multimodal", color: "#EA4335" },
+  { year: 2023, title: "GPT-4", color: "#FBBC05" }
+];
 
 export default function CompactTimeline() {
   return (
@@ -53,7 +62,7 @@ export default function CompactTimeline() {
             marginBottom: '5px',
             textAlign: 'center',
             color: 'rgba(255, 255, 255, 0.9)'
-          }}>{milestone.title.split(' ')[0]}</div>
+          }}>{milestone.title}</div>
         </div>
       ))}
     </div>

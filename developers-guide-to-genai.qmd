@@ -5,46 +5,12 @@ title: The Developers Guide to GenAI
 html: true
 format:
   revealjs: 
-    theme: dark
+    theme: moon
     # logo: logo.png
     footer: "The Developers Guide to GenAI • Bauke Brenninkmeijer"
 
 ---
 
-
-## Outline
-- how is genai used by developers
-- What does the stack look like?
-- 
-
----
-
-## The Developers Guid to GenAI
-
-
----
-
-## Goal
-
-Make you as fast as possible to use genAI in your workflows
-
---- 
-
-## Why this talk?
-
-GenAI will change everything for software engineers.
-
----
-
-## {background-color="black" background-image="img/dot-horizon.svg" background-size="contain"}
-
-. . .
-
-::: {.absolute bottom=1em left=35%}
-What is to come...
-:::
-
----
 
 ## Outline
 - Where are we now?
@@ -57,29 +23,92 @@ What is to come...
 - Responsible AI
 - Future 
 
----
-
-## Brief history of AI
-
-```{qreacto}
-import AITimeline from './components/AITimeline';
-<AITimeline />
-```
 
 ---
 
-## How GenAI is different form old AI
+## Why this talk? {.center}
 
-1. General applicability and multimodality - you can input almost anything and get a sensible output
-2. Performance is often close or better than humans. 
+GenAI will change everything
+
+<!-- ---
+
+## Goal {.center}
+
+Make you as fast as possible to use genAI in your workflows -->
+
+---
+
+## {background-image="img/white-dot.svg" background-size="contain"}
+. . .
+
+::: {.absolute bottom=1em left=35%}
+Where are we going...
+:::
 
 ---
 
 ## taking the temperature
 
-```{qreacto}
-import CompactTimeline from './components/CompactTimeline';
-<CompactTimeline />
-```
+Raise your hand if you:
+
+
+
+::: {.fragment .fade-in-then-semi-out}
+- have used AI to generate text
+:::
+::: {.fragment .fade-in-then-semi-out}
+- have used AI to generate code
+:::
+::: {.fragment .fade-in-then-semi-out}
+- have used AI to generate images
+:::
+::: {.fragment .fade-in-then-semi-out}
+- have paid for AI tools
+:::
+::: {.fragment .fade-in-then-semi-out}
+- have used an AI coding assistant
+:::
+
+---
+
+## Raise you hand if you think your job will change...
+
+::: {.fragment .fade-in-then-semi-out}
+- a little over the next 5 years. 
+:::
+::: {.fragment .fade-in-then-semi-out}
+- a little over the next 10 years.
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- a lot over the next 5 years.
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- a lot over the next 10 years.
+:::
+
+
+---
+
+## Brief history of AI {.scrollable page-layout="full"}
+
+-
+![](img/infographic-history-ml.png)
+
+
+---
+
+## How GenAI is different form old AI {.center}
+
+1. Flexibility
+2. Performance
+
+---
+
+##  {.scrollable width="100%"}
+
+
+{{< react AITimeline type="javascript" >}} 
 
 ---
