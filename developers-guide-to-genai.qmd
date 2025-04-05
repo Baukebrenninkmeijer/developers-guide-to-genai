@@ -4,12 +4,19 @@ title: The Developers Guide to GenAI
 # theme: uncover
 html: true
 format:
-  revealjs: 
+  revealjs:
     theme: moon
     # logo: logo.png
     footer: "The Developers Guide to GenAI • Bauke Brenninkmeijer"
 
 ---
+
+## Why this talk? {.center}
+
+GenAI will change everything
+
+
+<!-- ---
 
 
 ## Outline
@@ -21,14 +28,9 @@ format:
 - Developer Tools
 - Technical challenges
 - Responsible AI
-- Future 
+- Future
+ -->
 
-
----
-
-## Why this talk? {.center}
-
-GenAI will change everything
 
 <!-- ---
 
@@ -74,10 +76,7 @@ Raise your hand if you:
 ## Raise you hand if you think your job will change...
 
 ::: {.fragment .fade-in-then-semi-out}
-- a little over the next 5 years. 
-:::
-::: {.fragment .fade-in-then-semi-out}
-- a little over the next 10 years.
+- a lot over the next 2 years.
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
@@ -88,6 +87,14 @@ Raise your hand if you:
 - a lot over the next 10 years.
 :::
 
+::: {.fragment .fade-in-then-semi-out}
+- Not much.
+:::
+
+---
+
+## Insert  statistics about GenAI usage here
+
 
 ---
 
@@ -96,7 +103,6 @@ Raise your hand if you:
 -
 ![](img/infographic-history-ml.png)
 
-
 ---
 
 ## How GenAI is different form old AI {.center}
@@ -104,11 +110,40 @@ Raise your hand if you:
 1. Flexibility
 2. Performance
 
----
+<!-- ---
 
 ##  {.scrollable width="100%"}
 
-
-{{< react AITimeline type="javascript" >}} 
+{{< react AITimeline type="javascript" >}} -->
 
 ---
+
+## Core Concepts
+
+How does it work?
+
+<!-- ![](img/wallace_llm.gif) -->
+
+```{=html}
+<center>
+<img src="img/wallace_llm.gif" width="800" height="600">
+</center>
+```
+
+::: footer
+Source: https://amgadhasan.substack.com/p/explaining-how-llms-work-in-7-levels
+:::
+
+---
+
+## To be precise: predict probabilities of the next word
+
+![](img/word_probabilities.png)
+
+::: footer
+Source: https://amgadhasan.substack.com/p/explaining-how-llms-work-in-7-levels
+:::
+
+---
+
+## GenAI Stack

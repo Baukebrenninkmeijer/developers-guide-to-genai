@@ -23,15 +23,15 @@ A visual interactive timeline showing the key milestones in AI and deep learning
 
 1. Clone this repository
 2. Install dependencies:
-   ```
-   npm install
-   quarto add clearmatics/qreacto                                                                                                                                                                                                                                                                15:57:45
+```
+npm install
+quarto add clearmatics/qreacto
 
-   ```
+```
 3. Start the development server:
-   ```
-   npm start
-   ```
+```
+npm start
+```
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser
 
 ## Technologies Used
