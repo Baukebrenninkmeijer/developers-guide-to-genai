@@ -5,7 +5,7 @@ title: The Developers Guide to GenAI
 html: true
 format:
   revealjs:
-    theme: [moon, styles.css]
+    theme: [moon, styles.scss]
     # logo: logo.png
     footer: "The Developers Guide to GenAI • Bauke Brenninkmeijer"
     width: 1280
@@ -33,13 +33,6 @@ GenAI will change everything
 - Future
  -->
 
-
-<!-- ---
-
-## Goal {.center}
-
-Make you as fast as possible to use genAI in your workflows -->
-
 ---
 
 ## {background-image="img/white-dot.svg" background-size="contain"}
@@ -51,11 +44,13 @@ Where are we going...
 
 ---
 
+## ACT I: The Awakening {.chapter-title .center}
+
+---
+
 ## taking the temperature
 
 Raise your hand if you:
-
-
 
 ::: {.fragment .fade-in-then-semi-out}
 - have used AI to generate text
@@ -97,13 +92,26 @@ Raise your hand if you:
 
 ## Insert  statistics about GenAI usage here
 
-
 ---
 
-## Brief history of AI {.scrollable page-layout="full"}
+## {background-color="black"}
 
--
-![](img/infographic-history-ml.png)
+:::: {.columns}
+::: {.column width="50%" style="text-align: center; vertical-align: middle;"}
+<img src="img/17_use_it_all_the_time.png" style="width: 100%; display: block; margin: 0 auto;">
+
+:::
+
+::: {.column width="50%" style="text-align: center; vertical-align: middle;"}
+<img src="img/wired_3_in_4_coders.png" style="width: 100%; display: block; margin: 0 auto;">
+
+:::
+:::
+
+
+::: footer
+Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-ai/
+:::
 
 ---
 
@@ -112,11 +120,9 @@ Raise your hand if you:
 1. Flexibility
 2. Performance
 
-<!-- ---
+---
 
-##  {.scrollable width="100%"}
-
-{{< react AITimeline type="javascript" >}} -->
+## ACT II: The Mechanics {.chapter-title .center}
 
 ---
 
@@ -124,7 +130,6 @@ Raise your hand if you:
 
 How does it work?
 
-<!-- ![](img/wallace_llm.gif) -->
 
 ```{=html}
 <center>
@@ -190,14 +195,14 @@ source: https://zhuanlan.zhihu.com/p/631786282
 ##  {auto-animate=true background-color="rgba(253, 246, 227, 1)"}
 <h2 style="z-index:10">Context windows</h2>
 
-<div style="display: flex; align-items: flex-end; width: 100%; overflow: visible; position: relative; top: -85%;z-index:-10">
-  <img src="img/gpt3.5.svg" style="width:3%; margin-right: 10px; z-index: -10;">
-  <img src="img/gemini2_5pro.svg" style="width:80%; z-index: -10;">
+<div style="position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%); width: 80%; z-index: -10; text-align: center;">
+  <img src="img/gpt3.5.svg" style="width: 2%; vertical-align: middle; margin-right: 20px;" >
+  <img src="img/gemini2_5pro.svg" style="width: 60%; vertical-align: middle;" >
 </div>
 
 ---
 
-## Context windows=exploded {.center}
+## More is Better {.center}
 
 
 <table>
@@ -397,7 +402,11 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ---
 
-## Agents {.chapter-title}
+## ACT III: The Agents {.chapter-title .center}
+
+---
+
+## Agents {.chapter-title .center}
 
 
 <div style="text-align: center;">
@@ -406,10 +415,12 @@ _Autonomously make decisions and take actions_
 _to achieve a goal._
 </div>
 
-![](img/agent-diagram.svg) {.r-stretch}
 
-<!-- <img src="img/agent-diagram.svg" style="width: 50%;margin-left:auto;margin-right:auto;display:block;">  -->
+---
 
+<img src="img/agent-diagram.svg" style="width: 50%;margin-left:auto;margin-right:auto;display:block;"> 
+
+<!-- ![](img/agent-diagram.svg) {.r-stretch} -->
 
 ---
 
@@ -417,14 +428,53 @@ _to achieve a goal._
 
 ---
 
-Key components
+## Key components of Agents {auto-animate=true}
 
-- Reflection
-- Planning
-- Tool use
-- Collaboration
+```{=html}
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #b58900; margin: 0; text-align: center; font-size: 1.8em;">Reflection</h3>
+  </div>
+  
+  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #dc322f; margin: 0; text-align: center; font-size: 1.8em;">Planning</h3>
+  </div>
+  
+  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tool Use</h3>
+  </div>
+  
+  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #2aa198; margin: 0; text-align: center; font-size: 1.8em;">Collaboration</h3>
+  </div>
+</div>
+```
 
-Things made possible with reasoning.
+---
+
+
+## Key components of Agents {auto-animate=true}
+
+
+```{=html}
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+  <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Reflection</h3>
+  </div>
+  
+  <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Planning</h3>
+  </div>
+  
+  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tool Use</h3>
+  </div>
+  
+  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #2aa198; margin: 0; text-align: center; font-size: 1.8em;">Collaboration</h3>
+  </div>
+</div>
+```
 
 
 ---
@@ -478,12 +528,6 @@ Planning and reflection made possible by reasoning models.
 - Conversational interfaces
 - Data analysis and insights
 
-### Building Responsible GenAI Applications
-- Bias and fairness considerations
-- Privacy and security best practices
-- Transparency and explainability in AI systems
-- Regulatory landscape and compliance
-
 ### Future Trends and Conclusion
 - Emerging models and capabilities
 - Local model deployment and edge computing
@@ -491,3 +535,12 @@ Planning and reflection made possible by reasoning models.
 - Resources for further learning and experimentation
 
  -->
+
+ ---
+
+ ## Future
+
+ ---
+
+# {background-image="img/exponential-growth.png"  background-size="contain" background-color="white"}
+ <!-- ![](img/exponential-growth.png) -->
