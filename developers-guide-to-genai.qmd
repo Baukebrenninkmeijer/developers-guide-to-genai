@@ -5,10 +5,12 @@ title: The Developers Guide to GenAI
 html: true
 format:
   revealjs:
-    theme: moon
+    theme: [moon, styles.css]
     # logo: logo.png
     footer: "The Developers Guide to GenAI • Bauke Brenninkmeijer"
-
+    width: 1280
+    height: 720
+    # css: styles.css
 ---
 
 ## Why this talk? {.center}
@@ -126,7 +128,7 @@ How does it work?
 
 ```{=html}
 <center>
-<img src="img/wallace_llm.gif" width="800" height="600">
+<img src="img/wallace_llm.gif" width="700">
 </center>
 ```
 
@@ -146,4 +148,344 @@ Source: https://amgadhasan.substack.com/p/explaining-how-llms-work-in-7-levels
 
 ---
 
-## GenAI Stack
+### Tokens != words
+
+![](img/token_example.png)
+
+::: footer
+Source: https://amgadhasan.substack.com/p/explaining-how-llms-work-in-7-levels
+:::
+
+--- 
+
+::: {.r-stack}
+
+![](img/strawberry_old.png){.fragment .fade-in-then-semi-out}
+
+![](img/strawberry_new.png){.fragment .fade-in-then-semi-out width="100%"}
+
+![](img/strawberry_tokenized.png){.fragment}
+
+:::
+
+---
+
+## Temperature
+
+![](https://pic2.zhimg.com/v2-99ae84294fb411352fa844bf3945d209_r.jpg)
+
+::: footer
+source: https://zhuanlan.zhihu.com/p/631786282
+:::
+
+---
+
+## Context windows {auto-animate=true background-color="rgba(253, 246, 227, 1)" .center}
+
+<img src="img/gpt3.5.svg" style="width:100%;margin-left:auto;margin-right:auto;display:block">
+
+
+---
+
+##  {auto-animate=true background-color="rgba(253, 246, 227, 1)"}
+<h2 style="z-index:10">Context windows</h2>
+
+<div style="display: flex; align-items: flex-end; width: 100%; overflow: visible; position: relative; top: -85%;z-index:-10">
+  <img src="img/gpt3.5.svg" style="width:3%; margin-right: 10px; z-index: -10;">
+  <img src="img/gemini2_5pro.svg" style="width:80%; z-index: -10;">
+</div>
+
+---
+
+## Context windows=exploded {.center}
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="color: #eee8d5;">Context Window (Tokens)</th>
+      <th style="color: #eee8d5;">Model(s)</th>
+      <th style="color: #eee8d5;">Year</th>
+      <th style="color: #eee8d5;">Comparison (% of LOTR)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>512</td>
+      <td><em>BERT + GPT-1</em></td>
+      <td>2018</td>
+      <td>0.09%</td>
+    </tr>
+    <tr>
+      <td>4,096</td>
+      <td><em>GPT-3.5 (Original ChatGPT)</em></td>
+      <td>2022</td>
+      <td>0.7%</td>
+    </tr>
+    <tr>
+      <td>2,000,000</td>
+      <td><em>Gemini 1.5 pro</em></td>
+      <td>2024</td>
+      <td>341%</td>
+    </tr>
+  </tbody>
+</table>
+</br>
+Since last week Llama 4 Scout: 10M tokens (1709%).
+
+---
+
+## 🎮 Pick Your LLM!
+
+- 📥 Input modalities: text, image, audio, voice
+- 📝 Output modalities: text, image, voice, structured output
+- 🌍 Multilingual models
+- 🧠 Reasoning model: yes/no
+- ⚡ Supports function calling: yes/no
+- 📏 Maximum context window
+- 💰 Price per token
+- ⚡ Output speed
+
+---
+
+## ⚔️ Model Tiers: Choose Your Weapon! {.smaller}
+
+Most model providers offer a range of models, often tiered by capability and cost:
+
+<!-- ::: {.incremental .smaller} -->
+::: {.columns}
+::: {.column width="33%"}
+
+### 👑 Flagship Models
+
+- **Best for:** Complex reasoning, high accuracy, creative tasks.
+- **Trade-offs:** Slower, more expensive.
+
+*Examples: OpenAI o1, Claude 3.7 Sonnet, Gemini 2.5 Pro, Llama 4 Behemoth*
+:::
+
+::: {.column width="33%"}
+### ⚖️ Balanced Models
+- **Best for:** Good balance of performance, speed, and cost for general use.
+- **Trade-offs:** May not match flagship on the *most* complex tasks.
+
+*Examples: GPT-4o, Claude 3.7 Sonnet (Non reasoning)*
+:::
+
+::: {.column width="33%"}
+### ⚡ Fast/Lite Models
+- **Best for:** High throughput, low latency, simple tasks, cost-sensitive applications.
+- **Trade-offs:** Less capable reasoning, potentially lower accuracy.
+
+*Examples: GPT-4o-mini, Claude 3.5 Haiku, Gemini 2.0 Flash and Flash-lite*
+:::
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+**Key takeaway:** Match the model tier to your specific needs and budget!
+:::
+
+---
+
+```{=html}
+<div style="display: flex; justify-content: flex-start; align-items: flex-start; width: 100%;">
+
+<div style="
+  width: 32%; /* Adjusted width */
+  box-sizing: border-box; /* Added */
+  margin-right: 1%; /* Added margin */
+  border-radius: 15px;
+  padding: 20px;
+  background: linear-gradient(to right, #d5c4a1, #bdae93);
+  color: #282828;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', sans-serif;
+  /* margin: auto; Removed */
+  font-size: 0.5em; /* Reduced font size */
+">
+  <h2 style="margin-top: 0;">🧠 Claude 3.7 Sonnet</h2>
+  <p><strong>🎮 Type:</strong> Reasoning / Ethical AI</p>
+  <p><strong>🧩 Input:</strong> Text, Image</p>
+  <p><strong>🖼 Output:</strong> Text</p>
+  <p><strong>📏 Context:</strong> 200K tokens</p>
+  <p><strong>🛠 Function Calling:</strong> ✅</p>
+  <p><strong>💻 Special Ability:</strong> Computer Use (mouse, keyboard, browser), Content Caching</p>
+  <hr style="border: 1px solid #928374;">
+  <p><strong>💪 Strengths:</strong></p>
+  <ul>
+    <li>Understands and analyzes images</li>
+    <li>Handles long-form content</li>
+    <li>Performs autonomous computer tasks</li>
+  </ul>
+  <p><strong>⚠️ Weaknesses:</strong></p>
+  <ul>
+    <li>Can misfire in complex tasks</li>
+    <li>No structured/image output</li>
+  </ul>
+</div>
+
+<div style="
+  width: 32%; /* Adjusted width */
+  box-sizing: border-box; /* Added */
+  margin-right: 1%; /* Added margin */
+  border-radius: 15px;
+  padding: 20px;
+  background: linear-gradient(to right, #89b4fa, #7aa1e8); /* Blue gradient */
+  color: #1e1e2e; /* Darker text for contrast */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', sans-serif;
+  /* margin: auto; Removed */
+  font-size: 0.5em; /* Reduced font size */
+">
+  <h2 style="margin-top: 0;">✨ Gemini 2.0 Flash</h2>
+  <p><strong>⚡ Type:</strong> Speed & Efficiency / Long Context</p>
+  <p><strong>🧩 Input:</strong> Text, Image, Audio, Video</p>
+  <p><strong>🖼 Output:</strong> Text, Audio?</p>
+  <p><strong>📏 Context:</strong> 1M tokens</p>
+  <p><strong>🛠 Function Calling:</strong> ✅</p>
+  <hr style="border: 1px solid #627aa3;">
+  <p><strong>💪 Strengths:</strong></p>
+  <ul>
+    <li>Very fast response times</li>
+    <li>Cost-effective</li>
+    <li>Excellent for long context tasks</li>
+    <li>Good for high-volume/frequency tasks</li>
+  </ul>
+  <p><strong>⚠️ Weaknesses:</strong></p>
+  <ul>
+    <li>Less performant on highly complex reasoning vs Pro</li>
+    <li>May lack nuance compared to larger models</li>
+  </ul>
+</div>
+
+<div style="
+  width: 32%; /* Adjusted width */
+  box-sizing: border-box; /* Added */
+  /* No margin-right needed for the last item */
+  border-radius: 15px;
+  padding: 20px;
+  background: linear-gradient(to right, #a6e3a1, #94e2d5); /* Green gradient */
+  color: #1e1e2e; /* Darker text for contrast */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', sans-serif;
+  /* margin: auto; Removed */
+  font-size: 0.5em; /* Reduced font size */
+">
+  <h2 style="margin-top: 0; color: #181a1f;">👁️ GPT-4o</h2>
+  <p><strong>💡 Type:</strong> Multimodal Reasoning</p>
+  <p><strong>🧩 Input:</strong> Text, Image, Audio</p>
+  <p><strong>🖼 Output:</strong> Text, Image, Audio</p>
+  <p><strong>📏 Context:</strong> 128K tokens</p>
+  <p><strong>🛠 Function Calling:</strong> ✅</p>
+  <hr style="border: 1px solid #74a18a;">
+  <p><strong>💪 Strengths:</strong></p>
+  <ul>
+    <li>Strong multimodal understanding & generation</li>
+    <li>Real-time audio interaction</li>
+    <li>Good reasoning, coding, data analysis capabilities</li>
+    <li>Fast for its capability level</li>
+  </ul>
+  <p><strong>⚠️ Weaknesses:</strong></p>
+  <ul>
+    <li>Smaller context window than Gemini 1.5</li>
+    <li>Knowledge cutoff (Oct 2023)</li>
+  </ul>
+</div>
+
+</div>
+```
+
+---
+
+## Agents {.chapter-title}
+
+
+<div style="text-align: center;">
+_Autonomously make decisions and take actions_
+
+_to achieve a goal._
+</div>
+
+![](img/agent-diagram.svg) {.r-stretch}
+
+<!-- <img src="img/agent-diagram.svg" style="width: 50%;margin-left:auto;margin-right:auto;display:block;">  -->
+
+
+
+
+---
+
+Key components
+
+- Reflection
+- Planning
+- Tool use
+- Collaboration
+
+Things made possible with reasoning. 
+
+
+--- 
+
+Planning and reflection made possible by reasoning models. 
+
+
+---
+
+<!-- 
+
+### Introduction
+- Brief history of AI to GenAI transition
+- Why GenAI matters specifically for developers
+- How GenAI is different from traditional AI/ML approaches
+
+### Foundational Concepts
+- Large Language Models (LLMs) - how they work at a high level
+- Key terminology: tokens, embeddings, context windows, temperature
+- Different types of models and their capabilities (text, image, code generation, etc.)
+
+### The GenAI Stack for Developers
+- Model providers and APIs (OpenAI, Anthropic, Google, open-source options)
+- Vector databases and embeddings (Pinecone, Weaviate, Qdrant, etc.)
+- Orchestration frameworks (LangChain, LlamaIndex, etc.)
+- Evaluation and monitoring tools
+
+### Practical Implementation Patterns
+- Prompt engineering best practices
+- RAG (Retrieval Augmented Generation) architecture 
+- Fine-tuning vs. prompt engineering
+- Function/tool calling
+- Agents and multi-step reasoning
+
+### Developer Tools and Integration
+- GenAI-powered coding assistants (GitHub Copilot, Claude/ChatGPT for coding)
+- Integrating GenAI into existing workflows and applications
+- SDKs and libraries for different programming languages
+- Testing and evaluation of GenAI components
+
+### Technical Challenges and Solutions
+- Managing context windows and token limits
+- Handling hallucinations and improving accuracy
+- Performance optimization and cost management
+- Privacy and data security considerations
+
+### Real-World Use Cases
+- Code generation and documentation
+- Content generation and summarization
+- Search and information retrieval
+- Conversational interfaces
+- Data analysis and insights
+
+### Building Responsible GenAI Applications
+- Bias and fairness considerations
+- Privacy and security best practices
+- Transparency and explainability in AI systems
+- Regulatory landscape and compliance
+
+### Future Trends and Conclusion
+- Emerging models and capabilities
+- Local model deployment and edge computing
+- Multimodal AI systems
+- Resources for further learning and experimentation
+
+ -->

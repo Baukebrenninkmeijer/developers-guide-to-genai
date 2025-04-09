@@ -1,0 +1,12 @@
+
+/*-- scss:defaults --*/
+
+
+
+/*-- scss:rules --*/
+
+.chapter-title h2 {
+    font-size: 3em;
+    color: #eee8d5;
+    text-align: center;
+  }
