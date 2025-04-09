@@ -156,7 +156,7 @@ Source: https://amgadhasan.substack.com/p/explaining-how-llms-work-in-7-levels
 Source: https://amgadhasan.substack.com/p/explaining-how-llms-work-in-7-levels
 :::
 
---- 
+---
 
 ::: {.r-stack}
 
@@ -411,7 +411,9 @@ _to achieve a goal._
 <!-- <img src="img/agent-diagram.svg" style="width: 50%;margin-left:auto;margin-right:auto;display:block;">  -->
 
 
+---
 
+## {background-video="img/introducing_scrapybara_720.mp4" background-vide-muted="false"}
 
 ---
 
@@ -422,17 +424,17 @@ Key components
 - Tool use
 - Collaboration
 
-Things made possible with reasoning. 
-
-
---- 
-
-Planning and reflection made possible by reasoning models. 
+Things made possible with reasoning.
 
 
 ---
 
-<!-- 
+Planning and reflection made possible by reasoning models.
+
+
+---
+
+<!--
 
 ### Introduction
 - Brief history of AI to GenAI transition
@@ -452,7 +454,7 @@ Planning and reflection made possible by reasoning models.
 
 ### Practical Implementation Patterns
 - Prompt engineering best practices
-- RAG (Retrieval Augmented Generation) architecture 
+- RAG (Retrieval Augmented Generation) architecture
 - Fine-tuning vs. prompt engineering
 - Function/tool calling
 - Agents and multi-step reasoning
