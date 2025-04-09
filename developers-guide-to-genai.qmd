@@ -418,7 +418,9 @@ _to achieve a goal._
 
 ---
 
-<img src="img/agent-diagram.svg" style="width: 50%;margin-left:auto;margin-right:auto;display:block;"> 
+<img src="img/agent-diagram.svg" height="400" style="margin-left:auto;margin-right:auto;display:block;">
+
+<!-- <img src="img/agent-diagram.svg" style="width: 50%;margin-left:auto;margin-right:auto;display:block;">  -->
 
 <!-- ![](img/agent-diagram.svg) {.r-stretch} -->
 
@@ -435,15 +437,15 @@ _to achieve a goal._
   <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
     <h3 style="color: #b58900; margin: 0; text-align: center; font-size: 1.8em;">Reflection</h3>
   </div>
-  
+
   <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
     <h3 style="color: #dc322f; margin: 0; text-align: center; font-size: 1.8em;">Planning</h3>
   </div>
-  
+
   <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
     <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tool Use</h3>
   </div>
-  
+
   <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
     <h3 style="color: #2aa198; margin: 0; text-align: center; font-size: 1.8em;">Collaboration</h3>
   </div>
@@ -461,15 +463,15 @@ _to achieve a goal._
   <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
     <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Reflection</h3>
   </div>
-  
+
   <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
     <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Planning</h3>
   </div>
-  
+
   <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
     <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tool Use</h3>
   </div>
-  
+
   <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
     <h3 style="color: #2aa198; margin: 0; text-align: center; font-size: 1.8em;">Collaboration</h3>
   </div>
