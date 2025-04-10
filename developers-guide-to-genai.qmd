@@ -418,11 +418,8 @@ _to achieve a goal._
 
 ---
 
-<img src="img/agent-diagram.svg" height="400" style="margin-left:auto;margin-right:auto;display:block;">
+<img src="img/agent-diagram.svg" height="500" style="margin-left:auto;margin-right:auto;display:block;">
 
-<!-- <img src="img/agent-diagram.svg" style="width: 50%;margin-left:auto;margin-right:auto;display:block;">  -->
-
-<!-- ![](img/agent-diagram.svg) {.r-stretch} -->
 
 ---
 
