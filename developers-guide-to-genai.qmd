@@ -768,11 +768,56 @@ _to achieve a goal._
 
 ---
 
+## Programmic AI Frameworks
+
+- LangChain (Python, JS) 🚩
+- LlamaIndex (Python)
+- HayStack (Python)
+- PydanticAI (Python)
+
+---
+
+## Purpose of AI Frameworks
+
+End-to-end framework for building AI applications. 
+
+- Vector Databases
+- RAG components
+- Memory
+- Async management
+- Model integration
+- Embedding primitives
+- Agents
+- Orchestration
+- Evaluation
+- Monitoring
+
+
+---
+
 ## AI Agents Frameworks
 
 - LangGraph
 - CrewAI
 - Agents SDK (OpenaI)
+- Autogen
+- Agent Development Kit (ADK, Google)
+
+---
+
+## MCP: The Protocol That Connects Worlds
+
+<p style="color: #b58900; font-style: italic;">"MCP is an open protocol that enables seamless integration between LLM applications and external data sources and tools."<span style="color:white"> - Antropic</span></p>
+
+![](img/mcp_growth.png)
+
+---
+
+## {background-image="img/mcp_explained.webp" background-size="70%"}
+
+---
+
+## Agent2Agent
 
 ---
 
