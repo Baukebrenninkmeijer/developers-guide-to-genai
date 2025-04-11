@@ -45,7 +45,7 @@ Where are we going...
 
 ---
 
-## ACT I: The Awakening {.chapter-title .center background-gradient="linear-gradient(125deg, #073642, #2aa198)"}
+## ACT I: The Awakening {.chapter-title .center background-color="#073642"}
 
 ---
 
@@ -91,7 +91,26 @@ Raise your hand if you:
 
 ---
 
-## {.center}
+## The Ghibli AI Controversy {.center}
+
+::: {style="display: flex; justify-content: space-between; align-items: center; background: linear-gradient(135deg, #1a1a1a, #323232); padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);"}
+
+::: {style="width: 50%; padding-right: 30px;"}
+![](img/ghibli-backlash.png){style="border-radius:10px; box-shadow: 0 5px 15px rgba(0,0,0,0.4); width: 100%;"}
+:::
+
+::: {style="width: 45%; color: #eee8d5; text-align: left;"}
+<h3 style="color: #2aa198; margin-top: 0;">Studio Ghibli's Stance</h3>
+<!-- <p>The iconic animation studio spoke out against AI-generated imitations, highlighting the ethical concerns of using their artistic style without permission.</p> -->
+<p style="color: #b58900; font-style: italic;">"An Insult to Life Itself"</p>
+
+:::
+:::
+
+
+---
+
+## {.center visibility="hidden"}
 
 <!-- {background-image="img/ghibli-backlash.png" background-size="40%" background-color="#323232"} -->
 
@@ -129,32 +148,33 @@ Raise your hand if you:
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
-- Not much.
+- Not much at all.
 :::
 
 ---
 
 ## {background-color="black"}
 
-:::: {.columns}
-::: {.column width="50%" style="text-align: center; vertical-align: middle;"}
-<img src="img/17_use_it_all_the_time.png" style="width: 100%; display: block; margin: 0 auto;">
-
-:::
-
-::: {.column width="50%" style="text-align: center; vertical-align: middle;"}
-<img src="img/wired_3_in_4_coders.png" style="width: 100%; display: block; margin: 0 auto;">
-
-:::
-:::
+```{=html}
+<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; height: 80vh;">
+  <div style="width: 49%; display: flex; justify-content: center; align-items: center; height: 100%;">
+    <img src="img/17_use_it_all_the_time.png" style="max-width: 100%; max-height: 100%;">
+  </div>
+  <div style="width: 49%; display: flex; justify-content: center; align-items: center; height: 100%;">
+    <img src="img/wired_3_in_4_coders.png" style="max-width: 100%; max-height: 100%;">
+  </div>
+</div>
+```
 
 ---
 
-## {background-color="black"}
+## {.r-stretch background-color="black"}
 
-::: {style="text-align: center; vertical-align: middle;"}
-![](img/1_2_employers_have_ai.png)
-:::
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 80vh;">
+  <img src="img/1_2_employers_have_ai.png" style="max-width: 90%; max-height: 90%;">
+</div>
+```
 
 ::: footer
 Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-ai/
@@ -164,9 +184,11 @@ Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-a
 
 ## {.r-stretch background-color="black"}
 
-::: {style="text-align: center; vertical-align: middle;"}
-![](img/usage_platform.png)
-:::
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 80vh;">
+  <img src="img/usage_platform.png" style="max-width: 90%; max-height: 90%;">
+</div>
+```
 
 ::: footer
 Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-ai/
@@ -250,7 +272,7 @@ Source: https://amgadhasan.substack.com/p/explaining-how-llms-work-in-7-levels
 
 ::: {.r-stack}
 
-![](img/strawberry_old.png){.fragment}
+![](img/strawberry_old.png)
 
 ![](img/strawberry_new.png){.fragment .fade-in-then-semi-out width="100%"}
 
@@ -643,17 +665,131 @@ _to achieve a goal._
     <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tools</h3>
   </div>
 
-  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #2aa198; margin: 0; text-align: center; font-size: 1.8em;">Collaboration</h3>
+  <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Collaboration</h3>
   </div>
 </div>
 ```
 
 ---
 
-## {background-video="img/introducing_scrapybara_720.mp4" background-vide-muted="false"}
+## Types of Agents
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
+  <img src="img/single_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
+</div>
+```
+
+--- 
+
+## Hierarchical Multi-Agent System
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
+  <img src="img/hierarchical_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
+</div>
+```
 
 ---
+
+## Network Multi-Agent System
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
+  <img src="img/multi_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
+</div>
+```
+
+--- 
+
+## Tools
+
+```{=html}
+{{< include components/tools-grid.html >}}
+```
+
+---
+
+##
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh;">
+  <div style="display: flex; width: 100%; height: 100%;">
+    
+    <!-- Left Column -->
+    <div style="width: 30%; padding-right: 20px; display: flex; align-items: center;">
+      <div style="
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(135deg, #073642, #138ead);
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        color: #eee8d5;
+        font-size: 1.2em;
+        min-height: 300px;
+      ">
+        <h3 style="color: #2aa198; margin-bottom: 20px; font-size: 1.5em; text-align: center;">Visual AI Frameworks</h3>
+        
+        <ul style="list-style-type: none; padding-left: 0; margin: 0; text-align: left;">
+          <li style="margin-bottom: 15px; display: flex; align-items: center;">
+            <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✦</span> LangGraph
+          </li>
+          <li style="margin-bottom: 15px; display: flex; align-items: center;">
+            <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✦</span> FlowiseAI
+          </li>
+          <li style="margin-bottom: 15px; display: flex; align-items: center;">
+            <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✦</span> n8n
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Right Column -->
+    <div style="width: 70%; display: flex; align-items: center; justify-content: center;">
+      <img src="img/n8n_agent_view.webp" style="width: 100%; max-width: 100%; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
+    </div>
+    
+  </div>
+</div>
+```
+
+---
+
+## Programmic AI Frameworks
+
+- LangChain (Python, JS)
+- LlamaIndex (Python)
+- HayStack (Python)
+- PydanticAI (Python)
+
+---
+
+## AI Agents Frameworks
+
+- LangGraph
+- CrewAI
+- Agents SDK (OpenaI)
+
+---
+
+## Future
+
+test
+
+---
+
+## {background-image="img/exponential-growth.png"  background-size="contain" background-color="white"}
+
+---
+
+
+## {background-video="img/introducing_scrapybara_720.mp4" background-vide-muted="false"}
+
+
 
 <!--
 
@@ -707,15 +843,4 @@ _to achieve a goal._
 
  -->
 
- ---
-
- ## Future
-
- test
-
- ---
-
-## {background-image="img/exponential-growth.png"  background-size="contain" background-color="white"}
- <!-- ![](img/exponential-growth.png) -->
-
- ---
+---

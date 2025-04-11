@@ -1,0 +1,80 @@
+---
+description: Use Solarized color variables from styles.scss for consistent styling
+globs: **/*.scss, **/*.css, **/*.html, **/*.js, **/*.ts, **/*.tsx
+alwaysApply: true
+---
+
+- **Always Use Solarized Color Variables**
+  - Reference color variables from [styles.scss](mdc:styles.scss) instead of hardcoding HEX/RGB values
+  - This ensures consistency across the application and supports theming
+
+- **Available Color Variables:**
+  ```scss
+  // Dark theme colors
+  $base03: #002b36; // Dark background
+  $base02: #073642; // Dark background highlights
+  $base01: #586e75; // Comments/secondary content
+  $base00: #657b83; // Body text
+
+  // Light theme colors
+  $base0: #839496;  // Body text
+  $base1: #93a1a1;  // Optional emphasized content
+  $base2: #eee8d5;  // Light background highlights
+  $base3: #fdf6e3;  // Light background
+
+  // Accent colors
+  $yellow: #b58900;
+  $orange: #cb4b16;
+  $red: #dc322f;
+  $magenta: #d33682;
+  $violet: #6c71c4;
+  $blue: #268bd2;
+  $cyan: #2aa198;
+  $green: #859900;
+  ```
+
+- **Implementation Examples**
+  ```scss
+  // ✅ DO: Use color variables
+  .header {
+    background-color: $base03;
+    color: $base2;
+    border-bottom: 1px solid $blue;
+  }
+  
+  // ❌ DON'T: Hardcode color values
+  .header {
+    background-color: #002b36;
+    color: #eee8d5;
+    border-bottom: 1px solid #268bd2;
+  }
+  ```
+
+- **Using Gradients**
+  - Combine color variables for consistent gradients
+  - Reference the pattern from styles.scss:
+  ```scss
+  // ✅ DO: Create gradients with color variables
+  .gradient-element {
+    background: linear-gradient(to right, $base02, $cyan);
+  }
+  ```
+
+- **Semantic Color Usage**
+  - Use colors according to their semantic meaning:
+    - $base03, $base02: Dark backgrounds
+    - $base2, $base3: Light backgrounds
+    - $red: Errors/warnings
+    - $green: Success/confirmation
+    - $yellow: Caution/notification
+    - $blue: Information/interaction
+    - $cyan: Secondary interaction elements
+
+- **Accessibility Considerations**
+  - Ensure sufficient contrast between text and background colors
+  - Test combinations for WCAG AA compliance (minimum 4.5:1 for normal text)
+  - Consider using $base03/$base3 or $base02/$base2 for maximum contrast
+
+- **Maintenance**
+  - When new colors are added to styles.scss, update this rule
+  - Keep examples synchronized with actual usage in the codebase 
