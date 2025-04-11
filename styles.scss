@@ -27,3 +27,7 @@ $green: #859900;
     color: #eee8d5;
     text-align: center;
   }
+
+.base02-gradient-bg {
+  background: linear-gradient(to right, $base02, $cyan);
+}

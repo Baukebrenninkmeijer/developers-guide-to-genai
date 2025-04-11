@@ -13,6 +13,7 @@ format:
     # css: styles.css
 ---
 
+
 ## Why this talk? {.center}
 
 GenAI will change everything
@@ -44,17 +45,14 @@ Where are we going...
 
 ---
 
-## ACT I: The Awakening {.chapter-title .center}
+## ACT I: The Awakening {.chapter-title .center background-gradient="linear-gradient(125deg, #073642, #2aa198)"}
 
 ---
 
-## taking the temperature
+## taking the temperature {visibility="hidden"}
 
 Raise your hand if you:
 
-::: {.fragment .fade-in-then-semi-out}
-- have used AI to generate text
-:::
 ::: {.fragment .fade-in-then-semi-out}
 - have used AI to generate code
 :::
@@ -66,6 +64,52 @@ Raise your hand if you:
 :::
 ::: {.fragment .fade-in-then-semi-out}
 - have used an AI coding assistant
+:::
+::: {.fragment .fade-in-then-semi-out}
+- Have Ghiblified a photo
+:::
+
+---
+
+## Generate Code {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #2aa198)"}
+
+---
+
+## Generate Images {.chapter-title .center background-gradient="linear-gradient(145deg, #073642, #2aa198)"}
+
+---
+
+## Paid for AI tools {.chapter-title .center background-gradient="linear-gradient(155deg, #073642, #2aa198)"}
+
+---
+
+## Used an AI coding assistant {.chapter-title .center background-gradient="linear-gradient(165deg, #073642, #2aa198)"}
+
+---
+
+## Have Ghiblified a photo {.chapter-title .center background-gradient="linear-gradient(165deg, #073642, #2aa198)"}
+
+---
+
+## {.center}
+
+<!-- {background-image="img/ghibli-backlash.png" background-size="40%" background-color="#323232"} -->
+
+::: {.r-stretch style="display: flex; justify-content: center; align-items: center;"}
+![](img/ghibli-backlash.png){height=300 style="border-radius:10px;text-shadow: 10px 10px"}
+:::
+
+---
+
+## Flux just isn't the same
+
+:::: {.columns}
+::: {.column width="50%" style="text-align: center; vertical-align: middle;" .center}
+![](img/CAM00629.jpg)
+:::
+::: {.column width="50%" style="text-align: center; vertical-align: middle;"}
+![](img/ghiblified-output.jpeg)
+:::
 :::
 
 ---
@@ -90,10 +134,6 @@ Raise your hand if you:
 
 ---
 
-## Insert  statistics about GenAI usage here
-
----
-
 ## {background-color="black"}
 
 :::: {.columns}
@@ -108,6 +148,13 @@ Raise your hand if you:
 :::
 :::
 
+---
+
+## {background-color="black"}
+
+::: {style="text-align: center; vertical-align: middle;"}
+![](img/1_2_employers_have_ai.png)
+:::
 
 ::: footer
 Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-ai/
@@ -115,10 +162,44 @@ Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-a
 
 ---
 
-## How GenAI is different form old AI {.center}
+## {.r-stretch background-color="black"}
 
-1. Flexibility
-2. Performance
+::: {style="text-align: center; vertical-align: middle;"}
+![](img/usage_platform.png)
+:::
+
+::: footer
+Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-ai/
+:::
+
+---
+
+## Why GenAI is different {.chapter-title}
+
+```{=html}
+<div style="display: flex; justify-content: space-between; margin-bottom: 60px;">
+  <!-- First box (Generation vs. Analysis) -->
+  <div style="width: 45%; border-radius: 15px; padding: 35px;margin-right: 20px; 
+       background: linear-gradient(135deg, #b58900, #cb4b16); 
+       color: #fdf6e3; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
+    <h3 style="text-align: center; margin: 0; font-size: 1.8em;">1. Generation vs. Analysis</h3>
+  </div>
+  
+  <!-- Second box (Multi-modality) -->
+  <div style="width: 45%; border-radius: 15px; padding: 35px; 
+       background: linear-gradient(135deg, #268bd2, #6c71c4); 
+       color: #fdf6e3; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
+    <h3 style="text-align: center; margin: 0; font-size: 1.8em;">2. Multi-modality</h3>
+  </div>
+</div>
+
+<!-- Third box (Generality) - centered at bottom -->
+<div style="width: 45%; margin: 40px auto 0; border-radius: 15px; padding: 35px; 
+     background: linear-gradient(135deg, #2aa198, #859900); 
+     color: #fdf6e3; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
+  <h3 style="text-align: center; margin: 0; font-size: 1.8em;">3. Generality</h3>
+</div>
+```
 
 ---
 
@@ -126,7 +207,7 @@ Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-a
 
 ---
 
-## Core Concepts
+## Core Concepts {visibility="hidden"}
 
 How does it work?
 
@@ -136,6 +217,10 @@ How does it work?
 <img src="img/wallace_llm.gif" width="700">
 </center>
 ```
+
+--- 
+
+## {background-image="img/wallace_llm.gif" background-size="contain"}
 
 ::: footer
 Source: https://amgadhasan.substack.com/p/explaining-how-llms-work-in-7-levels
@@ -165,7 +250,7 @@ Source: https://amgadhasan.substack.com/p/explaining-how-llms-work-in-7-levels
 
 ::: {.r-stack}
 
-![](img/strawberry_old.png){.fragment .fade-in-then-semi-out}
+![](img/strawberry_old.png){.fragment}
 
 ![](img/strawberry_new.png){.fragment .fade-in-then-semi-out width="100%"}
 
@@ -200,7 +285,7 @@ source: https://zhuanlan.zhihu.com/p/631786282
   <img src="img/gemini2_5pro.svg" style="width: 60%; vertical-align: middle;" >
 </div>
 
----
+<!-- ---
 
 ## More is Better {.center}
 
@@ -236,7 +321,26 @@ source: https://zhuanlan.zhihu.com/p/631786282
   </tbody>
 </table>
 </br>
-Since last week Llama 4 Scout: 10M tokens (1709%).
+
+::: {.fade-in}
+That's 3788x more.
+::: -->
+
+---
+
+## {background-image="img/context_window_growth.png" background-size="contain"}
+
+
+:::footer
+:::
+
+---
+
+## {background-image="img/pokemon-poke-ball.gif" background-size="contain"}
+
+:::footer
+:::
+
 
 ---
 
@@ -247,13 +351,14 @@ Since last week Llama 4 Scout: 10M tokens (1709%).
 - 🌍 Multilingual models
 - 🧠 Reasoning model: yes/no
 - ⚡ Supports function calling: yes/no
+- 🛠 Tool Calling: yes/no
 - 📏 Maximum context window
 - 💰 Price per token
 - ⚡ Output speed
 
 ---
 
-## ⚔️ Model Tiers: Choose Your Weapon! {.smaller}
+## ⚔️ Model Tiers: Choose Your Weapon! {.smaller visibility="hidden"}
 
 Most model providers offer a range of models, often tiered by capability and cost:
 
@@ -263,24 +368,39 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ### 👑 Flagship Models
 
-- **Best for:** Complex reasoning, high accuracy, creative tasks.
-- **Trade-offs:** Slower, more expensive.
+```{=html}
+<ul style="list-style-type: none; font-size: 0.9em;">
+  <li style="margin-bottom: 0.8em;"><span style="display: inline-block; width: 1.2em; text-align: center; font-weight: bold; color: #859900;">✅</span> Complex reasoning, high accuracy, creative tasks.</li>
+  <li style="margin-bottom: 0.8em;"><span style="display: inline-block; width: 1.2em; text-align: center; font-weight: bold; color: #dc322f;">⚠️</span> Slower, more expensive.</li>
+</ul>
+```
 
 *Examples: OpenAI o1, Claude 3.7 Sonnet, Gemini 2.5 Pro, Llama 4 Behemoth*
+
 :::
 
 ::: {.column width="33%"}
 ### ⚖️ Balanced Models
-- **Best for:** Good balance of performance, speed, and cost for general use.
-- **Trade-offs:** May not match flagship on the *most* complex tasks.
+
+```{=html}
+<ul style="list-style-type: none; font-size: 0.9em;">
+  <li style="margin-bottom: 0.8em;"><span style="display: inline-block; width: 1.2em; text-align: center; font-weight: bold; color: #859900;">✅</span> Good balance of performance, speed, and cost for general use.</li>
+  <li style="margin-bottom: 0.8em;"><span style="display: inline-block; width: 1.2em; text-align: center; font-weight: bold; color: #dc322f;">⚠️</span> May not match flagship on the <em>most</em> complex tasks.</li>
+</ul>
+```
 
 *Examples: GPT-4o, Claude 3.7 Sonnet (Non reasoning)*
 :::
 
 ::: {.column width="33%"}
 ### ⚡ Fast/Lite Models
-- **Best for:** High throughput, low latency, simple tasks, cost-sensitive applications.
-- **Trade-offs:** Less capable reasoning, potentially lower accuracy.
+
+```{=html}
+<ul style="list-style-type: none; font-size: 0.9em;">
+  <li style="margin-bottom: 0.8em;"><span style="display: inline-block; width: 1.2em; text-align: center; font-weight: bold; color: #859900;">✅</span> High throughput, low latency, simple tasks, cost-sensitive applications.</li>
+  <li style="margin-bottom: 0.8em;"><span style="display: inline-block; width: 1.2em; text-align: center; font-weight: bold; color: #dc322f;">⚠️</span> Less capable reasoning, potentially lower accuracy.</li>
+</ul>
+```
 
 *Examples: GPT-4o-mini, Claude 3.5 Haiku, Gemini 2.0 Flash and Flash-lite*
 :::
@@ -309,23 +429,24 @@ Most model providers offer a range of models, often tiered by capability and cos
   font-size: 0.5em; /* Reduced font size */
 ">
   <h2 style="margin-top: 0;">🧠 Claude 3.7 Sonnet</h2>
-  <p><strong>🎮 Type:</strong> Reasoning / Ethical AI</p>
+  <p><strong>🎮 Type:</strong>Reasoning & Coding</p>
   <p><strong>🧩 Input:</strong> Text, Image</p>
   <p><strong>🖼 Output:</strong> Text</p>
   <p><strong>📏 Context:</strong> 200K tokens</p>
   <p><strong>🛠 Function Calling:</strong> ✅</p>
-  <p><strong>💻 Special Ability:</strong> Computer Use (mouse, keyboard, browser), Content Caching</p>
+  <p><strong>🏗️ Structured Output:</strong> ✅</p>
+  <p><strong>🤔 Reasoning:</strong> ✅</p>
+  <p><strong>💻 Special Ability:</strong> Computer Use (mouse, keyboard, browser)</p>
   <hr style="border: 1px solid #928374;">
   <p><strong>💪 Strengths:</strong></p>
   <ul>
-    <li>Understands and analyzes images</li>
-    <li>Handles long-form content</li>
+    <li>Amazing coder</li>
+    <li>Caches content</li>
     <li>Performs autonomous computer tasks</li>
   </ul>
   <p><strong>⚠️ Weaknesses:</strong></p>
   <ul>
-    <li>Can misfire in complex tasks</li>
-    <li>No structured/image output</li>
+    <li>No image output</li>
   </ul>
 </div>
 
@@ -344,10 +465,12 @@ Most model providers offer a range of models, often tiered by capability and cos
 ">
   <h2 style="margin-top: 0;">✨ Gemini 2.0 Flash</h2>
   <p><strong>⚡ Type:</strong> Speed & Efficiency / Long Context</p>
-  <p><strong>🧩 Input:</strong> Text, Image, Audio, Video</p>
-  <p><strong>🖼 Output:</strong> Text, Audio?</p>
+  <p><strong>🧩 Input:</strong> Text, Image, Audio, Video, Voice</p>
+  <p><strong>🖼 Output:</strong> Text, Voice</p>
   <p><strong>📏 Context:</strong> 1M tokens</p>
   <p><strong>🛠 Function Calling:</strong> ✅</p>
+  <p><strong>🏗️ Structured Output:</strong> ✅</p>
+  <p><strong>🤔 Reasoning:</strong> ❌</p>
   <hr style="border: 1px solid #627aa3;">
   <p><strong>💪 Strengths:</strong></p>
   <ul>
@@ -359,11 +482,10 @@ Most model providers offer a range of models, often tiered by capability and cos
   <p><strong>⚠️ Weaknesses:</strong></p>
   <ul>
     <li>Less performant on highly complex reasoning vs Pro</li>
-    <li>May lack nuance compared to larger models</li>
   </ul>
 </div>
 
-<div style="
+<!-- <div style="
   width: 32%; /* Adjusted width */
   box-sizing: border-box; /* Added */
   /* No margin-right needed for the last item */
@@ -395,10 +517,66 @@ Most model providers offer a range of models, often tiered by capability and cos
     <li>Smaller context window than Gemini 1.5</li>
     <li>Knowledge cutoff (Oct 2023)</li>
   </ul>
+</div> -->
+
+
+<div style="
+  width: 32%; /* Adjusted width */
+  box-sizing: border-box; /* Added */
+  /* margin-right: 1%; Added margin */
+  border-radius: 15px;
+  padding: 20px;
+  background: linear-gradient(to right, #f38ba8, #fab387); /* Red-orange gradient */
+  color: #1e1e2e; /* Darker text for contrast */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', sans-serif;
+  /* margin: auto; Removed */
+  font-size: 0.5em; /* Reduced font size */
+">
+  <h2 style="margin-top: 0; color: #181a1f;">🧠 DeepSeek-V3 (OS)</h2>
+  <p><strong>💡 Type:</strong> Coding & Technical Reasoning</p>
+  <p><strong>🧩 Input:</strong> Text, Images (VL variant)</p>
+  <p><strong>🖼 Output:</strong> Text</p>
+  <p><strong>📏 Context:</strong> 128K tokens</p>
+  <p><strong>🛠 Function Calling:</strong> ❌</p>
+  <p><strong>🏗️ Structured Output:</strong> 🔶</p>
+  <p><strong>🤔 Reasoning:</strong>✅</p>
+  <hr style="border: 1px solid #e5989b;">
+  <p><strong>💪 Strengths:</strong></p>
+  <ul>
+    <li>Exceptional coding & mathematical reasoning</li>
+    <li>Strong multilingual capabilities (Chinese+English)</li>
+    <li>Open-source</li>
+  </ul>
+  <p><strong>⚠️ Weaknesses:</strong></p>
+  <ul>
+    <li>Fewer modalities than some competitors</li>
+    <li>Less robust content moderation</li>
+  </ul>
 </div>
 
 </div>
 ```
+
+:::footer
+:::
+
+---
+
+## {background-image="img/llm_features.png" background-size="contain"}
+
+
+---
+
+## Reasoning Models {background-image="img/winnie.gif" background-size="contain" .chapter-title}
+
+---
+
+## {background-image="img/thinking_tags_example.png" background-size="contain" background-color="#4A90E2"}
+
+---
+
+## {background-image="img/reasoning_models_perf_jump.png" background-size="contain"}
 
 ---
 
@@ -423,10 +601,6 @@ _to achieve a goal._
 
 ---
 
-## {background-video="img/introducing_scrapybara_720.mp4" background-vide-muted="false"}
-
----
-
 ## Key components of Agents {auto-animate=true}
 
 ```{=html}
@@ -440,7 +614,7 @@ _to achieve a goal._
   </div>
 
   <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tool Use</h3>
+    <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tools</h3>
   </div>
 
   <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
@@ -466,7 +640,7 @@ _to achieve a goal._
   </div>
 
   <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tool Use</h3>
+    <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tools</h3>
   </div>
 
   <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
@@ -475,11 +649,9 @@ _to achieve a goal._
 </div>
 ```
 
-
 ---
 
-Planning and reflection made possible by reasoning models.
-
+## {background-video="img/introducing_scrapybara_720.mp4" background-vide-muted="false"}
 
 ---
 
@@ -539,7 +711,11 @@ Planning and reflection made possible by reasoning models.
 
  ## Future
 
+ test
+
  ---
 
-# {background-image="img/exponential-growth.png"  background-size="contain" background-color="white"}
+## {background-image="img/exponential-growth.png"  background-size="contain" background-color="white"}
  <!-- ![](img/exponential-growth.png) -->
+
+ ---
