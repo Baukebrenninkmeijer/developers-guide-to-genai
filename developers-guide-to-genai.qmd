@@ -14,10 +14,13 @@ format:
 ---
 
 
-## Why this talk? {.center}
+## Why this talk? {.center .chapter-title}
 
-GenAI will change everything
-
+```{=html}
+<center>
+<h1 style="font-size: 2.5em; margin-bottom: 0; color: #2aa198;">GenAI will change everything</h1>
+</center>
+```
 
 <!-- ---
 
@@ -73,6 +76,8 @@ Raise your hand if you:
 
 ## Generate Code {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #2aa198)"}
 
+<p style="margin-top:-10em;margin-left:40%">Hands up if</p>
+
 ---
 
 ## Generate Images {.chapter-title .center background-gradient="linear-gradient(145deg, #073642, #2aa198)"}
@@ -102,7 +107,29 @@ Raise your hand if you:
 ::: {style="width: 45%; color: #eee8d5; text-align: left;"}
 <h3 style="color: #2aa198; margin-top: 0;">Studio Ghibli's Stance</h3>
 <!-- <p>The iconic animation studio spoke out against AI-generated imitations, highlighting the ethical concerns of using their artistic style without permission.</p> -->
-<p style="color: #b58900; font-style: italic;">"An Insult to Life Itself"</p>
+<blockquote style="
+    margin: 20px 0;
+    padding: 15px 20px;
+    border-left: 5px solid #2aa198;
+    background: rgba(163, 163, 163, 0.2);
+    font-family: 'Georgia', serif;
+    position: relative;
+    border-radius: 10px;
+">
+    <p style="
+        color: #b58900;
+        font-size: 1.2em;
+        font-style: italic;
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    ">"An Insult to Life Itself"</p>
+    <footer style="
+        color: #eee8d5;
+        font-size: 0.95em;
+        text-align: right;
+        font-weight: 500;
+    ">— Hayao Miyazaki</footer>
+</blockquote>
 
 :::
 :::
@@ -165,6 +192,10 @@ Raise your hand if you:
   </div>
 </div>
 ```
+
+::: footer
+Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-ai/
+:::
 
 ---
 
@@ -592,6 +623,9 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ## Reasoning Models {background-image="img/winnie.gif" background-size="contain" .chapter-title}
 
+:::footer
+:::
+
 ---
 
 ## {background-image="img/thinking_tags_example.png" background-size="contain" background-color="#4A90E2"}
@@ -671,9 +705,17 @@ _to achieve a goal._
 </div>
 ```
 
+--- 
+
+## Tools
+
+```{=html}
+{{< include components/tools-grid.html >}}
+```
+
 ---
 
-## Types of Agents
+## Types of Agents: Single Agent System
 
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
@@ -683,7 +725,7 @@ _to achieve a goal._
 
 --- 
 
-## Hierarchical Multi-Agent System
+## Types of Agents: Hierarchical Multi-Agent System
 
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
@@ -693,7 +735,7 @@ _to achieve a goal._
 
 ---
 
-## Network Multi-Agent System
+## Types of Agents: Network Multi-Agent System
 
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
@@ -701,13 +743,7 @@ _to achieve a goal._
 </div>
 ```
 
---- 
 
-## Tools
-
-```{=html}
-{{< include components/tools-grid.html >}}
-```
 
 ---
 
@@ -781,17 +817,22 @@ _to achieve a goal._
 
 End-to-end framework for building AI applications. 
 
+:::{.columns}
+:::{.column}
 - Vector Databases
 - RAG components
 - Memory
 - Async management
 - Model integration
+:::
+:::{.column}
 - Embedding primitives
 - Agents
 - Orchestration
 - Evaluation
 - Monitoring
-
+:::
+:::
 
 ---
 
@@ -799,17 +840,68 @@ End-to-end framework for building AI applications.
 
 - LangGraph
 - CrewAI
-- Agents SDK (OpenaI)
+- Agents SDK (OpenAI)
 - Autogen
 - Agent Development Kit (ADK, Google)
+
+
+---
+
+## Development Tools
+
+- Cursor
+- Windsurf
+- Aider
+- VS code Extensions
+  - Cline
+  - Roo Code
+
+---
+
+## Biggest challenge: Planning
+
+If you give it too complex and unspecified tasks, it will fail.
 
 ---
 
 ## MCP: The Protocol That Connects Worlds
 
-<p style="color: #b58900; font-style: italic;">"MCP is an open protocol that enables seamless integration between LLM applications and external data sources and tools."<span style="color:white"> - Antropic</span></p>
-
-![](img/mcp_growth.png)
+```{=html}
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; margin: 30px 0;">
+  <!-- Left side: Quote -->
+  <div style="flex: 1; min-width: 45%;">
+    <blockquote style="
+        margin: 0;
+        padding: 15px 20px;
+        border-left: 5px solid #2aa198;
+        background: rgba(163, 163, 163, 0.2);
+        font-family: 'Georgia', serif;
+        position: relative;
+        border-radius: 10px;
+        width: 90%;
+    ">
+        <p style="
+            color: #b58900;
+            font-size: 1em;
+            font-style: italic;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        ">"MCP is an open protocol that enables seamless integration between LLM applications and external data sources and tools."</p>
+        <footer style="
+            color: #eee8d5;
+            font-size: 0.85em;
+            text-align: right;
+            font-weight: 500;
+        ">— Anthropic</footer>
+    </blockquote>
+  </div>
+  
+  <!-- Right side: Image -->
+  <div style="flex: 1; min-width: 60%; display: flex; align-items: center; justify-content: center;">
+    <img src="img/mcp_growth.png" style="max-width: 100%; height: auto;">
+  </div>
+</div>
+```
 
 ---
 
@@ -823,7 +915,7 @@ End-to-end framework for building AI applications.
 
 ## Future
 
-test
+"The more it reasons, the more unpredictable it becomes" - Ilya Sutskever
 
 ---
 
