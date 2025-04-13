@@ -1,0 +1,74 @@
+# The Developer's Guide to GenAI - Project Requirements Document
+
+## Overview
+Create a comprehensive guide for developers on effectively working with generative AI technologies. The guide should cover foundational concepts, practical implementation patterns, tools integration, and best practices for professional developers.
+
+## Content Structure
+- Introduction to Generative AI for developers
+- Foundational concepts and terminology
+- The GenAI stack and architecture patterns
+- Practical implementation examples
+- Developer tools and workflows
+- Technical challenges and solutions
+- Responsible AI development practices
+- Future trends and preparation
+
+## Technical Requirements
+- Create presentation slides using Quarto/Revealjs
+- Implement clean, responsive design using SCSS styling
+- Develop custom visualization components for key concepts
+- Include code examples for multiple programming languages
+- Provide demonstration notebooks/examples for hands-on learning
+
+## Implementation Priorities
+### Foundation (Priority 1)
+- Create core slide deck structure and design system
+- Develop introduction and foundational concepts sections
+- Implement basic visualization components
+- Establish repository structure and development workflow
+
+### Core Content (Priority 2)
+- Implementation patterns and architecture components
+- Developer tools and integration guides
+- Technical challenges and solutions
+- Complete slide formatting and navigation
+
+### Advanced Features (Priority 3)
+- Interactive demonstrations of GenAI capabilities
+- Advanced visualization components
+- Case studies and real-world examples
+- Cross-references and additional resources
+
+### Documentation & Finalization (Priority 4)
+- Review and refinement of all content
+- Technical editing and fact checking
+- Prepare supporting materials and resources
+- Finalize presentation flow and timing
+
+## Technical Challenges & Considerations
+- **Accuracy**: Ensuring all technical information is accurate and up-to-date
+- **Accessibility**: Making complex AI concepts accessible to developers of all experience levels
+- **Code Examples**: Providing practical, working code examples for multiple languages/frameworks
+- **Visual Explanations**: Creating clear visualizations for complex AI concepts
+- **Technical Depth**: Balancing conceptual explanations with technical implementation details
+
+## Appendix
+### Key Topics to Cover
+- Large Language Models (LLMs) and how they work
+- Tokens, embeddings, context windows, temperature
+- Prompt engineering best practices
+- Retrieval Augmented Generation (RAG)
+- Function/tool calling patterns
+- Fine-tuning vs prompt engineering
+- Agent frameworks and reasoning patterns
+- Vector databases and embeddings
+- Orchestration frameworks and tools
+- Integration with existing developer workflows
+- Performance optimization and cost management
+- Privacy and security considerations
+
+### Target Audience
+- Professional software developers
+- Technical architects and team leads
+- DevOps and MLOps practitioners
+- Development teams implementing GenAI solutions
