@@ -621,7 +621,6 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ## {background-image="img/llm_features.png" background-size="contain"}
 
-
 ---
 
 ## Reasoning Models {background-image="img/winnie.gif" background-size="contain" .chapter-title}
@@ -637,76 +636,17 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ## {background-image="img/reasoning_models_perf_jump.png" background-size="contain"}
 
----
-
-## ACT III: The Agents {.chapter-title .center}
 
 ---
 
-## Agents {.chapter-title .center}
-
-
-<div style="text-align: center;">
-_Autonomously make decisions and take actions_
-
-_to achieve a goal._
-</div>
-
+## Software Stack {.chapter-title .center}
 
 ---
 
-<img src="img/agent-diagram.svg" height="500" style="margin-left:auto;margin-right:auto;display:block;">
+## {background-image="img/genai-stack.webp" background-size="contain" background-color="white"}
 
-
----
-
-## Key components of Agents {auto-animate=true}
-
-```{=html}
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
-  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #b58900; margin: 0; text-align: center; font-size: 1.8em;">Reflection</h3>
-  </div>
-
-  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #dc322f; margin: 0; text-align: center; font-size: 1.8em;">Planning</h3>
-  </div>
-
-  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tools</h3>
-  </div>
-
-  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #2aa198; margin: 0; text-align: center; font-size: 1.8em;">Collaboration</h3>
-  </div>
-</div>
-```
-
----
-
-
-## Key components of Agents {auto-animate=true}
-
-
-```{=html}
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
-  <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Reflection</h3>
-  </div>
-
-  <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Planning</h3>
-  </div>
-
-  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tools</h3>
-  </div>
-
-  <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Collaboration</h3>
-  </div>
-</div>
-```
+:::footer
+:::
 
 --- 
 
@@ -762,39 +702,8 @@ _to achieve a goal._
 ## {background-image="img/mcp_explained.webp" background-size="70%"}
 
 
----
-
-## Types of Agents: Single Agent System
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
-  <img src="img/single_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
-</div>
-```
-
---- 
-
-## Types of Agents: Hierarchical Multi-Agent System
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
-  <img src="img/hierarchical_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
-</div>
-```
 
 ---
-
-## Types of Agents: Network Multi-Agent System
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
-  <img src="img/multi_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
-</div>
-```
-
----
-
-##
 
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh;">
@@ -840,8 +749,6 @@ _to achieve a goal._
 </div>
 ```
 
-
-
 ---
 
 ## Programmic AI Frameworks
@@ -862,7 +769,22 @@ _to achieve a goal._
 
 ---
 
-## Purpose of AI Frameworks
+## Self-hosting a model
+
+
+- Ollama (UI)
+- LM Studio (UI)
+- LlamaCpp (CLI)
+- vllm (CLI)
+
+
+---
+
+## {background-video="img/langchain-video.mp4" background-vide-muted="true" background-size="contain"}
+
+---
+
+## Purpose of AI Frameworks {visibility="hidden"}
 
 End-to-end framework for building AI applications. 
 
@@ -889,10 +811,9 @@ End-to-end framework for building AI applications.
 
 - LangGraph
 - CrewAI
-- Agents SDK (OpenAI)
 - Autogen
+- Agents SDK (OpenAI)
 - Agent Development Kit (ADK, Google)
-
 
 ---
 
@@ -916,30 +837,258 @@ VS Code
 ---
 
 ## Biggest challenge: Specificity
-
 If you give it too complex and unspecified tasks, it will fail.
 
 ---
 
-Greenfield tips:
+## {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #cb4b16)"}
 
-1. Idea Honing - refine the idea
-2. Task Decomposition - break down the task into smaller tasks
-3. Implementation - implement the tasks one by one.
-
----
-
-Task Management:
-- Task Master
-- Cursor Rules
-- Roo Code
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
+  <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+    
+    <div style="display: grid; grid-template-columns: 70% 30%; gap: 25px; margin-top: 20px;">
+      
+      <!-- Greenfield Tips -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        <h2 style="color: #cb4b16; text-align: center; margin-bottom: 20px; font-size: 1.8em;">Greenfield Development</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+          <!-- Idea Honing -->
+          <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="width: 70px; height: 70px; background: #cb4b16; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+              <span style="font-size: 2em; color: #002b36;">💡</span>
+            </div>
+            <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 1.2em;">1. Idea Honing</h3>
+          </div>
+          
+          <!-- Task Decomposition -->
+          <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="width: 70px; height: 70px; background: #cb4b16; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+              <span style="font-size: 2em; color: #002b36;">🧩</span>
+            </div>
+            <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 1.2em;">2. Task Decomposition</h3>
+          </div>
+          
+          <!-- Implementation -->
+          <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="width: 70px; height: 70px; background: #cb4b16; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+              <span style="font-size: 2em; color: #002b36;">🚀</span>
+            </div>
+            <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 1.2em;">3. Implementation</h3>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Existing Codebases -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="color: #859900; text-align: center; margin-bottom: 20px; font-size: 1.8em;">Existing Codebases</h2>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 70px; height: 70px; background: #859900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+            <span style="font-size: 2em; color: #002b36;">🔄</span>
+          </div>
+          <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 1.2em;">Incremental Iteration</h3>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Common Practice for Both -->
+    <div style="margin-top: 25px; background: linear-gradient(135deg, #073642, #002b36); padding: 15px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); text-align: center;">
+      <div style="display: flex; align-items: center; justify-content: center;">
+        <div style="width: 50px; height: 50px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 15px;">
+          <span style="font-size: 1.8em; color: #002b36;">🧪</span>
+        </div>
+        <h3 style="color: #eee8d5; margin: 0; font-size: 1.4em;">For both: Lots of tests</h3>
+      </div>
+    </div>
+    
+  </div>
+</div>
+```
 
 --- 
 
-Cost management:
-- Caching
-- Batching
-- Cost estimation and tracking (i.e. how many tokens are you using?)
+## {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #2aa198)"}
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
+  <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+    
+    <h2 style="color: #2aa198; text-align: center; margin-bottom: 30px; font-size: 2em;">Cost Management Strategies</h2>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px; margin-top: 20px;">
+      
+      <!-- Caching -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 80px; height: 80px; background: #2aa198; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+          <span style="font-size: 2.5em; color: #002b36;">⚡</span>
+        </div>
+        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Caching</h3>
+      </div>
+      
+      <!-- Batching -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 80px; height: 80px; background: #b58900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+          <span style="font-size: 2.5em; color: #002b36;">📦</span>
+        </div>
+        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Batching</h3>
+      </div>
+      
+      <!-- Cost tracking -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 80px; height: 80px; background: #268bd2; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+          <span style="font-size: 2.5em; color: #002b36;">📊</span>
+        </div>
+        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Token Usage</h3>
+      </div>
+      
+    </div>
+  </div>
+</div>
+```
+
+---
+
+##  {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #6c71c4)"}
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
+  <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+    
+    <h2 style="color: #d33682; text-align: center; margin-bottom: 30px; font-size: 2em;">Task Management Tools</h2>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px; margin-top: 20px;">
+      
+      <!-- Task Master AI -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 80px; height: 80px; background: #d33682; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+          <span style="font-size: 2.5em; color: #002b36;">✅</span>
+        </div>
+        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Task Master AI</h3>
+      </div>
+      
+      <!-- Cursor Rules -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 80px; height: 80px; background: #6c71c4; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+          <span style="font-size: 2.5em; color: #002b36;">📋</span>
+        </div>
+        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Cursor Rules</h3>
+      </div>
+      
+      <!-- Roo Code -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 80px; height: 80px; background: #859900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+          <span style="font-size: 2.5em; color: #002b36;">🦘</span>
+        </div>
+        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Roo Code</h3>
+      </div>
+      
+    </div>
+  </div>
+</div>
+```
+
+---
+
+## ACT III: The Agents {.chapter-title .center}
+
+---
+
+## Agents {.chapter-title .center}
+
+
+<div style="text-align: center;">
+_Autonomously make decisions and take actions_
+
+_to achieve a goal._
+</div>
+
+
+---
+
+<img src="img/agent-diagram.svg" height="500" style="margin-left:auto;margin-right:auto;display:block;">
+
+---
+
+## Key components of Agents {auto-animate=true}
+
+```{=html}
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #b58900; margin: 0; text-align: center; font-size: 1.8em;">Reflection</h3>
+  </div>
+
+  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #dc322f; margin: 0; text-align: center; font-size: 1.8em;">Planning</h3>
+  </div>
+
+  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tools</h3>
+  </div>
+
+  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #2aa198; margin: 0; text-align: center; font-size: 1.8em;">Collaboration</h3>
+  </div>
+</div>
+```
+
+---
+
+
+## Key components of Agents {auto-animate=true}
+
+
+```{=html}
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+  <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Reflection</h3>
+  </div>
+
+  <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Planning</h3>
+  </div>
+
+  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tools</h3>
+  </div>
+
+  <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
+    <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Collaboration</h3>
+  </div>
+</div>
+```
+
+--- 
+
+## Types of Agents: Single Agent System
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
+  <img src="img/single_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
+</div>
+```
+
+--- 
+
+## Types of Agents: Hierarchical Multi-Agent System
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
+  <img src="img/hierarchical_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
+</div>
+```
+
+---
+
+## Types of Agents: Network Multi-Agent System
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
+  <img src="img/multi_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
+</div>
+```
 
 ---
 
