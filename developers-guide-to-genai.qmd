@@ -14,13 +14,18 @@ format:
 ---
 
 
-## Why this talk? {.center .chapter-title}
+## Start with why? {.center .chapter-title}
 
+::: {.fragment .fade-in}
 ```{=html}
 <center>
 <h1 style="font-size: 2.5em; margin-bottom: 0; color: #2aa198;">GenAI will change everything</h1>
 </center>
 ```
+:::
+
+---
+
 
 <!-- ---
 
@@ -48,7 +53,16 @@ Where are we going...
 
 ---
 
-## ACT I: The Awakening {.chapter-title .center background-color="#073642"}
+## Outline
+
+- Do the moms know yet?
+- The mechanics
+- The Agents
+
+
+---
+
+## ACT I: Do the moms know yet? {.chapter-title .center background-color="#073642"}
 
 ---
 
@@ -647,6 +661,10 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 :::footer
 :::
+
+---
+
+## {background-image="img/drowning-warning.png" background-size="contain"}
 
 ---
 
