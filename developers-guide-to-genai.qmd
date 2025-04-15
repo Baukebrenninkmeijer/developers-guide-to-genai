@@ -235,23 +235,23 @@ Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-a
 ```{=html}
 <div style="display: flex; justify-content: space-between; margin-bottom: 60px;">
   <!-- First box (Generation vs. Analysis) -->
-  <div style="width: 45%; border-radius: 15px; padding: 35px;margin-right: 20px; 
-       background: linear-gradient(135deg, #b58900, #cb4b16); 
+  <div style="width: 45%; border-radius: 15px; padding: 35px;margin-right: 20px;
+       background: linear-gradient(135deg, #b58900, #cb4b16);
        color: #fdf6e3; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
     <h3 style="text-align: center; margin: 0; font-size: 1.8em;">1. Generation vs. Analysis</h3>
   </div>
-  
+
   <!-- Second box (Multi-modality) -->
-  <div style="width: 45%; border-radius: 15px; padding: 35px; 
-       background: linear-gradient(135deg, #268bd2, #6c71c4); 
+  <div style="width: 45%; border-radius: 15px; padding: 35px;
+       background: linear-gradient(135deg, #268bd2, #6c71c4);
        color: #fdf6e3; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
     <h3 style="text-align: center; margin: 0; font-size: 1.8em;">2. Multi-modality</h3>
   </div>
 </div>
 
 <!-- Third box (Generality) - centered at bottom -->
-<div style="width: 45%; margin: 40px auto 0; border-radius: 15px; padding: 35px; 
-     background: linear-gradient(135deg, #2aa198, #859900); 
+<div style="width: 45%; margin: 40px auto 0; border-radius: 15px; padding: 35px;
+     background: linear-gradient(135deg, #2aa198, #859900);
      color: #fdf6e3; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
   <h3 style="text-align: center; margin: 0; font-size: 1.8em;">3. Generality</h3>
 </div>
@@ -274,7 +274,7 @@ How does it work?
 </center>
 ```
 
---- 
+---
 
 ## {background-image="img/wallace_llm.gif" background-size="contain"}
 
@@ -648,7 +648,7 @@ Most model providers offer a range of models, often tiered by capability and cos
 :::footer
 :::
 
---- 
+---
 
 ## Tools
 
@@ -689,7 +689,7 @@ Most model providers offer a range of models, often tiered by capability and cos
         ">— Anthropic</footer>
     </blockquote>
   </div>
-  
+
   <!-- Right side: Image -->
   <div style="flex: 1; min-width: 60%; display: flex; align-items: center; justify-content: center;">
     <img src="img/mcp_growth.png" style="max-width: 100%; height: auto;">
@@ -701,14 +701,12 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ## {background-image="img/mcp_explained.webp" background-size="70%"}
 
-
-
 ---
 
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh;">
   <div style="display: flex; width: 100%; height: 100%;">
-    
+
     <!-- Left Column -->
     <div style="width: 30%; padding-right: 20px; display: flex; align-items: center;">
       <div style="
@@ -725,7 +723,7 @@ Most model providers offer a range of models, often tiered by capability and cos
         min-height: 300px;
       ">
         <h3 style="color: #2aa198; margin-bottom: 20px; font-size: 1.5em; text-align: center;">Visual AI Frameworks</h3>
-        
+
         <ul style="list-style-type: none; padding-left: 0; margin: 0; text-align: left;">
           <li style="margin-bottom: 15px; display: flex; align-items: center;">
             <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✦</span> LangGraph
@@ -739,12 +737,12 @@ Most model providers offer a range of models, often tiered by capability and cos
         </ul>
       </div>
     </div>
-    
+
     <!-- Right Column -->
     <div style="width: 70%; display: flex; align-items: center; justify-content: center;">
       <img src="img/n8n_agent_view.webp" style="width: 100%; max-width: 100%; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
     </div>
-    
+
   </div>
 </div>
 ```
@@ -772,7 +770,7 @@ Most model providers offer a range of models, often tiered by capability and cos
 ## Self-hosting a model
 
 
-- Ollama (UI)
+- Ollama (CLI) ✅
 - LM Studio (UI)
 - LlamaCpp (CLI)
 - vllm (CLI)
@@ -786,7 +784,7 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ## Purpose of AI Frameworks {visibility="hidden"}
 
-End-to-end framework for building AI applications. 
+End-to-end framework for building AI applications.
 
 :::{.columns}
 :::{.column}
@@ -846,13 +844,13 @@ If you give it too complex and unspecified tasks, it will fail.
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
   <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-    
-    <div style="display: grid; grid-template-columns: 70% 30%; gap: 25px; margin-top: 20px;">
-      
+
+    <div style="display: grid; grid-template-columns: 67% 30%; gap: 3%; margin-top: 20px;">
+
       <!-- Greenfield Tips -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
         <h2 style="color: #cb4b16; text-align: center; margin-bottom: 20px; font-size: 1.8em;">Greenfield Development</h2>
-        
+
         <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
           <!-- Idea Honing -->
           <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -861,7 +859,7 @@ If you give it too complex and unspecified tasks, it will fail.
             </div>
             <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 1.2em;">1. Idea Honing</h3>
           </div>
-          
+
           <!-- Task Decomposition -->
           <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div style="width: 70px; height: 70px; background: #cb4b16; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -869,7 +867,7 @@ If you give it too complex and unspecified tasks, it will fail.
             </div>
             <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 1.2em;">2. Task Decomposition</h3>
           </div>
-          
+
           <!-- Implementation -->
           <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div style="width: 70px; height: 70px; background: #cb4b16; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -879,11 +877,11 @@ If you give it too complex and unspecified tasks, it will fail.
           </div>
         </div>
       </div>
-      
+
       <!-- Existing Codebases -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; justify-content: center;">
         <h2 style="color: #859900; text-align: center; margin-bottom: 20px; font-size: 1.8em;">Existing Codebases</h2>
-        
+
         <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
           <div style="width: 70px; height: 70px; background: #859900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
             <span style="font-size: 2em; color: #002b36;">🔄</span>
@@ -891,9 +889,9 @@ If you give it too complex and unspecified tasks, it will fail.
           <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 1.2em;">Incremental Iteration</h3>
         </div>
       </div>
-      
+
     </div>
-    
+
     <!-- Common Practice for Both -->
     <div style="margin-top: 25px; background: linear-gradient(135deg, #073642, #002b36); padding: 15px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); text-align: center;">
       <div style="display: flex; align-items: center; justify-content: center;">
@@ -903,23 +901,23 @@ If you give it too complex and unspecified tasks, it will fail.
         <h3 style="color: #eee8d5; margin: 0; font-size: 1.4em;">For both: Lots of tests</h3>
       </div>
     </div>
-    
+
   </div>
 </div>
 ```
 
---- 
+---
 
 ## {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #2aa198)"}
 
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
   <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-    
+
     <h2 style="color: #2aa198; text-align: center; margin-bottom: 30px; font-size: 2em;">Cost Management Strategies</h2>
-    
+
     <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px; margin-top: 20px;">
-      
+
       <!-- Caching -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
         <div style="width: 80px; height: 80px; background: #2aa198; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -927,7 +925,7 @@ If you give it too complex and unspecified tasks, it will fail.
         </div>
         <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Caching</h3>
       </div>
-      
+
       <!-- Batching -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
         <div style="width: 80px; height: 80px; background: #b58900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -935,7 +933,7 @@ If you give it too complex and unspecified tasks, it will fail.
         </div>
         <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Batching</h3>
       </div>
-      
+
       <!-- Cost tracking -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
         <div style="width: 80px; height: 80px; background: #268bd2; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -943,7 +941,7 @@ If you give it too complex and unspecified tasks, it will fail.
         </div>
         <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Token Usage</h3>
       </div>
-      
+
     </div>
   </div>
 </div>
@@ -956,11 +954,11 @@ If you give it too complex and unspecified tasks, it will fail.
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
   <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-    
+
     <h2 style="color: #d33682; text-align: center; margin-bottom: 30px; font-size: 2em;">Task Management Tools</h2>
-    
+
     <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px; margin-top: 20px;">
-      
+
       <!-- Task Master AI -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
         <div style="width: 80px; height: 80px; background: #d33682; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -968,7 +966,7 @@ If you give it too complex and unspecified tasks, it will fail.
         </div>
         <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Task Master AI</h3>
       </div>
-      
+
       <!-- Cursor Rules -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
         <div style="width: 80px; height: 80px; background: #6c71c4; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -976,7 +974,7 @@ If you give it too complex and unspecified tasks, it will fail.
         </div>
         <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Cursor Rules</h3>
       </div>
-      
+
       <!-- Roo Code -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
         <div style="width: 80px; height: 80px; background: #859900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -984,7 +982,7 @@ If you give it too complex and unspecified tasks, it will fail.
         </div>
         <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Roo Code</h3>
       </div>
-      
+
     </div>
   </div>
 </div>
@@ -1060,7 +1058,7 @@ _to achieve a goal._
 </div>
 ```
 
---- 
+---
 
 ## Types of Agents: Single Agent System
 
@@ -1070,7 +1068,7 @@ _to achieve a goal._
 </div>
 ```
 
---- 
+---
 
 ## Types of Agents: Hierarchical Multi-Agent System
 
@@ -1100,6 +1098,15 @@ _to achieve a goal._
 
 ## {background-image="img/exponential-growth.png"  background-size="contain" background-color="white"}
 
+
+:::footer
+:::
+
+---
+
+## {background-image="img/mad2024.jpg" style="color:black"}
+
+<h2 style="color:darkblue;">200 --> 2000<h2>
 
 :::footer
 :::
