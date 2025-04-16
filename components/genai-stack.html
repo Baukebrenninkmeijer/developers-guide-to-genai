@@ -1,0 +1,149 @@
+<div class="llm-tech-stack-container"
+    style="font-family: 'Arial', sans-serif; max-width: 800px; margin: 20px auto; padding: 0 15px;">
+    <style>
+        .llm-tech-stack-container h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        .llm-tech-stack-container .stack-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .llm-tech-stack-container .stack-layer {
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .llm-tech-stack-container .icon-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #f5f5f5;
+            padding: 10px;
+        }
+
+        .llm-tech-stack-container .icon {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .llm-tech-stack-container .layer-content {
+            flex-grow: 1;
+            padding: 15px 20px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .llm-tech-stack-container .application {
+            background-color: #c1e1a6;
+        }
+
+        .llm-tech-stack-container .tooling {
+            background-color: #7dd3c0;
+        }
+
+        .llm-tech-stack-container .model-api {
+            background-color: #23c4dd;
+        }
+
+        .llm-tech-stack-container .platform {
+            background-color: #1a8e9d;
+        }
+
+        .llm-tech-stack-container .hardware {
+            background-color: #0e4c58;
+        }
+
+        .llm-tech-stack-container .attribution {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #777;
+            text-align: right;
+            width: 100%;
+        }
+
+        .llm-tech-stack-container .emoji-icon {
+            font-size: 36px;
+            line-height: 1;
+        }
+
+        @media (max-width: 600px) {
+            .llm-tech-stack-container .icon-container {
+                width: 40px;
+                height: 40px;
+            }
+
+            .llm-tech-stack-container .icon {
+                width: 25px;
+                height: 25px;
+            }
+
+            .llm-tech-stack-container .emoji-icon {
+                font-size: 24px;
+            }
+
+            .llm-tech-stack-container .layer-content {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+
+    <div class="stack-container">
+        <!-- Application Layer -->
+        <div class="stack-layer">
+            <div class="icon-container">
+                <span class="emoji-icon" role="img" aria-label="AI Application">🤖</span>
+            </div>
+            <div class="layer-content application">APPLICATION</div>
+        </div>
+
+        <!-- Tooling Layer -->
+        <div class="stack-layer">
+            <div class="icon-container">
+                <span class="emoji-icon" role="img" aria-label="AI Tools">🧰</span>
+            </div>
+            <div class="layer-content tooling">TOOLING</div>
+        </div>
+
+        <!-- Model/API Layer -->
+        <div class="stack-layer">
+            <div class="icon-container">
+                <span class="emoji-icon" role="img" aria-label="Neural Network">🧠</span>
+            </div>
+            <div class="layer-content model-api">MODEL / API</div>
+        </div>
+
+        <!-- Platform Layer -->
+        <div class="stack-layer">
+            <div class="icon-container">
+                <span class="emoji-icon" role="img" aria-label="Cloud AI Platform">☁️</span>
+            </div>
+            <div class="layer-content platform">PLATFORM AND STORAGE</div>
+        </div>
+
+        <!-- Hardware Layer -->
+        <div class="stack-layer">
+            <div class="icon-container">
+                <span class="emoji-icon" role="img" aria-label="GPU Hardware">💾</span>
+            </div>
+            <div class="layer-content hardware">HARDWARE</div>
+        </div>
+    </div>
+    <div class="attribution">@ Sandi Besen</div>
+</div>

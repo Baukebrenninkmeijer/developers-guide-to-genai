@@ -13,9 +13,6 @@ format:
     toc: true
     toc-depth: 1
     show-slide-number: speaker
-    include-in-header:
-      - text: |
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 
 
@@ -784,7 +781,7 @@ Most model providers offer a range of models, often tiered by capability and cos
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: linear-gradient(135deg, #073642,rgb(13, 105, 128));
+        background: linear-gradient(135deg, #073642, #138ead);
         border-radius: 15px;
         padding: 25px;
         box-shadow: 0 6px 15px rgba(0,0,0,0.3);
@@ -819,7 +816,7 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ---
 
-## Programmic AI Frameworks {visibility="hidden"}
+## Programmic AI Frameworks
 
 - LangChain (Python, JS)
 - LlamaIndex (Python)
@@ -828,177 +825,131 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ---
 
-## Programmic AI Frameworks {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #268bd2)"}
+## Programmic AI Frameworks
 
-```{=html}
-<div style="display: flex; justify-content: center; width: 100%; margin-top: 15px;">
-  <div style="width: 90%; background: rgba(7, 54, 66, 0.8); border-radius: 10px; padding: 15px;">
-    
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
-      
-      <!-- LangChain -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 10px; height: 80px; display: flex; align-items: center;">
-        <h3 style="color: #2aa198; margin-top: 0; font-size: 1.1em; display: flex; justify-content: space-between; align-items: center; width: 100%;">
-          <span>🔗 LangChain  🚩</span>
-          <div>
-          <span style="background-color: #268bd2; color: #fdf6e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8em; font-weight: normal;">Python</span>
-          <span style="background-color: #268bd2; color: #fdf6e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8em; font-weight: normal;">JS</span>
-          </div>
-        </h3>
-      </div>
-      
-      <!-- LlamaIndex -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 10px; height: 80px; display: flex; align-items: center;">
-        <h3 style="color: #b58900; margin-top: 0; font-size: 1.1em; display: flex; justify-content: space-between; align-items: center; width: 100%;">
-          <span>🦙 LlamaIndex</span>
-          <span style="background-color: #268bd2; color: #fdf6e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8em; font-weight: normal;">Python</span>
-        </h3>
-      </div>
-      
-      <!-- Haystack -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 10px; height: 80px; display: flex; align-items: center;">
-        <h3 style="color: #859900; margin-top: 0; font-size: 1.1em; display: flex; justify-content: space-between; align-items: center; width: 100%;">
-          <span>🌾 Haystack</span>
-          <span style="background-color: #268bd2; color: #fdf6e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8em; font-weight: normal;">Python</span>
-        </h3>
-      </div>
-      
-      <!-- PydanticAI -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 10px; height: 80px; display: flex; align-items: center;">
-        <h3 style="color: #e92063; margin-top: 0; font-size: 1.1em; display: flex; justify-content: space-between; align-items: center; width: 100%;">
-          <span><img src="img/pydantic_ai_logo.svg" alt="Pydantic Logo" style="height: 35px; margin-right: 5px; vertical-align: middle;"/> PydanticAI</span>
-          <span style="background-color: #268bd2; color: #fdf6e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8em; font-weight: normal;">Python</span>
-        </h3>
-      </div>
-    </div>
-  </div>
-</div>
-```
+- LangChain (Python, JS) 🚩
+- LlamaIndex (Python)
+- HayStack (Python)
+- PydanticAI (Python)
 
 ---
 
-## {background-video="img/langchain-video.mp4" background-video-muted="true" background-size="contain" background-video-loop="true"}
+## {background-video="img/langchain-video.mp4" background-vide-muted="true" background-size="contain"}
 
 
 ---
 
+## Self-hosting a model
 
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 15px;">
-  <div style="width: 95%; display: flex; gap: 20px;">
-    <!-- Left panel with model options -->
-    <div style="flex: 1; background: linear-gradient(135deg, #073642, #138ead); padding: 1.0rem; border-radius: 10px; color: #eee8d5; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 35%;">
-      <h3 style="color: #eee8d5; border-bottom: 2px solid #2aa198; padding-bottom: 0.5rem; margin-bottom: 1rem; font-size: 1.2em;">Self-Hosting Options</h3>
-      
-      <ul style="list-style-type: none; padding-left: 0.1rem; font-size: 0.8em; line-height: 1.6;">
-        <li style="margin-bottom: 2rem; padding-left: 2rem; position: relative;">
-          <span style="color: #2aa198; font-weight: bold; position: absolute; left: 0;"><img src="img/cli-white.png" alt="CLI" style="width: 20px; height: 20px;"></span>
-          <strong style="color: #fdf6e3;">Ollama</strong> ✅
-          <!-- <div style="margin-left: 0.8rem; font-size: 0.9em;">Simple, user-friendly</div> -->
-        </li>
-        <li style="margin-bottom: 2rem; padding-left: 2rem; position: relative;">
-          <span style="color: #2aa198; font-weight: bold; position: absolute; left: 0;"><img src="img/gui.png" alt="CLI" style="width: 20px; height: 20px;"></span>
-          <strong style="color: #fdf6e3;">LM Studio</strong> 
-          <!-- <div style="margin-left: 0.8rem; font-size: 0.9em;">Complete GUI</div> -->
-        </li>
-        <li style="margin-bottom: 2rem; padding-left: 2rem; position: relative;">
-          <span style="color: #2aa198; font-weight: bold; position: absolute; left: 0;"><img src="img/cli-white.png" alt="CLI" style="width: 20px; height: 20px;"></span>
-          <strong style="color: #fdf6e3;">LlamaCpp</strong> 
-          <!-- <div style="margin-left: 0.8rem; font-size: 0.9em;">Low-level, flexible</div> -->
-        </li>
-        <li style="margin-bottom: 2rem; padding-left: 2rem; position: relative;">
-          <span style="color: #2aa198; font-weight: bold; position: absolute; left: 0;"><img src="img/cli-white.png" alt="CLI" style="width: 20px; height: 20px;"></span>
-          <strong style="color: #fdf6e3;">vllm</strong>
-          <!-- <div style="margin-left: 0.8rem; font-size: 0.9em;">Performance-optimized</div> -->
-        </li>
-      </ul>
-    </div>
-    
-    <!-- Right panel with image -->
-    <div style="flex: 2; display: flex; justify-content: center; align-items: center; padding: 1rem;">
-      <img src="img/self-hosting-model.png" alt="Illustration of self-hosted LLM infrastructure" style="max-width: 100%; border-radius: 8px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); max-height:100%">
-    </div>
-  </div>
-</div>
-```
+
+- Ollama (CLI) ✅
+- LM Studio (UI)
+- LlamaCpp (CLI)
+- vllm (CLI)
+
+
+---
+
+## Purpose of AI Frameworks {visibility="hidden"}
+
+End-to-end framework for building AI applications.
+
+:::{.columns}
+:::{.column}
+- Vector Databases
+- RAG components
+- Memory
+- Async management
+- Model integration
+:::
+:::{.column}
+- Embedding primitives
+- Agents
+- Orchestration
+- Evaluation
+- Monitoring
+:::
+:::
 
 ---
 
 ## Development Tools {.center background-gradient="linear-gradient(135deg, #073642, #2aa198)"}
 
 ```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 14px;">
-  <div style="width: 95%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
+  <div style="width: 95%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
     
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 7px;">
-      <!-- VS Code Section -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 14px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #859900; margin-top: 0; border-bottom: 2px solid #859900; padding-bottom: 4px; font-size: 0.96em;">
-          <span style="font-size: 0.88em; margin-right: 4px;">📝</span> VS Code
-        </h3>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
-          <div style="background: rgba(133, 153, 0, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #859900; display: block; margin-bottom: 6px;">👨‍💻</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Github Copilot</span>
-          </div>
-          <div style="background: rgba(133, 153, 0, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #859900; display: block; margin-bottom: 6px;">📊</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Cline</span>
-          </div>
-          <div style="background: rgba(133, 153, 0, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #859900; display: block; margin-bottom: 6px;">🦘</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Roo Code</span>
-          </div>
-        </div>
-      </div>      
-
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; margin-top: 10px;">
+      
       <!-- IDE Section -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 14px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #2aa198; margin-top: 0; border-bottom: 2px solid #2aa198; padding-bottom: 4px; font-size: 0.96em;">
-          <span style="font-size: 0.88em; margin-right: 4px;">💻</span> IDE
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        <h3 style="color: #2aa198; margin-top: 0; border-bottom: 2px solid #2aa198; padding-bottom: 6px; font-size: 0.96em;">
+          <span style="font-size: 0.88em; margin-right: 6px;">💻</span> IDE
         </h3>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
-          <div style="background: rgba(42, 161, 152, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <img src="img/cursor-logo.png" style="height: 1.8em; margin-bottom: 6px; display: block; margin-left: auto; margin-right: auto;">
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Cursor</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px;">
+          <div style="background: rgba(42, 161, 152, 0.15); border-radius: 8px; padding: 12px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+            <span style="font-size: 1.2em; color: #2aa198; display: block; margin-bottom: 8px;">🔄</span>
+            <span style="color: #eee8d5; font-size: 0.76em; font-weight: bold;">Cursor</span>
           </div>
-          <div style="background: rgba(42, 161, 152, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #2aa198; display: block; margin-bottom: 6px;">🌊</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Windsurf</span>
+          <div style="background: rgba(42, 161, 152, 0.15); border-radius: 8px; padding: 12px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+            <span style="font-size: 1.2em; color: #2aa198; display: block; margin-bottom: 8px;">🌊</span>
+            <span style="color: #eee8d5; font-size: 0.76em; font-weight: bold;">Windsurf</span>
           </div>
         </div>
       </div>
       
       <!-- CLI Section -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 14px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #b58900; margin-top: 0; border-bottom: 2px solid #b58900; padding-bottom: 4px; font-size: 0.96em;">
-          <span style="font-size: 0.88em; margin-right: 4px;">⌨️</span> CLI
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        <h3 style="color: #b58900; margin-top: 0; border-bottom: 2px solid #b58900; padding-bottom: 6px; font-size: 0.96em;">
+          <span style="font-size: 0.88em; margin-right: 6px;">⌨️</span> CLI
         </h3>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
-          <div style="background: rgba(181, 137, 0, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #b58900; display: block; margin-bottom: 6px;">🔧</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Aider</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px;">
+          <div style="background: rgba(181, 137, 0, 0.15); border-radius: 8px; padding: 12px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+            <span style="font-size: 1.2em; color: #b58900; display: block; margin-bottom: 8px;">🔧</span>
+            <span style="color: #eee8d5; font-size: 0.76em; font-weight: bold;">Aider</span>
           </div>
-          <div style="background: rgba(181, 137, 0, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #b58900; display: block; margin-bottom: 0px;">🤖</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Claude coder</span>
-            <span style="color: #93a1a1; font-size: 0.45em; display: block; margin-top: 3px;">⚠️Only Claude Sonnet</span>
+          <div style="background: rgba(181, 137, 0, 0.15); border-radius: 8px; padding: 12px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+            <span style="font-size: 1.2em; color: #b58900; display: block; margin-bottom: 8px;">🤖</span>
+            <span style="color: #eee8d5; font-size: 0.76em; font-weight: bold;">Claude coder</span>
+            <span style="color: #93a1a1; font-size: 0.56em; display: block; margin-top: 4px;">Only Claude Sonnet</span>
           </div>
         </div>
       </div>
       
       <!-- Web Section -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 14px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #268bd2; margin-top: 0; border-bottom: 2px solid #268bd2; padding-bottom: 4px; font-size: 0.96em;">
-          <span style="font-size: 0.88em; margin-right: 4px;">🌐</span> Web
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        <h3 style="color: #268bd2; margin-top: 0; border-bottom: 2px solid #268bd2; padding-bottom: 6px; font-size: 0.96em;">
+          <span style="font-size: 0.88em; margin-right: 6px;">🌐</span> Web
         </h3>
-        <div style="display: flex; justify-content: center; margin-top: 8px;">
-          <div style="background: rgba(38, 139, 210, 0.15); border-radius: 8px; padding: 8px; width: 45%; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #268bd2; display: block; margin-bottom: 6px;">🔥</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Firebase Studio</span>
+        <div style="display: flex; justify-content: center; margin-top: 12px;">
+          <div style="background: rgba(38, 139, 210, 0.15); border-radius: 8px; padding: 12px; width: 45%; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+            <span style="font-size: 1.2em; color: #268bd2; display: block; margin-bottom: 8px;">🔥</span>
+            <span style="color: #eee8d5; font-size: 0.76em; font-weight: bold;">Firebase Studio</span>
           </div>
         </div>
       </div>
+      
+      <!-- VS Code Section -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        <h3 style="color: #859900; margin-top: 0; border-bottom: 2px solid #859900; padding-bottom: 6px; font-size: 0.96em;">
+          <span style="font-size: 0.88em; margin-right: 6px;">📝</span> VS Code
+        </h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px;">
+          <div style="background: rgba(133, 153, 0, 0.15); border-radius: 8px; padding: 12px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+            <span style="font-size: 1.2em; color: #859900; display: block; margin-bottom: 8px;">👨‍💻</span>
+            <span style="color: #eee8d5; font-size: 0.76em; font-weight: bold;">Github Copilot</span>
+          </div>
+          <div style="background: rgba(133, 153, 0, 0.15); border-radius: 8px; padding: 12px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+            <span style="font-size: 1.2em; color: #859900; display: block; margin-bottom: 8px;">📊</span>
+            <span style="color: #eee8d5; font-size: 0.76em; font-weight: bold;">Cline</span>
+          </div>
+          <div style="background: rgba(133, 153, 0, 0.15); border-radius: 8px; padding: 12px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+            <span style="font-size: 1.2em; color: #859900; display: block; margin-bottom: 8px;">🦘</span>
+            <span style="color: #eee8d5; font-size: 0.76em; font-weight: bold;">Roo Code</span>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 </div>
@@ -1214,8 +1165,9 @@ If you give it too complex and unspecified tasks, it will fail.
 ## {background-image="img/mcp_explained.webp" background-size="70%"}
 
 
+---
 
-# The Agents
+# The Agents {.chapter-title .center}
 
 ---
 
@@ -1270,13 +1222,7 @@ If you give it too complex and unspecified tasks, it will fail.
 
 ---
 
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 50%; margin: 20px auto;">
-  <div style="background: linear-gradient(135deg,  #073642,rgb(1, 77, 96)); border-radius: 15px; padding: 10%; box-shadow: 0 6px 18px rgba(0,0,0,0.3); max-width: 90%;">
-    <img src="img/agent-diagram.svg" style="max-width: 100%; height: auto; display: block;margin:0">
-  </div>
-</div>
-```
+<img src="img/agent-diagram.svg" height="500" style="margin-left:auto;margin-right:auto;display:block;">
 
 ---
 
@@ -1360,83 +1306,23 @@ If you give it too complex and unspecified tasks, it will fail.
 
 ---
 
-## AI Agents Frameworks {.chapter-title background-gradient="linear-gradient(135deg, #073642, #268bd2)"}
+## AI Agents Frameworks
 
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 15px;">
-  <div style="width: 90%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-    
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 0px;">
-      
-      <!-- LangGraph -->
-      <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #2aa198; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <div style="width: 70px; height: 70px; background: #2aa198; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 2em; color: #002b36;">🔄</span>
-        </div>
-        <h3 style="color: #eee8d5; font-size: 1em;">LangGraph</h3>
-        <!-- <p style="color: #93a1a1; font-size: 0.5em;">Build stateful, multi-actor systems with LLMs</p> -->
-      </div>
-      
-      <!-- CrewAI -->
-      <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #b58900; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <div style="width: 70px; height: 70px; background: #b58900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 1.5em; color: #002b36;">👥</span>
-        </div>
-        <h3 style="color: #eee8d5; font-size: 1em;">CrewAI</h3>
-        <!-- <p style="color: #93a1a1; font-size: 0.5em;">Orchestrate role-based agents in teams</p> -->
-      </div>
-      
-      <!-- Autogen -->
-      <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #dc322f; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <div style="width: 70px; height: 70px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 1.5em; color: #002b36;">🤖</span>
-        </div>
-        <h3 style="color: #eee8d5; font-size: 1em;">Autogen</h3>
-        <!-- <p style="color: #93a1a1; font-size: 0.5em;">Multi-agent conversation framework</p> -->
-      </div>
-    </div>
-
-    <!-- Bottom row with centered blocks - now outside the grid for better centering -->
-    <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;">
-      <!-- Agents SDK (OpenAI) -->
-      <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #859900; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; max-width: 30%;">
-        <div style="width: 70px; height: 70px; background: #859900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 1.5em; color: #002b36;">🧠</span>
-        </div>
-        <h3 style="color: #eee8d5; font-size: 1em;">Agents SDK</h3>
-        <!-- <p style="color: #93a1a1; font-size: 0.5em;">OpenAI's toolkit for assistant applications</p> -->
-      </div>
-      
-      <!-- ADK (Google) -->
-      <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #6c71c4; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; max-width: 30%;">
-        <div style="width: 70px; height: 70px; background: #6c71c4; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 1.5em; color: #002b36;">🛠️</span>
-        </div>
-        <h3 style="color: #eee8d5; font-size: 1em;">Agent Development Kit</h3>
-        <!-- <p style="color: #93a1a1; font-size: 0.5em;">Google's framework for agent creation</p> -->
-      </div>
-    </div>
-  </div>
-</div>
-```
+- LangGraph
+- CrewAI
+- Autogen
+- Agents SDK (OpenAI)
+- Agent Development Kit (ADK, Google)
 
 ---
 
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 80vh; padding: 20px; box-sizing: border-box;">
-  <img src="img/agent-decision-diagram.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
-</div>
-```
-
-:::footer
-Source: AI Agents Unleashed Playbook 2025, Hubspot
-:::
+![](img/agent-decision-diagram.png)
 
 # Future
 
 ---
 
-## Exponential growth {.chapter-title .center background-image="img/blog_exponential_growth_chart.webp" background-opacity="0.5" background-size="contain" background-color="black"}
+## Exponential growth {.chapter-title .center}
 
 ---
 
@@ -1463,7 +1349,7 @@ Source: AI Agents Unleashed Playbook 2025, Hubspot
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin: 20px 0;">
   <div style="width: 49%;">
     <img src="img/length-of-tasks-linear.png" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            </div>
+  </div>
   <div style="width: 49%;">
     <img src="img/length-of-tasks-log.png" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
   </div>
@@ -1477,33 +1363,33 @@ Source: AI Agents Unleashed Playbook 2025, Hubspot
 
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; height: 80vh;">
-    <blockquote style="
+  <blockquote style="
       width: 80%;
       margin: 0 auto;
       padding: 40px 50px;
       border-left: 8px solid #2aa198;
       background: rgba(0, 43, 54, 0.7);
-        font-family: 'Georgia', serif;
-        position: relative;
-        border-radius: 10px;
+      font-family: 'Georgia', serif;
+      position: relative;
+      border-radius: 10px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    ">
-        <p style="
+  ">
+      <p style="
           color: #eee8d5;
           font-size: 1.5em;
-            font-style: italic;
+          font-style: italic;
           margin-bottom: 25px;
           text-align: center;
           line-height: 1.4;
           text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
       ">"The more it reasons, the more unpredictable it becomes"</p>
-        <footer style="
+      <footer style="
           color: #b58900;
           font-size: 1.4em;
-            text-align: right;
-            font-weight: 500;
+          text-align: right;
+          font-weight: 500;
       ">— Ilya Sutskever</footer>
-    </blockquote>
+  </blockquote>
 </div>
 ```
 
@@ -1518,19 +1404,7 @@ Source: AI Agents Unleashed Playbook 2025, Hubspot
 
 ---
 
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh;">
-  <img src="img/drowning-developer.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
-</div>
-```
-
-:::{.notes}
-We didn't have time to talk about
-- Monitoring and evaluation
-- Debugging
-- Guardrails
-- And much more.
-:::
+![](img/drowning-developer.png)
 
 ---
 
@@ -1558,13 +1432,13 @@ We didn't have time to talk about
       </li>
     </ul>
   </div>
-
+  
   <!-- Right side: QR code and questions -->
   <div style="width: 45%; background: rgba(0, 43, 54, 0.7); border-radius: 15px; padding: 25px; box-shadow: 0 6px 15px rgba(0,0,0,0.3); border: 1px solid #6c71c4; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 20px;">
     <h2 style="color: #6c71c4; margin-top: 0; border-bottom: 2px solid #6c71c4; padding-bottom: 10px; font-size: 2em; text-align: center; width: 80%;">Questions?</h2>
     <div style="background: rgba(7, 54, 66, 0.5); padding: 15px; border-radius: 12px; display: flex; justify-content: center; margin-top: 20px; width: 70%;">
       <img src="img/qr-code.png" style="width: 180px; height: 180px;">
-  </div>
+    </div>
     <p style="color: #93a1a1; margin-top: 15px; text-align: center; font-style: italic;">Scan to connect</p>
   </div>
 </div>
@@ -1631,113 +1505,3 @@ We didn't have time to talk about
 - Resources for further learning and experimentation
 
  -->
-
-## Programmic AI Frameworks {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #268bd2)"}
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
-  <div style="width: 90%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-    
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; margin-top: 20px;">
-      
-      <!-- LangChain -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); position: relative; overflow: hidden;">
-        <div style="position: absolute; top: -15px; right: -15px; background: #dc322f; color: #fdf6e3; font-size: 0.7em; padding: 5px 20px; transform: rotate(45deg); transform-origin: bottom right;">
-          🚩
-        </div>
-        <h3 style="color: #2aa198; margin-top: 0; border-bottom: 2px solid #2aa198; padding-bottom: 8px; font-size: 1.5em;">
-          <span style="font-size: 1.1em; margin-right: 8px;">🔗</span> LangChain
-        </h3>
-        <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
-          <div style="color: #eee8d5; font-size: 1.1em;">
-            <ul style="list-style-type: none; padding-left: 0;">
-              <li style="margin-bottom: 10px;">• Component-based architecture</li>
-              <li style="margin-bottom: 10px;">• Extensive integrations</li>
-              <li>• Chains & agents support</li>
-            </ul>
-          </div>
-          <div style="display: flex; flex-direction: column; align-items: center; margin-left: 15px;">
-            <div style="background: rgba(38, 139, 210, 0.2); border-radius: 8px; padding: 8px; margin-bottom: 8px;">
-              <span style="color: #268bd2; font-weight: bold;">Python</span>
-            </div>
-            <div style="background: rgba(181, 137, 0, 0.2); border-radius: 8px; padding: 8px;">
-              <span style="color: #b58900; font-weight: bold;">JavaScript</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- LlamaIndex -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #b58900; margin-top: 0; border-bottom: 2px solid #b58900; padding-bottom: 8px; font-size: 1.5em;">
-          <span style="font-size: 1.1em; margin-right: 8px;">🦙</span> LlamaIndex
-        </h3>
-        <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
-          <div style="color: #eee8d5; font-size: 1.1em;">
-            <ul style="list-style-type: none; padding-left: 0;">
-              <li style="margin-bottom: 10px;">• Data connection framework</li>
-              <li style="margin-bottom: 10px;">• RAG optimization</li>
-              <li>• Query engines & routers</li>
-            </ul>
-          </div>
-          <div style="display: flex; flex-direction: column; align-items: center; margin-left: 15px;">
-            <div style="background: rgba(38, 139, 210, 0.2); border-radius: 8px; padding: 8px;">
-              <span style="color: #268bd2; font-weight: bold;">Python</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Haystack -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #859900; margin-top: 0; border-bottom: 2px solid #859900; padding-bottom: 8px; font-size: 1.5em;">
-          <span style="font-size: 1.1em; margin-right: 8px;">🌾</span> Haystack
-        </h3>
-        <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
-          <div style="color: #eee8d5; font-size: 1.1em;">
-            <ul style="list-style-type: none; padding-left: 0;">
-              <li style="margin-bottom: 10px;">• Pipeline architecture</li>
-              <li style="margin-bottom: 10px;">• Search & retrieval focus</li>
-              <li>• Modular components</li>
-            </ul>
-          </div>
-          <div style="display: flex; flex-direction: column; align-items: center; margin-left: 15px;">
-            <div style="background: rgba(38, 139, 210, 0.2); border-radius: 8px; padding: 8px;">
-              <span style="color: #268bd2; font-weight: bold;">Python</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- PydanticAI -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #d33682; margin-top: 0; border-bottom: 2px solid #d33682; padding-bottom: 8px; font-size: 1.5em;">
-          <span style="font-size: 1.1em; margin-right: 8px;">🧩</span> PydanticAI
-        </h3>
-        <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
-          <div style="color: #eee8d5; font-size: 1.1em;">
-            <ul style="list-style-type: none; padding-left: 0;">
-              <li style="margin-bottom: 10px;">• Schema-driven design</li>
-              <li style="margin-bottom: 10px;">• Type validation</li>
-              <li>• Lightweight & minimal</li>
-            </ul>
-          </div>
-          <div style="display: flex; flex-direction: column; align-items: center; margin-left: 15px;">
-            <div style="background: rgba(38, 139, 210, 0.2); border-radius: 8px; padding: 8px;">
-              <span style="color: #268bd2; font-weight: bold;">Python</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    
-    <!-- Comparison note at bottom -->
-    <div style="margin-top: 25px; background: rgba(0, 43, 54, 0.7); border-radius: 12px; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-      <p style="color: #93a1a1; margin: 0; text-align: center; font-size: 0.9em;">
-        <span style="color: #dc322f; font-weight: bold;">⚠️</span> LangChain has been criticized for complexity and abstraction leakiness
-      </p>
-    </div>
-    
-  </div>
-</div>

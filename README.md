@@ -9,15 +9,6 @@ A visual interactive timeline showing the key milestones in AI and deep learning
 - Concise summaries of key AI developments
 - Color-coded timeline events for visual distinction
 
-## Milestones Included
-
-- AlexNet (2012) - The CNN architecture that sparked the deep learning revolution
-- Transformers (2017) - Google's "Attention is All You Need" paper that revolutionized NLP
-- BERT (2018) - Google's bidirectional transformer that advanced NLP capabilities
-- GPT-3 (2020) - OpenAI's 175B parameter model with remarkable few-shot learning
-- Diffusion Models (2021) - DALL-E, Stable Diffusion, and the text-to-image generation explosion
-- Multimodal Models (2022) - Models like CLIP that understand multiple types of data
-- GPT-4 (2023) - OpenAI's multimodal model with near-human performance
 
 ## Running the Application
 
