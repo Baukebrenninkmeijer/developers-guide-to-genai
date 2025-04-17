@@ -56,7 +56,7 @@ Why are you here? What's your use-case?
 
 ---
 
-## 
+##
 
 <div style="display: flex; justify-content: center; align-items: center; height: 90%; width: 100%;">
   <img src="img/doge-deep-dream.webp" style="max-height:100%;max-width:100%;object-fit: contain;">
@@ -73,7 +73,7 @@ Why are you here? What's your use-case?
 </div>
 
 ::: {.notes}
-2023, highlight importance of discussing IP and copyright. 
+2023, highlight importance of discussing IP and copyright.
 :::
 
 :::footer
@@ -99,7 +99,7 @@ Why are you here? What's your use-case?
 </div>
 
 
-# The Landscape 
+# The Landscape
 
 ---
 
@@ -365,6 +365,8 @@ source: https://zhuanlan.zhihu.com/p/631786282
 
 ## Context windows {auto-animate=true background-color="rgba(253, 246, 227, 1)" .center}
 
+How much stuff you can put it.
+
 <img src="img/gpt3.5.svg" style="width:100%;margin-left:auto;margin-right:auto;display:block">
 
 
@@ -451,7 +453,7 @@ That's 3788x more.
   margin-top: 5%;
 ">
   <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; margin-top: 20px;">
-    
+
     <!-- Input/Output Capabilities -->
     <div style="width: 29%; background: rgba(42, 161, 152, 0.15); /* Flat teal color matching header */ border-radius: 12px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 0 15px rgba(42, 161, 152, 0.25);">
       <h3 style="color: #2aa198; margin-top: 0; border-bottom: 2px solid #2aa198; padding-bottom: 8px; font-size: 1.02em;">
@@ -459,20 +461,20 @@ That's 3788x more.
       </h3>
       <ul style="list-style-type: none; padding-left: 0; color: #eee8d5; font-size: 0.66em;">
         <li style="margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">📥</span> 
+          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">📥</span>
           <span>Input modalities: text, image, audio, voice</span>
         </li>
         <li style="margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">📝</span> 
+          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">📝</span>
           <span>Output modalities: text, image, voice</span>
         </li>
         <li style="margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">🌍</span> 
+          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">🌍</span>
           <span>Multilingual capabilities</span>
         </li>
       </ul>
     </div>
-    
+
     <!-- Technical Capabilities -->
     <div style="width: 29%; background: rgba(38, 139, 210, 0.15); /* Flat blue color matching header */ border-radius: 12px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 0 15px rgba(38, 139, 210, 0.25);">
       <h3 style="color: #268bd2; margin-top: 0; border-bottom: 2px solid #268bd2; padding-bottom: 8px; font-size: 1.02em;">
@@ -480,20 +482,20 @@ That's 3788x more.
       </h3>
       <ul style="list-style-type: none; padding-left: 0; color: #eee8d5; font-size: 0.66em;">
         <li style="margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="color: #859900; font-weight: bold; margin-right: 10px;">🧠</span> 
+          <span style="color: #859900; font-weight: bold; margin-right: 10px;">🧠</span>
           <span>Reasoning</span>
         </li>
         <li style="margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="color: #859900; font-weight: bold; margin-right: 10px;">🛠</span> 
+          <span style="color: #859900; font-weight: bold; margin-right: 10px;">🛠</span>
           <span>Tool Calling</span>
         </li>
         <li style="margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="color: #859900; font-weight: bold; margin-right: 10px;">🔢</span> 
+          <span style="color: #859900; font-weight: bold; margin-right: 10px;">🔢</span>
           <span>Structured Output</span>
         </li>
       </ul>
     </div>
-    
+
     <!-- Practical Considerations -->
     <div style="width: 29%; background: rgba(211, 54, 130, 0.15); /* Flat magenta color matching header */ border-radius: 12px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 0 15px rgba(211, 54, 130, 0.25);">
       <h3 style="color: #d33682; margin-top: 0; border-bottom: 2px solid #d33682; padding-bottom: 8px; font-size: 1.02em;">
@@ -501,15 +503,15 @@ That's 3788x more.
       </h3>
       <ul style="list-style-type: none; padding-left: 0; color: #eee8d5; font-size: 0.66em;">
         <li style="margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">📏</span> 
+          <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">📏</span>
           <span>Maximum context window size</span>
         </li>
         <li style="margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">💰</span> 
+          <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">💰</span>
           <span>Price per token (input/output)</span>
         </li>
         <li style="margin-bottom: 12px; display: flex; align-items: center;">
-          <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">⚡</span> 
+          <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">⚡</span>
           <span>Response generation speed</span>
         </li>
       </ul>
@@ -758,7 +760,6 @@ Most model providers offer a range of models, often tiered by capability and cos
 {{< include components/genai-stack.html >}}
 ```
 
-
 ---
 
 ```{=html}
@@ -829,9 +830,9 @@ Most model providers offer a range of models, often tiered by capability and cos
 ```{=html}
 <div style="display: flex; justify-content: center; width: 100%; margin-top: 15px;">
   <div style="width: 90%; background: rgba(7, 54, 66, 0.8); border-radius: 10px; padding: 15px;">
-    
+
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
-      
+
       <!-- LangChain -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 10px; height: 80px; display: flex; align-items: center;">
         <h3 style="color: #2aa198; margin-top: 0; font-size: 1.1em; display: flex; justify-content: space-between; align-items: center; width: 100%;">
@@ -842,7 +843,7 @@ Most model providers offer a range of models, often tiered by capability and cos
           </div>
         </h3>
       </div>
-      
+
       <!-- LlamaIndex -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 10px; height: 80px; display: flex; align-items: center;">
         <h3 style="color: #b58900; margin-top: 0; font-size: 1.1em; display: flex; justify-content: space-between; align-items: center; width: 100%;">
@@ -850,7 +851,7 @@ Most model providers offer a range of models, often tiered by capability and cos
           <span style="background-color: #268bd2; color: #fdf6e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8em; font-weight: normal;">Python</span>
         </h3>
       </div>
-      
+
       <!-- Haystack -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 10px; height: 80px; display: flex; align-items: center;">
         <h3 style="color: #859900; margin-top: 0; font-size: 1.1em; display: flex; justify-content: space-between; align-items: center; width: 100%;">
@@ -858,7 +859,7 @@ Most model providers offer a range of models, often tiered by capability and cos
           <span style="background-color: #268bd2; color: #fdf6e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8em; font-weight: normal;">Python</span>
         </h3>
       </div>
-      
+
       <!-- PydanticAI -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 10px; height: 80px; display: flex; align-items: center;">
         <h3 style="color: #e92063; margin-top: 0; font-size: 1.1em; display: flex; justify-content: space-between; align-items: center; width: 100%;">
@@ -885,7 +886,7 @@ Most model providers offer a range of models, often tiered by capability and cos
     <!-- Left panel with model options -->
     <div style="flex: 1; background: linear-gradient(135deg, #073642, #138ead); padding: 1.0rem; border-radius: 10px; color: #eee8d5; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 35%;">
       <h3 style="color: #eee8d5; border-bottom: 2px solid #2aa198; padding-bottom: 0.5rem; margin-bottom: 1rem; font-size: 1.2em;">Self-Hosting Options</h3>
-      
+
       <ul style="list-style-type: none; padding-left: 0.1rem; font-size: 0.8em; line-height: 1.6;">
         <li style="margin-bottom: 2rem; padding-left: 2rem; position: relative;">
           <span style="color: #2aa198; font-weight: bold; position: absolute; left: 0;"><img src="img/cli-white.png" alt="CLI" style="width: 20px; height: 20px;"></span>
@@ -894,12 +895,12 @@ Most model providers offer a range of models, often tiered by capability and cos
         </li>
         <li style="margin-bottom: 2rem; padding-left: 2rem; position: relative;">
           <span style="color: #2aa198; font-weight: bold; position: absolute; left: 0;"><img src="img/gui.png" alt="CLI" style="width: 20px; height: 20px;"></span>
-          <strong style="color: #fdf6e3;">LM Studio</strong> 
+          <strong style="color: #fdf6e3;">LM Studio</strong>
           <!-- <div style="margin-left: 0.8rem; font-size: 0.9em;">Complete GUI</div> -->
         </li>
         <li style="margin-bottom: 2rem; padding-left: 2rem; position: relative;">
           <span style="color: #2aa198; font-weight: bold; position: absolute; left: 0;"><img src="img/cli-white.png" alt="CLI" style="width: 20px; height: 20px;"></span>
-          <strong style="color: #fdf6e3;">LlamaCpp</strong> 
+          <strong style="color: #fdf6e3;">LlamaCpp</strong>
           <!-- <div style="margin-left: 0.8rem; font-size: 0.9em;">Low-level, flexible</div> -->
         </li>
         <li style="margin-bottom: 2rem; padding-left: 2rem; position: relative;">
@@ -909,7 +910,7 @@ Most model providers offer a range of models, often tiered by capability and cos
         </li>
       </ul>
     </div>
-    
+
     <!-- Right panel with image -->
     <div style="flex: 2; display: flex; justify-content: center; align-items: center; padding: 1rem;">
       <img src="img/self-hosting-model.png" alt="Illustration of self-hosted LLM infrastructure" style="max-width: 100%; border-radius: 8px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); max-height:100%">
@@ -925,7 +926,7 @@ Most model providers offer a range of models, often tiered by capability and cos
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 14px;">
   <div style="width: 95%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-    
+
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 7px;">
       <!-- VS Code Section -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 14px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
@@ -946,7 +947,7 @@ Most model providers offer a range of models, often tiered by capability and cos
             <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Roo Code</span>
           </div>
         </div>
-      </div>      
+      </div>
 
       <!-- IDE Section -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 14px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
@@ -964,7 +965,7 @@ Most model providers offer a range of models, often tiered by capability and cos
           </div>
         </div>
       </div>
-      
+
       <!-- CLI Section -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 14px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
         <h3 style="color: #b58900; margin-top: 0; border-bottom: 2px solid #b58900; padding-bottom: 4px; font-size: 0.96em;">
@@ -982,7 +983,7 @@ Most model providers offer a range of models, often tiered by capability and cos
           </div>
         </div>
       </div>
-      
+
       <!-- Web Section -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 14px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
         <h3 style="color: #268bd2; margin-top: 0; border-bottom: 2px solid #268bd2; padding-bottom: 4px; font-size: 0.96em;">
@@ -1011,14 +1012,14 @@ If you give it too complex and unspecified tasks, it will fail. -->
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
   <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-    
+
     <h2 style="color: #dc322f; text-align: center; margin-bottom: 15px; font-size: 2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Biggest Challenge: Specificity</h2>
 
     <div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
       <div style="width: 100px; height: 100px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
         <span style="font-size: 3em; color: #002b36;">⚠️</span>
       </div>
-      
+
       <div style="max-width: 70%;">
         <p style="color: #eee8d5; font-size: 0.9em; margin-bottom: 15px; line-height: 1.5;">
           GenAI will fail when given tasks that are:
@@ -1039,13 +1040,13 @@ If you give it too complex and unspecified tasks, it will fail. -->
         </ul>
       </div>
     </div>
-    
+
     <div style="background: rgba(220, 50, 47, 0.2); border-left: 4px solid #dc322f; padding: 15px; border-radius: 0 8px 8px 0; margin-top: 25px;">
       <p style="color: #eee8d5; font-size: 0.9em; margin: 0; font-style: italic; text-align: center;">
         "The quality of your output is directly proportional to the specificity of your input."
       </p>
     </div>
-    
+
   </div>
 </div>
 ```
@@ -1062,7 +1063,7 @@ If you give it too complex and unspecified tasks, it will fail. -->
   <div style="width: 45%; display: flex; justify-content: center; align-items: center;">
     <img src="img/prompt.jpg" style="max-width: 90%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
   </div>
-  
+
   <!-- Right side: Techniques List -->
   <div style="width: 50%;">
     <div style="background: linear-gradient(135deg, #073642, #2aa198); padding: 25px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.3);">
@@ -1097,15 +1098,15 @@ If you give it too complex and unspecified tasks, it will fail. -->
 
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; height: 50vh; width: 100%; margin: 50px 0;">
-  <div style="background: linear-gradient(135deg, #002b36, #073642); 
-              padding: 40px 60px; 
-              border-radius: 15px; 
-              box-shadow: 0 8px 30px rgba(0,0,0,0.5); 
+  <div style="background: linear-gradient(135deg, #002b36, #073642);
+              padding: 40px 60px;
+              border-radius: 15px;
+              box-shadow: 0 8px 30px rgba(0,0,0,0.5);
               text-align: center;
               border: 3px solid #268bd2;
               max-width: 80%;">
-    <h1 style="color: #fdf6e3; 
-               font-size: 3em; 
+    <h1 style="color: #fdf6e3;
+               font-size: 3em;
                font-weight: 700;
                margin: 0;
                text-shadow: 2px 2px 5px rgba(0,0,0,0.3);">
@@ -1120,7 +1121,7 @@ If you give it too complex and unspecified tasks, it will fail. -->
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px; background-gradient: linear-gradient(135deg, #073642, #268bd2);">
   <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-    
+
     <h1 style="color: #268bd2; text-align: center; margin-bottom: 30px; font-size: 2.2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Development Patterns</h1>
 
     <div style="display: grid; grid-template-columns: 67% 30%; gap: 3%; margin-top: 20px;">
@@ -1338,7 +1339,7 @@ If you give it too complex and unspecified tasks, it will fail. -->
     background: linear-gradient(135deg, #073642, #002b36);
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    
+
   ">
     <div style="
       font-size: 1.4em;
@@ -1353,7 +1354,7 @@ If you give it too complex and unspecified tasks, it will fail. -->
   </div>
 
   <div style="
-    flex: 1; 
+    flex: 1;
     height: 400px;
     max-height: 60vh;
     border-radius: 10px;
@@ -1467,9 +1468,9 @@ If you give it too complex and unspecified tasks, it will fail. -->
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 15px;">
   <div style="width: 90%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-    
+
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 0px;">
-      
+
       <!-- LangGraph -->
       <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #2aa198; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
         <div style="width: 70px; height: 70px; background: #2aa198; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -1478,7 +1479,7 @@ If you give it too complex and unspecified tasks, it will fail. -->
         <h3 style="color: #eee8d5; font-size: 1em;">LangGraph</h3>
         <!-- <p style="color: #93a1a1; font-size: 0.5em;">Build stateful, multi-actor systems with LLMs</p> -->
       </div>
-      
+
       <!-- CrewAI -->
       <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #b58900; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
         <div style="width: 70px; height: 70px; background: #b58900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -1487,7 +1488,7 @@ If you give it too complex and unspecified tasks, it will fail. -->
         <h3 style="color: #eee8d5; font-size: 1em;">CrewAI</h3>
         <!-- <p style="color: #93a1a1; font-size: 0.5em;">Orchestrate role-based agents in teams</p> -->
       </div>
-      
+
       <!-- Autogen -->
       <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #dc322f; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
         <div style="width: 70px; height: 70px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -1508,7 +1509,7 @@ If you give it too complex and unspecified tasks, it will fail. -->
         <h3 style="color: #eee8d5; font-size: 1em;">Agents SDK</h3>
         <!-- <p style="color: #93a1a1; font-size: 0.5em;">OpenAI's toolkit for assistant applications</p> -->
       </div>
-      
+
       <!-- ADK (Google) -->
       <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #6c71c4; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; max-width: 30%;">
         <div style="width: 70px; height: 70px; background: #6c71c4; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -1647,15 +1648,15 @@ We didn't have time to talk about
     </h3>
     <ul style="list-style-type: none; padding-left: 0; margin-top: 0px;">
       <li style="margin-bottom: 10px; display: flex; align-items: center; padding: 10px; border-radius: 8px;">
-        <span style="color: #2aa198; margin-right: 15px; font-size: 1.1em;">•</span> 
+        <span style="color: #2aa198; margin-right: 15px; font-size: 1.1em;">•</span>
         <span style="color: #eee8d5;">Connect with me on LinkedIn</span>
       </li>
       <li style="margin-bottom: 10px; display: flex; align-items: center; padding: 10px; border-radius: 8px;">
-        <span style="color: #2aa198; margin-right: 15px; font-size: 1.1em;">•</span> 
+        <span style="color: #2aa198; margin-right: 15px; font-size: 1.1em;">•</span>
         <span style="color: #eee8d5;">Share your GenAI challenges</span>
       </li>
       <li style="margin-bottom: 10px; display: flex; align-items: center; padding: 10px; border-radius: 8px;">
-        <span style="color: #2aa198; margin-right: 15px; font-size: 1.1em;">•</span> 
+        <span style="color: #2aa198; margin-right: 15px; font-size: 1.1em;">•</span>
         <span style="color: #eee8d5;">Discuss implementation strategies</span>
       </li>
     </ul>
@@ -1739,9 +1740,9 @@ We didn't have time to talk about
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
   <div style="width: 90%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-    
+
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; margin-top: 20px;">
-      
+
       <!-- LangChain -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); position: relative; overflow: hidden;">
         <div style="position: absolute; top: -15px; right: -15px; background: #dc322f; color: #fdf6e3; font-size: 0.7em; padding: 5px 20px; transform: rotate(45deg); transform-origin: bottom right;">
@@ -1768,7 +1769,7 @@ We didn't have time to talk about
           </div>
         </div>
       </div>
-      
+
       <!-- LlamaIndex -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
         <h3 style="color: #b58900; margin-top: 0; border-bottom: 2px solid #b58900; padding-bottom: 8px; font-size: 1.5em;">
@@ -1789,7 +1790,7 @@ We didn't have time to talk about
           </div>
         </div>
       </div>
-      
+
       <!-- Haystack -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
         <h3 style="color: #859900; margin-top: 0; border-bottom: 2px solid #859900; padding-bottom: 8px; font-size: 1.5em;">
@@ -1810,7 +1811,7 @@ We didn't have time to talk about
           </div>
         </div>
       </div>
-      
+
       <!-- PydanticAI -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
         <h3 style="color: #d33682; margin-top: 0; border-bottom: 2px solid #d33682; padding-bottom: 8px; font-size: 1.5em;">
@@ -1831,16 +1832,16 @@ We didn't have time to talk about
           </div>
         </div>
       </div>
-      
+
     </div>
-    
+
     <!-- Comparison note at bottom -->
     <div style="margin-top: 25px; background: rgba(0, 43, 54, 0.7); border-radius: 12px; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
       <p style="color: #93a1a1; margin: 0; text-align: center; font-size: 0.9em;">
         <span style="color: #dc322f; font-weight: bold;">⚠️</span> LangChain has been criticized for complexity and abstraction leakiness
       </p>
     </div>
-    
+
   </div>
 </div>
 ```
@@ -1859,14 +1860,14 @@ If you give it too complex and unspecified tasks, it will fail.
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
   <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-    
+
     <h2 style="color: #dc322f; text-align: center; margin-bottom: 30px; font-size: 2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Biggest Challenge: Specificity</h2>
 
     <div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
       <div style="width: 100px; height: 100px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
         <span style="font-size: 3em; color: #002b36;">⚠️</span>
       </div>
-      
+
       <div style="max-width: 70%;">
         <p style="color: #eee8d5; font-size: 1.4em; margin-bottom: 15px; line-height: 1.5;">
           GenAI will fail when given tasks that are:
@@ -1887,13 +1888,13 @@ If you give it too complex and unspecified tasks, it will fail.
         </ul>
       </div>
     </div>
-    
+
     <div style="background: rgba(220, 50, 47, 0.2); border-left: 4px solid #dc322f; padding: 15px; border-radius: 0 8px 8px 0; margin-top: 25px;">
       <p style="color: #eee8d5; font-size: 1.1em; margin: 0; font-style: italic; text-align: center;">
         "The quality of your output is directly proportional to the specificity of your input."
       </p>
     </div>
-    
+
   </div>
 </div>
 ```
