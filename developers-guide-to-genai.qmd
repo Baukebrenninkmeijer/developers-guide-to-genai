@@ -13,9 +13,6 @@ format:
     toc: true
     toc-depth: 1
     show-slide-number: speaker
-    include-in-header:
-      - text: |
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 
 
@@ -76,7 +73,7 @@ Why are you here? What's your use-case?
 </div>
 
 ::: {.notes}
-2023
+2023, highlight importance of discussing IP and copyright. 
 :::
 
 :::footer
@@ -745,7 +742,6 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ## {background-image="img/reasoning_models_perf_jump.png" background-size="contain"}
 
----
 
 # The Tools {.center}
 
@@ -760,14 +756,6 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ```{=html}
 {{< include components/genai-stack.html >}}
-```
-
----
-
-## Tools
-
-```{=html}
-{{< include components/tools-grid.html >}}
 ```
 
 
@@ -815,6 +803,14 @@ Most model providers offer a range of models, often tiered by capability and cos
 
   </div>
 </div>
+```
+
+---
+
+## Tools
+
+```{=html}
+{{< include components/tools-grid.html >}}
 ```
 
 ---
@@ -877,7 +873,7 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ---
 
-## {background-video="img/langchain-video.mp4" background-video-muted="true" background-size="contain" background-video-loop="true"}
+## {background-video="img/langchain-video.mp4" background-video-muted="true" background-size="contain" background-video-loop="true" background-color="#EBEDED"}
 
 
 ---
@@ -1004,14 +1000,120 @@ Most model providers offer a range of models, often tiered by capability and cos
 </div>
 ```
 
-## Biggest challenge: Specificity
+<!-- ## Biggest challenge: Specificity
 
-If you give it too complex and unspecified tasks, it will fail.
+If you give it too complex and unspecified tasks, it will fail. -->
+
+---
+
+## {background-gradient="linear-gradient(135deg, #073642, #dc322f)"}
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
+  <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+    
+    <h2 style="color: #dc322f; text-align: center; margin-bottom: 15px; font-size: 2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Biggest Challenge: Specificity</h2>
+
+    <div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
+      <div style="width: 100px; height: 100px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+        <span style="font-size: 3em; color: #002b36;">⚠️</span>
+      </div>
+      
+      <div style="max-width: 70%;">
+        <p style="color: #eee8d5; font-size: 0.9em; margin-bottom: 15px; line-height: 1.5;">
+          GenAI will fail when given tasks that are:
+        </p>
+        <ul style="color: #eee8d5; font-size: 0.9em; list-style-type: none; padding-left: 0;">
+          <li style="margin-bottom: 12px; display: flex; align-items: center;">
+            <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">✘</span> Too complex without breakdown
+          </li>
+          <li style="margin-bottom: 12px; display: flex; align-items: center;">
+            <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">✘</span> Ambiguous in requirements
+          </li>
+          <li style="margin-bottom: 12px; display: flex; align-items: center;">
+            <span style="color: #859900; font-weight: bold; margin-right: 10px;">✓</span> Break down complex tasks
+          </li>
+          <li style="display: flex; align-items: center;">
+            <span style="color: #859900; font-weight: bold; margin-right: 10px;">✓</span> Be specific in instructions
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div style="background: rgba(220, 50, 47, 0.2); border-left: 4px solid #dc322f; padding: 15px; border-radius: 0 8px 8px 0; margin-top: 25px;">
+      <p style="color: #eee8d5; font-size: 0.9em; margin: 0; font-style: italic; text-align: center;">
+        "The quality of your output is directly proportional to the specificity of your input."
+      </p>
+    </div>
+    
+  </div>
+</div>
+```
 
 
 # The Patterns
 
 ---
+
+
+```{=html}
+<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: 20px;">
+  <!-- Left side: Image -->
+  <div style="width: 45%; display: flex; justify-content: center; align-items: center;">
+    <img src="img/prompt.jpg" style="max-width: 90%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+  </div>
+  
+  <!-- Right side: Techniques List -->
+  <div style="width: 50%;">
+    <div style="background: linear-gradient(135deg, #073642, #2aa198); padding: 25px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.3);">
+      <h3 style="color: #eee8d5; margin-top: 0; margin-bottom: 15px; border-bottom: 2px solid #eee8d5; padding-bottom: 8px; font-size: 1.4em;">
+        Techniques for Effective Prompting
+      </h3>
+      <ul style="color: #eee8d5; font-size: 1.1em; list-style-type: none; padding-left: 5px;">
+        <li style="margin-bottom: 10px; display: flex; align-items: center;">
+          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Few-shot prompting
+        </li>
+        <li style="margin-bottom: 10px; display: flex; align-items: center;">
+          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Chain of Thought
+        </li>
+        <li style="margin-bottom: 10px; display: flex; align-items: center;">
+          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Tree of Thought
+        </li>
+        <li style="margin-bottom: 10px; display: flex; align-items: center;">
+          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Self-Consistency
+        </li>
+        <li style="display: flex; align-items: center;">
+          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> and many more...
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+## {.centered-statement .center}
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; height: 50vh; width: 100%; margin: 50px 0;">
+  <div style="background: linear-gradient(135deg, #002b36, #073642); 
+              padding: 40px 60px; 
+              border-radius: 15px; 
+              box-shadow: 0 8px 30px rgba(0,0,0,0.5); 
+              text-align: center;
+              border: 3px solid #268bd2;
+              max-width: 80%;">
+    <h1 style="color: #fdf6e3; 
+               font-size: 3em; 
+               font-weight: 700;
+               margin: 0;
+               text-shadow: 2px 2px 5px rgba(0,0,0,0.3);">
+      Use LLMs to prompt LLMs
+    </h1>
+  </div>
+</div>
+```
 
 ## {background-gradient="linear-gradient(135deg, #073642, #268bd2)"}
 
@@ -1741,3 +1843,58 @@ We didn't have time to talk about
     
   </div>
 </div>
+```
+
+## Biggest challenge: Specificity
+
+If you give it too complex and unspecified tasks, it will fail.
+
+
+# The Patterns
+
+---
+
+## {background-gradient="linear-gradient(135deg, #073642, #dc322f)"}
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
+  <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+    
+    <h2 style="color: #dc322f; text-align: center; margin-bottom: 30px; font-size: 2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Biggest Challenge: Specificity</h2>
+
+    <div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
+      <div style="width: 100px; height: 100px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+        <span style="font-size: 3em; color: #002b36;">⚠️</span>
+      </div>
+      
+      <div style="max-width: 70%;">
+        <p style="color: #eee8d5; font-size: 1.4em; margin-bottom: 15px; line-height: 1.5;">
+          GenAI will fail when given tasks that are:
+        </p>
+        <ul style="color: #eee8d5; font-size: 1.2em; list-style-type: none; padding-left: 0;">
+          <li style="margin-bottom: 12px; display: flex; align-items: center;">
+            <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">✘</span> Too complex without breakdown
+          </li>
+          <li style="margin-bottom: 12px; display: flex; align-items: center;">
+            <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">✘</span> Ambiguous in requirements
+          </li>
+          <li style="margin-bottom: 12px; display: flex; align-items: center;">
+            <span style="color: #859900; font-weight: bold; margin-right: 10px;">✓</span> Break down complex tasks
+          </li>
+          <li style="display: flex; align-items: center;">
+            <span style="color: #859900; font-weight: bold; margin-right: 10px;">✓</span> Be specific in instructions
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div style="background: rgba(220, 50, 47, 0.2); border-left: 4px solid #dc322f; padding: 15px; border-radius: 0 8px 8px 0; margin-top: 25px;">
+      <p style="color: #eee8d5; font-size: 1.1em; margin: 0; font-style: italic; text-align: center;">
+        "The quality of your output is directly proportional to the specificity of your input."
+      </p>
+    </div>
+    
+  </div>
+</div>
+```
+
