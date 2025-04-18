@@ -690,40 +690,6 @@ Most model providers offer a range of models, often tiered by capability and cos
   </ul>
 </div>
 
-<!-- <div style="
-  width: 32%; /* Adjusted width */
-  box-sizing: border-box; /* Added */
-  /* No margin-right needed for the last item */
-  border-radius: 15px;
-  padding: 20px;
-  background: linear-gradient(to right, #a6e3a1, #94e2d5); /* Green gradient */
-  color: #1e1e2e; /* Darker text for contrast */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  font-family: 'Segoe UI', sans-serif;
-  /* margin: auto; Removed */
-  font-size: 0.5em; /* Reduced font size */
-">
-  <h2 style="margin-top: 0; color: #181a1f;">👁️ GPT-4o</h2>
-  <p><strong>💡 Type:</strong> Multimodal Reasoning</p>
-  <p><strong>🧩 Input:</strong> Text, Image, Audio</p>
-  <p><strong>🖼 Output:</strong> Text, Image, Audio</p>
-  <p><strong>📏 Context:</strong> 128K tokens</p>
-  <p><strong>🛠 Function Calling:</strong> ✅</p>
-  <hr style="border: 1px solid #74a18a;">
-  <p><strong>💪 Strengths:</strong></p>
-  <ul>
-    <li>Strong multimodal understanding & generation</li>
-    <li>Real-time audio interaction</li>
-    <li>Good reasoning, coding, data analysis capabilities</li>
-    <li>Fast for its capability level</li>
-  </ul>
-  <p><strong>⚠️ Weaknesses:</strong></p>
-  <ul>
-    <li>Smaller context window than Gemini 1.5</li>
-    <li>Knowledge cutoff (Oct 2023)</li>
-  </ul>
-</div> -->
-
 
 <div style="
   width: 32%; /* Adjusted width */
@@ -732,7 +698,7 @@ Most model providers offer a range of models, often tiered by capability and cos
   border-radius: 15px;
   padding: 20px;
   background: linear-gradient(to right, #f38ba8, #fab387); /* Red-orange gradient */
-  color: #1e1e2e; /* Darker text for contrast */
+  color: #1e1e2ree; /* Darker text for contrast */
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   font-family: 'Segoe UI', sans-serif;
   /* margin: auto; Removed */
