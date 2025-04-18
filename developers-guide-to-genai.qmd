@@ -73,7 +73,7 @@ Why are you here? What's your use-case?
 </div>
 
 ::: {.notes}
-2023, highlight importance of discussing IP and copyright.
+2022, highlight importance of discussing IP and copyright.
 :::
 
 :::footer
@@ -88,6 +88,13 @@ Why are you here? What's your use-case?
   </div>
 </div>
 ```
+
+---
+
+## {background-video="img/will_smith_spaghetti.mp4" background-video-muted="true" background-video-loop="background-video-loop" background-size="contain"}
+
+:::footer
+:::
 
 ---
 
@@ -225,14 +232,14 @@ Raise your hand if you:
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
-- a lot over the next 10 years.
+- a lot over the next 10 years. 
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
 - Not much at all.
 :::
 
----
+<!-- ---
 
 ## {background-color="black"}
 
@@ -250,6 +257,40 @@ Raise your hand if you:
 ::: footer
 Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-ai/
 :::
+ -->
+
+
+---
+
+## {.r-stretch background-color="black"}
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 80vh;">
+  <img src="img/wired_3_in_4_coders.png" style="max-width: 90%; max-height: 90%;">
+</div>
+```
+
+
+::: footer
+Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-ai/
+:::
+
+
+---
+
+## {.r-stretch background-color="black"}
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 80vh;">
+  <img src="img/17_use_it_all_the_time.png" style="max-width: 90%; max-height: 90%;">
+</div>
+```
+
+
+::: footer
+Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-ai/
+:::
+
 
 ---
 
@@ -839,7 +880,7 @@ Most model providers offer a range of models, often tiered by capability and cos
           <span>🔗 LangChain  🚩</span>
           <div>
           <span style="background-color: #268bd2; color: #fdf6e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8em; font-weight: normal;">Python</span>
-          <span style="background-color: #268bd2; color: #fdf6e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8em; font-weight: normal;">JS</span>
+          <span style="background-color: #6c71c4; color: #fdf6e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8em; font-weight: normal;">JS</span>
           </div>
         </h3>
       </div>
@@ -1535,7 +1576,7 @@ If you give it too complex and unspecified tasks, it will fail. -->
 Source: AI Agents Unleashed Playbook 2025, Hubspot
 :::
 
-# Future
+#   {background-image="img/octo-future.gif"}
 
 ---
 
@@ -1683,6 +1724,11 @@ We didn't have time to talk about
 - Collect contact information for follow-up conversations
 :::
 
+
+---
+
+## {background-image="img/pope.jpeg" background-color="black" background-size="contain"}
+
 <!--
 
 ### Introduction
@@ -1734,168 +1780,3 @@ We didn't have time to talk about
 - Resources for further learning and experimentation
 
  -->
-
-## Programmic AI Frameworks {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #268bd2)"}
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
-  <div style="width: 90%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; margin-top: 20px;">
-
-      <!-- LangChain -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); position: relative; overflow: hidden;">
-        <div style="position: absolute; top: -15px; right: -15px; background: #dc322f; color: #fdf6e3; font-size: 0.7em; padding: 5px 20px; transform: rotate(45deg); transform-origin: bottom right;">
-          🚩
-        </div>
-        <h3 style="color: #2aa198; margin-top: 0; border-bottom: 2px solid #2aa198; padding-bottom: 8px; font-size: 1.5em;">
-          <span style="font-size: 1.1em; margin-right: 8px;">🔗</span> LangChain
-        </h3>
-        <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
-          <div style="color: #eee8d5; font-size: 1.1em;">
-            <ul style="list-style-type: none; padding-left: 0;">
-              <li style="margin-bottom: 10px;">• Component-based architecture</li>
-              <li style="margin-bottom: 10px;">• Extensive integrations</li>
-              <li>• Chains & agents support</li>
-            </ul>
-          </div>
-          <div style="display: flex; flex-direction: column; align-items: center; margin-left: 15px;">
-            <div style="background: rgba(38, 139, 210, 0.2); border-radius: 8px; padding: 8px; margin-bottom: 8px;">
-              <span style="color: #268bd2; font-weight: bold;">Python</span>
-            </div>
-            <div style="background: rgba(181, 137, 0, 0.2); border-radius: 8px; padding: 8px;">
-              <span style="color: #b58900; font-weight: bold;">JavaScript</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- LlamaIndex -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #b58900; margin-top: 0; border-bottom: 2px solid #b58900; padding-bottom: 8px; font-size: 1.5em;">
-          <span style="font-size: 1.1em; margin-right: 8px;">🦙</span> LlamaIndex
-        </h3>
-        <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
-          <div style="color: #eee8d5; font-size: 1.1em;">
-            <ul style="list-style-type: none; padding-left: 0;">
-              <li style="margin-bottom: 10px;">• Data connection framework</li>
-              <li style="margin-bottom: 10px;">• RAG optimization</li>
-              <li>• Query engines & routers</li>
-            </ul>
-          </div>
-          <div style="display: flex; flex-direction: column; align-items: center; margin-left: 15px;">
-            <div style="background: rgba(38, 139, 210, 0.2); border-radius: 8px; padding: 8px;">
-              <span style="color: #268bd2; font-weight: bold;">Python</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Haystack -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #859900; margin-top: 0; border-bottom: 2px solid #859900; padding-bottom: 8px; font-size: 1.5em;">
-          <span style="font-size: 1.1em; margin-right: 8px;">🌾</span> Haystack
-        </h3>
-        <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
-          <div style="color: #eee8d5; font-size: 1.1em;">
-            <ul style="list-style-type: none; padding-left: 0;">
-              <li style="margin-bottom: 10px;">• Pipeline architecture</li>
-              <li style="margin-bottom: 10px;">• Search & retrieval focus</li>
-              <li>• Modular components</li>
-            </ul>
-          </div>
-          <div style="display: flex; flex-direction: column; align-items: center; margin-left: 15px;">
-            <div style="background: rgba(38, 139, 210, 0.2); border-radius: 8px; padding: 8px;">
-              <span style="color: #268bd2; font-weight: bold;">Python</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PydanticAI -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #d33682; margin-top: 0; border-bottom: 2px solid #d33682; padding-bottom: 8px; font-size: 1.5em;">
-          <span style="font-size: 1.1em; margin-right: 8px;">🧩</span> PydanticAI
-        </h3>
-        <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
-          <div style="color: #eee8d5; font-size: 1.1em;">
-            <ul style="list-style-type: none; padding-left: 0;">
-              <li style="margin-bottom: 10px;">• Schema-driven design</li>
-              <li style="margin-bottom: 10px;">• Type validation</li>
-              <li>• Lightweight & minimal</li>
-            </ul>
-          </div>
-          <div style="display: flex; flex-direction: column; align-items: center; margin-left: 15px;">
-            <div style="background: rgba(38, 139, 210, 0.2); border-radius: 8px; padding: 8px;">
-              <span style="color: #268bd2; font-weight: bold;">Python</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Comparison note at bottom -->
-    <div style="margin-top: 25px; background: rgba(0, 43, 54, 0.7); border-radius: 12px; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-      <p style="color: #93a1a1; margin: 0; text-align: center; font-size: 0.9em;">
-        <span style="color: #dc322f; font-weight: bold;">⚠️</span> LangChain has been criticized for complexity and abstraction leakiness
-      </p>
-    </div>
-
-  </div>
-</div>
-```
-
-## Biggest challenge: Specificity
-
-If you give it too complex and unspecified tasks, it will fail.
-
-
-# The Patterns
-
----
-
-## {background-gradient="linear-gradient(135deg, #073642, #dc322f)"}
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
-  <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-
-    <h2 style="color: #dc322f; text-align: center; margin-bottom: 30px; font-size: 2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Biggest Challenge: Specificity</h2>
-
-    <div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
-      <div style="width: 100px; height: 100px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-        <span style="font-size: 3em; color: #002b36;">⚠️</span>
-      </div>
-
-      <div style="max-width: 70%;">
-        <p style="color: #eee8d5; font-size: 1.4em; margin-bottom: 15px; line-height: 1.5;">
-          GenAI will fail when given tasks that are:
-        </p>
-        <ul style="color: #eee8d5; font-size: 1.2em; list-style-type: none; padding-left: 0;">
-          <li style="margin-bottom: 12px; display: flex; align-items: center;">
-            <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">✘</span> Too complex without breakdown
-          </li>
-          <li style="margin-bottom: 12px; display: flex; align-items: center;">
-            <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">✘</span> Ambiguous in requirements
-          </li>
-          <li style="margin-bottom: 12px; display: flex; align-items: center;">
-            <span style="color: #859900; font-weight: bold; margin-right: 10px;">✓</span> Break down complex tasks
-          </li>
-          <li style="display: flex; align-items: center;">
-            <span style="color: #859900; font-weight: bold; margin-right: 10px;">✓</span> Be specific in instructions
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div style="background: rgba(220, 50, 47, 0.2); border-left: 4px solid #dc322f; padding: 15px; border-radius: 0 8px 8px 0; margin-top: 25px;">
-      <p style="color: #eee8d5; font-size: 1.1em; margin: 0; font-style: italic; text-align: center;">
-        "The quality of your output is directly proportional to the specificity of your input."
-      </p>
-    </div>
-
-  </div>
-</div>
-```
-
