@@ -1,36 +1,18 @@
-# AI Evolution Timeline
+# The Developers Guide to AI
 
-A visual interactive timeline showing the key milestones in AI and deep learning from 2012 to present.
+## Abstract
+The JavaScript ecosystem is notorious for its framework proliferation—a phenomenon now mirrored in generative AI. Each week brings new LLMs, frameworks, IDEs, and GPU startups. While ChatGPT, Copilot, and DeepSeek have gained recognition, powerful tools like Claude, Cline, Cursor, and Windsurf remain less familiar to many professionals.
 
-## Features
+This talk provides a comprehensive overview of generative AI, exploring how these technologies function and the diverse capabilities they offer. We'll examine how to effectively incorporate these tools into both product development and software engineering workflows. Beginning with core fundamentals, we'll progress through structured responses, visual models, and reasoning capabilities, before exploring specialized development environments and IDE integrations that can transform your productivity.
 
-- Responsive timeline visualization
-- Animated interactions for better user experience
-- Concise summaries of key AI developments
-- Color-coded timeline events for visual distinction
+## Slides
+The slides are available in a rendered html format [here](_site/developers-guide-to-genai.html).
 
+## Run/Installation
 
-## Running the Application
+1. Install Quarto locally
+2. `quarto add clearmatics/qreacto`
+3. `quarto preview developers-guide-to-genai.qmd --no-browser`
 
-1. Clone this repository
-2. Install dependencies:
-
-```
-npm install
-quarto add clearmatics/qreacto
-```
-
-## Technologies Used
-
-- React
-- CSS with responsive design
-- Information visualization best practices
-
-## Design Principles
-
-This timeline follows modern information visualization best practices:
-- Clear visual hierarchy
-- Consistent color coding
-- Progressive disclosure of information
-- Responsive design for all devices
-- Accessible text and contrasts
+## License
+Licensed under CC BY 4.0

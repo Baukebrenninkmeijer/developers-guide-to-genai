@@ -175,7 +175,6 @@ cython_debug/
 developers-guide-to-genai_files/*
 /.quarto/
 /.luarc.json
-_site/*
 .DS_Store
 node_modules/*
 
