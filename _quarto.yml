@@ -3,7 +3,9 @@ project:
   output-dir: docs
 
 website:
-  site-path: /developers-guide-to-genai/
+  title: "The Developers Guide to GenAI"
+  site-url: "https://baukebrenninkmeijer.github.io/developers-guide-to-genai"
+  repo-url: "https://github.com/baukebrenninkmeijer/developers-guide-to-genai"
 
 format:
   revealjs:
