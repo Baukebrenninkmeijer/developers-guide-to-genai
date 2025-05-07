@@ -6,7 +6,7 @@ The JavaScript ecosystem is notorious for its framework proliferation—a phenom
 This talk provides a comprehensive overview of generative AI, exploring how these technologies function and the diverse capabilities they offer. We'll examine how to effectively incorporate these tools into both product development and software engineering workflows. Beginning with core fundamentals, we'll progress through structured responses, visual models, and reasoning capabilities, before exploring specialized development environments and IDE integrations that can transform your productivity.
 
 ## Slides
-The slides are available in a rendered html format [here](_site/developers-guide-to-genai.html).
+The slides are available in a rendered html format [here](docs/developers-guide-to-genai.html).
 
 ## Run/Installation
 
