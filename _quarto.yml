@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: docs
 
+website:
+  site-path: /developers-guide-to-genai/
+
 format:
   revealjs:
     slide-level: 2

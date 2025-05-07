@@ -1,12 +1,10 @@
 ---
 marp: true
 title: The Developers Guide to GenAI
-# theme: uncover
 html: true
 format:
   revealjs:
     theme: [moon, styles.scss]
-    # logo: logo.png
     footer: "The Developers Guide to GenAI • Bauke Brenninkmeijer"
     width: 1280
     height: 720
