@@ -14,5 +14,13 @@ The slides are available in a rendered html format [here](docs/developers-guide-
 2. `quarto add clearmatics/qreacto`
 3. `quarto preview developers-guide-to-genai.qmd --no-browser`
 
+## Deployment to GitHub Pages
+
+1. Build the presentation for deployment:
+   ```bash
+   quarto render developers-guide-to-genai.qmd
+   ```
+
+
 ## License
 Licensed under CC BY 4.0
