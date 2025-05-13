@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"background": "#002b36", "title": {"color": "#eee8d5", "anchor": "middle", "fontSize": 20, "fontWeight": "bold"}, "axis": {"labelColor": "#eee8d5", "titleColor": "#eee8d5", "gridColor": "#586e75", "domainColor": "#586e75"}, "legend": {"labelColor": "#eee8d5", "titleColor": "#eee8d5"}, "text": {"color": "#eee8d5"}}, "layer": [{"data": {"name": "data-4b759824cc74be7099db03ec45614391"}, "mark": {"type": "line", "color": "#586e75", "strokeDash": [3, 3]}, "encoding": {"detail": {"field": "Practice Area", "type": "nominal"}, "x": {"field": "Practice Area", "sort": ["Immigration", "Personal Injury", "Civil Litigation", "Criminal Law", "Family Law", "Trusts and Estates"], "type": "nominal"}, "y": {"field": "Adoption Rate", "type": "quantitative"}}, "transform": [{"fold": ["Individual Practitioners", "Firm Level"], "as": ["Adoption Type", "Adoption Rate"]}]}, {"data": {"name": "data-56aefe284c9d030129b88e98a5ab772d"}, "mark": {"type": "circle", "size": 100}, "encoding": {"color": {"field": "Adoption Type", "legend": {"title": "Adoption Level"}, "scale": {"domain": ["Individual Practitioners", "Firm Level"], "range": ["#b58900", "#cb4b16"]}, "type": "nominal"}, "tooltip": [{"field": "Practice Area", "type": "nominal"}, {"field": "Adoption Type", "type": "nominal"}, {"field": "Adoption Rate", "type": "quantitative"}], "x": {"field": "Practice Area", "sort": ["Immigration", "Personal Injury", "Civil Litigation", "Criminal Law", "Family Law", "Trusts and Estates"], "title": null, "type": "nominal"}, "y": {"field": "Adoption Rate", "scale": {"domain": [0, 50]}, "title": "Adoption Rate (%)", "type": "quantitative"}}}, {"data": {"name": "data-56aefe284c9d030129b88e98a5ab772d"}, "mark": {"type": "text", "align": "center", "baseline": "bottom", "color": "#fdf6e3", "dy": -10, "fontSize": 11}, "encoding": {"color": {"field": "Adoption Type", "legend": {"title": "Adoption Level"}, "scale": {"domain": ["Individual Practitioners", "Firm Level"], "range": ["#b58900", "#cb4b16"]}, "type": "nominal"}, "text": {"field": "Adoption Rate", "format": ".0f", "type": "quantitative"}, "tooltip": [{"field": "Practice Area", "type": "nominal"}, {"field": "Adoption Type", "type": "nominal"}, {"field": "Adoption Rate", "type": "quantitative"}], "x": {"field": "Practice Area", "sort": ["Immigration", "Personal Injury", "Civil Litigation", "Criminal Law", "Family Law", "Trusts and Estates"], "title": null, "type": "nominal"}, "y": {"field": "Adoption Rate", "scale": {"domain": [0, 50]}, "title": "Adoption Rate (%)", "type": "quantitative"}}}], "height": 350, "title": "AI Adoption by Practice Area: Individual vs. Firm Level", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-4b759824cc74be7099db03ec45614391": [{"Practice Area": "Immigration", "Individual Practitioners": 47, "Firm Level": 17}, {"Practice Area": "Personal Injury", "Individual Practitioners": 37, "Firm Level": 20}, {"Practice Area": "Civil Litigation", "Individual Practitioners": 36, "Firm Level": 27}, {"Practice Area": "Criminal Law", "Individual Practitioners": 28, "Firm Level": 18}, {"Practice Area": "Family Law", "Individual Practitioners": 26, "Firm Level": 20}, {"Practice Area": "Trusts and Estates", "Individual Practitioners": 25, "Firm Level": 18}], "data-56aefe284c9d030129b88e98a5ab772d": [{"Practice Area": "Immigration", "Adoption Type": "Individual Practitioners", "Adoption Rate": 47}, {"Practice Area": "Personal Injury", "Adoption Type": "Individual Practitioners", "Adoption Rate": 37}, {"Practice Area": "Civil Litigation", "Adoption Type": "Individual Practitioners", "Adoption Rate": 36}, {"Practice Area": "Criminal Law", "Adoption Type": "Individual Practitioners", "Adoption Rate": 28}, {"Practice Area": "Family Law", "Adoption Type": "Individual Practitioners", "Adoption Rate": 26}, {"Practice Area": "Trusts and Estates", "Adoption Type": "Individual Practitioners", "Adoption Rate": 25}, {"Practice Area": "Immigration", "Adoption Type": "Firm Level", "Adoption Rate": 17}, {"Practice Area": "Personal Injury", "Adoption Type": "Firm Level", "Adoption Rate": 20}, {"Practice Area": "Civil Litigation", "Adoption Type": "Firm Level", "Adoption Rate": 27}, {"Practice Area": "Criminal Law", "Adoption Type": "Firm Level", "Adoption Rate": 18}, {"Practice Area": "Family Law", "Adoption Type": "Firm Level", "Adoption Rate": 20}, {"Practice Area": "Trusts and Estates", "Adoption Type": "Firm Level", "Adoption Rate": 18}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

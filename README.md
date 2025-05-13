@@ -17,9 +17,20 @@ The slides are available in a rendered html format [here](docs/developers-guide-
 ## Deployment to GitHub Pages
 
 1. Build the presentation for deployment:
-   ```bash
-   quarto render developers-guide-to-genai.qmd
-   ```
+
+```bash
+quarto render developers-guide-to-genai.qmd
+```
+
+Building a self-contained version
+```bash
+quarto render developers-guide-to-genai.qmd --to revealjs --self-contained --pdf-engine=typst 
+```
+
+Convert to PDF
+```bash
+decktape docs/developers-guide-to-genai.html docs/dev-guide-to-genai.pdf 
+```
 
 
 ## License

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"background": "#002b36", "title": {"color": "#eee8d5", "anchor": "middle", "fontSize": 20, "fontWeight": "bold"}, "axis": {"labelColor": "#eee8d5", "titleColor": "#eee8d5", "gridColor": "#586e75", "domainColor": "#586e75"}, "legend": {"labelColor": "#eee8d5", "titleColor": "#eee8d5"}, "text": {"color": "#eee8d5"}}, "layer": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "Firm Size", "legend": null, "scale": {"domain": ["Solo", "2-5", "6-20", "21-50", "51+"], "range": ["#268bd2", "#1a9dba", "#2aa198", "#7ecac0", "#afdecb"]}, "type": "nominal"}, "tooltip": [{"field": "Firm Size", "type": "nominal"}, {"field": "Adoption Rate", "type": "quantitative"}], "x": {"axis": {"labelAngle": 0, "labelFontSize": 15}, "field": "Firm Size", "sort": null, "title": null, "type": "nominal"}, "y": {"field": "Adoption Rate", "scale": {"domain": [0, 50]}, "title": "Adoption Rate (%)", "type": "quantitative"}}, "title": "AI Adoption Rates by Firm Size"}, {"mark": {"type": "text", "align": "center", "baseline": "bottom", "color": "#fdf6e3", "dy": -10, "fontSize": 21}, "encoding": {"color": {"field": "Firm Size", "legend": null, "scale": {"domain": ["Solo", "2-5", "6-20", "21-50", "51+"], "range": ["#268bd2", "#1a9dba", "#2aa198", "#7ecac0", "#afdecb"]}, "type": "nominal"}, "text": {"field": "Percentage Label", "type": "nominal"}, "tooltip": [{"field": "Firm Size", "type": "nominal"}, {"field": "Adoption Rate", "type": "quantitative"}], "x": {"axis": {"labelAngle": 0, "labelFontSize": 15}, "field": "Firm Size", "sort": null, "title": null, "type": "nominal"}, "y": {"field": "Adoption Rate", "scale": {"domain": [0, 50]}, "title": "Adoption Rate (%)", "type": "quantitative"}}, "title": "AI Adoption Rates by Firm Size"}], "data": {"name": "data-1357884269fca759b74a0cae2a1e8345"}, "height": 350, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-1357884269fca759b74a0cae2a1e8345": [{"Firm Size": "Solo", "Adoption Rate": 21, "Percentage Label": "21%"}, {"Firm Size": "2-5", "Adoption Rate": 21, "Percentage Label": "21%"}, {"Firm Size": "6-20", "Adoption Rate": 19, "Percentage Label": "19%"}, {"Firm Size": "21-50", "Adoption Rate": 22, "Percentage Label": "22%"}, {"Firm Size": "51+", "Adoption Rate": 39, "Percentage Label": "39%"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

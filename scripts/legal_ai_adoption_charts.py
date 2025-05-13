@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 """
-Generate charts visualizing legal AI adoption data using Altair.
+Generate charts visualizing legal AI adoption data using Altair and Plotly.
 
 This script creates three charts:
-1. AI Adoption Rates by Firm Size
-2. AI Adoption by Practice Area - Individual vs. Firm Level
-3. Concerns Slowing AI Adoption
+1. AI Adoption Rates by Firm Size (Altair)
+2. AI Adoption by Practice Area - Individual vs. Firm Level (Altair - connected dots)
+3. Concerns Slowing AI Adoption (Plotly - bar chart)
 
 The charts use the Solarized color palette for consistent styling with the presentation.
 """
 
 import pandas as pd
 import altair as alt
+import plotly.express as px
+import plotly.graph_objects as go
 import os
+from typing import Dict, Any
 
 # Ensure the output directory exists
-os.makedirs('../img', exist_ok=True)
+os.makedirs('img', exist_ok=True)
 
 # Set Altair theme based on Solarized colors
 # Colors from styles.scss
@@ -38,7 +41,8 @@ COLORS = {
     'green': '#859900'
 }
 
-# Create a custom theme
+# Create a custom theme using the new API according to the deprecation warning
+# Using a simpler approach to avoid type errors
 def solarized_theme():
     return {
         'config': {
@@ -58,7 +62,6 @@ def solarized_theme():
         }
     }
 
-# Register the theme
 alt.themes.register('solarized', solarized_theme)
 alt.themes.enable('solarized')
 
@@ -66,20 +69,43 @@ alt.themes.enable('solarized')
 # Chart 1: AI Adoption Rates by Firm Size
 # =====================================================================
 
-# Create DataFrame for firm size adoption
+# Create DataFrame for firm size adoption with more detailed categories
+# Use simplified labels (removed "lawyers")
 firm_size_data = pd.DataFrame({
-    'Firm Size': ['51+ Lawyers', '50 or Fewer Lawyers'],
-    'Adoption Rate': [39, 20]
+    'Firm Size': ['51+', '21-50', '6-20', '2-5', 'Solo'],
+    'Adoption Rate': [39, 22, 19, 21, 21]
 })
 
+# Add percentage label column
+firm_size_data['Percentage Label'] = firm_size_data['Adoption Rate'].astype(str) + '%'
+
+# Sort from largest to smallest firm size
+firm_size_data['Firm Size'] = pd.Categorical(
+    firm_size_data['Firm Size'], 
+    categories=['51+', '21-50', '6-20', '2-5', 'Solo']
+)
+firm_size_data = firm_size_data.sort_values('Firm Size', ascending=False)
+
+# Create a color gradient for the bars, going from dark blue to cyan
+color_scale = alt.Scale(
+    domain=firm_size_data['Firm Size'].tolist(),
+    range=[COLORS['blue'], '#1a9dba', COLORS['cyan'], '#7ecac0', '#afdecb']
+)
+
 chart1 = alt.Chart(firm_size_data).mark_bar().encode(
-    x=alt.X('Firm Size:N', title=None),
+    x=alt.X('Firm Size:N', 
+            title=None, 
+            sort=None,  # Use the order from the dataframe
+            axis=alt.Axis(
+                labelAngle=0,  # Rotate labels 0 degrees
+                labelFontSize=15  # Increase label font size by 50%
+            )),
     y=alt.Y('Adoption Rate:Q', title='Adoption Rate (%)', scale=alt.Scale(domain=[0, 50])),
-    color=alt.Color('Firm Size:N', scale=alt.Scale(range=[COLORS['blue'], COLORS['cyan']]), legend=None),
+    color=alt.Color('Firm Size:N', scale=color_scale, legend=None),
     tooltip=['Firm Size', 'Adoption Rate']
 ).properties(
     title='AI Adoption Rates by Firm Size',
-    width=500,
+    width=600,
     height=350
 )
 
@@ -88,10 +114,10 @@ text1 = chart1.mark_text(
     align='center',
     baseline='bottom',
     dy=-10,
-    fontSize=14,
+    fontSize=21,  # Increase text size by 50% (from 14 to 21)
     color=COLORS['base3']
 ).encode(
-    text=alt.Text('Adoption Rate:Q', format='.0f')
+    text='Percentage Label:N'
 )
 
 chart1_final = (chart1 + text1).configure_title(
@@ -132,7 +158,9 @@ practice_area_melted['Practice Area'] = pd.Categorical(
     categories=sorted_areas
 )
 
-chart2 = alt.Chart(practice_area_melted).mark_bar().encode(
+# Create a connected dot plot instead of a bar chart
+# First create the points
+points = alt.Chart(practice_area_melted).mark_circle(size=100).encode(
     x=alt.X('Practice Area:N', title=None, sort=sorted_areas),
     y=alt.Y('Adoption Rate:Q', title='Adoption Rate (%)', scale=alt.Scale(domain=[0, 50])),
     color=alt.Color('Adoption Type:N', 
@@ -140,24 +168,36 @@ chart2 = alt.Chart(practice_area_melted).mark_bar().encode(
                                  range=[COLORS['yellow'], COLORS['orange']]),
                    legend=alt.Legend(title="Adoption Level")),
     tooltip=['Practice Area', 'Adoption Type', 'Adoption Rate']
-).properties(
-    title='AI Adoption by Practice Area: Individual vs. Firm Level',
-    width=600,
-    height=350
 )
 
-# Add text labels on top of bars
-text2 = chart2.mark_text(
+# Create lines to connect the dots for the same practice area
+lines = alt.Chart(practice_area_data).transform_fold(
+    ['Individual Practitioners', 'Firm Level'],
+    as_=['Adoption Type', 'Adoption Rate']
+).mark_line(color=COLORS['base01'], strokeDash=[3, 3]).encode(
+    x=alt.X('Practice Area:N', sort=sorted_areas),
+    y=alt.Y('Adoption Rate:Q'),
+    detail='Practice Area:N'
+)
+
+# Add text labels for the points
+text2 = points.mark_text(
     align='center',
     baseline='bottom',
-    dy=-5,
+    dy=-10,
     fontSize=11,
     color=COLORS['base3']
 ).encode(
     text=alt.Text('Adoption Rate:Q', format='.0f')
 )
 
-chart2_final = (chart2 + text2).configure_title(
+chart2 = (lines + points + text2).properties(
+    title='AI Adoption by Practice Area: Individual vs. Firm Level',
+    width=600,
+    height=350
+)
+
+chart2_final = chart2.configure_title(
     fontSize=20,
     fontWeight='bold',
     color=COLORS['base2'],
@@ -168,7 +208,7 @@ chart2_final = (chart2 + text2).configure_title(
 chart2_final.save('img/legal_ai_adoption_by_practice_area.html')
 
 # =====================================================================
-# Chart 3: Concerns Slowing AI Adoption
+# Chart 3: Concerns Slowing AI Adoption - Plotly Bar Chart
 # =====================================================================
 
 # Create DataFrame for concerns
@@ -191,7 +231,7 @@ concerns_data = pd.DataFrame({
 })
 
 # Sort concerns by percentage (descending)
-concerns_data = concerns_data.sort_values('Percentage', ascending=True)
+concerns_data = concerns_data.sort_values('Percentage', ascending=False).reset_index(drop=True)
 
 # Color mapping for categories
 category_colors = {
@@ -202,40 +242,49 @@ category_colors = {
     'Financial': COLORS['cyan']
 }
 
-# Create a horizontal bar chart
-chart3 = alt.Chart(concerns_data).mark_bar().encode(
-    y=alt.Y('Concern:N', title=None, sort='-x'),
-    x=alt.X('Percentage:Q', title='Percentage (%)', scale=alt.Scale(domain=[0, 50])),
-    color=alt.Color('Category:N', 
-                   scale=alt.Scale(domain=list(category_colors.keys()),
-                                 range=list(category_colors.values())),
-                   legend=alt.Legend(title="Concern Category")),
-    tooltip=['Concern', 'Percentage', 'Category']
-).properties(
-    title='Concerns Slowing AI Adoption in Legal Practices',
-    width=600,
-    height=300
+# Create a horizontal bar chart using Plotly Graph Objects for more control
+fig = go.Figure()
+
+# Add each bar with explicit color based on its category
+for i, row in concerns_data.iterrows():
+    fig.add_trace(go.Bar(
+        y=[row['Concern']],  # Must be a list for a single point
+        x=[row['Percentage']],
+        orientation='h',
+        name=row['Category'],
+        showlegend=False,
+        marker_color=category_colors[row['Category']],
+        text=f"{row['Percentage']}%",
+        textposition='outside',
+        hovertemplate=f"<b>{row['Concern']}</b><br>Percentage: {row['Percentage']}%<extra></extra>"
+    ))
+
+# Update the layout to match the Solarized theme
+fig.update_layout(
+    paper_bgcolor=COLORS['base03'],
+    plot_bgcolor=COLORS['base03'],
+    font_color=COLORS['base2'],
+    title={
+        'text': 'Concerns Slowing AI Adoption in Legal Practices',
+        'font': {'size': 20},
+        'x': 0.5  # Center the title
+    },
+    yaxis_title=None,
+    xaxis_title='Percentage (%)',
+    xaxis=dict(
+        gridcolor=COLORS['base01'],
+        range=[0, 50]  # Set x-axis range to 0-50 for consistency
+    ),
+    yaxis=dict(
+        gridcolor=COLORS['base01']
+    ),
+    margin=dict(l=200, r=100, t=80, b=50),  # Add margin for long concern names
+    barmode='group',
+    height=500,
+    width=800
 )
 
-# Add text labels at the end of bars
-text3 = chart3.mark_text(
-    align='left',
-    baseline='middle',
-    dx=3,
-    fontSize=12,
-    color=COLORS['base3']
-).encode(
-    text=alt.Text('Percentage:Q', format='.0f')
-)
-
-chart3_final = (chart3 + text3).configure_title(
-    fontSize=20,
-    fontWeight='bold',
-    color=COLORS['base2'],
-    anchor='middle'
-)
-
-# Save chart
-chart3_final.save('img/legal_ai_adoption_concerns.html')
+# Save the chart
+fig.write_html('img/legal_ai_adoption_concerns.html')
 
 print("Charts generated and saved to the 'img' directory.")
