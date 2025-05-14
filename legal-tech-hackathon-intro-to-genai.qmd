@@ -210,6 +210,18 @@ Why are you here? What's your use-case?
 
 ---
 
+## Law Adoption Rate
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 80vh;">
+  <img src="img/legal_ai_adoption_by_practice_area.svg" style="max-width: 90%; max-height: 90%;">
+</div>
+```
+
+
+
+---
+
 ## {.r-stretch background-color="black"}
 
 ```{=html}

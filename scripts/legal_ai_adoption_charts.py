@@ -128,7 +128,7 @@ chart1_final = (chart1 + text1).configure_title(
 )
 
 # Save chart
-chart1_final.save('img/legal_ai_adoption_by_firm_size.html')
+chart1_final.save('img/legal_ai_adoption_by_firm_size.svg')
 
 # =====================================================================
 # Chart 2: AI Adoption by Practice Area - Individual vs. Firm Level
@@ -159,33 +159,37 @@ practice_area_melted['Practice Area'] = pd.Categorical(
 )
 
 # Create a connected dot plot instead of a bar chart
-# First create the points
-points = alt.Chart(practice_area_melted).mark_circle(size=100).encode(
-    x=alt.X('Practice Area:N', title=None, sort=sorted_areas),
-    y=alt.Y('Adoption Rate:Q', title='Adoption Rate (%)', scale=alt.Scale(domain=[0, 50])),
+# First create the points - with pivoted axes and brighter colors
+points = alt.Chart(practice_area_melted).mark_circle(size=100, opacity=1).encode(
+    y=alt.Y('Practice Area:N', title=None, sort=sorted_areas, 
+            axis=alt.Axis(labelFontSize=18)),  # 50% increase from default 12
+    x=alt.X('Adoption Rate:Q', title='Adoption Rate (%)', scale=alt.Scale(domain=[10, 50]),
+            axis=alt.Axis(labelFontSize=18, titleFontSize=18)),  # 50% increase from default 12
     color=alt.Color('Adoption Type:N', 
                    scale=alt.Scale(domain=['Individual Practitioners', 'Firm Level'],
-                                 range=[COLORS['yellow'], COLORS['orange']]),
-                   legend=alt.Legend(title="Adoption Level")),
+                                  range=[COLORS['yellow'], COLORS['red']]),
+                   legend=alt.Legend(title="Adoption Level", 
+                                    labelFontSize=18,  # 50% increase from default 12
+                                    titleFontSize=18)),  # 50% increase from default 12
     tooltip=['Practice Area', 'Adoption Type', 'Adoption Rate']
 )
 
-# Create lines to connect the dots for the same practice area
+# Create lines to connect the dots for the same practice area - with pivoted axes
 lines = alt.Chart(practice_area_data).transform_fold(
     ['Individual Practitioners', 'Firm Level'],
     as_=['Adoption Type', 'Adoption Rate']
 ).mark_line(color=COLORS['base01'], strokeDash=[3, 3]).encode(
-    x=alt.X('Practice Area:N', sort=sorted_areas),
-    y=alt.Y('Adoption Rate:Q'),
+    y=alt.Y('Practice Area:N', sort=sorted_areas),
+    x=alt.X('Adoption Rate:Q'),
     detail='Practice Area:N'
 )
 
 # Add text labels for the points
 text2 = points.mark_text(
-    align='center',
-    baseline='bottom',
-    dy=-10,
-    fontSize=11,
+    align='left',
+    baseline='middle',
+    dx=10,
+    fontSize=15,
     color=COLORS['base3']
 ).encode(
     text=alt.Text('Adoption Rate:Q', format='.0f')
@@ -194,7 +198,7 @@ text2 = points.mark_text(
 chart2 = (lines + points + text2).properties(
     title='AI Adoption by Practice Area: Individual vs. Firm Level',
     width=600,
-    height=350
+    height=400
 )
 
 chart2_final = chart2.configure_title(
@@ -205,7 +209,7 @@ chart2_final = chart2.configure_title(
 )
 
 # Save chart
-chart2_final.save('img/legal_ai_adoption_by_practice_area.html')
+chart2_final.save('img/legal_ai_adoption_by_practice_area.svg')
 
 # =====================================================================
 # Chart 3: Concerns Slowing AI Adoption - Plotly Bar Chart
@@ -285,6 +289,6 @@ fig.update_layout(
 )
 
 # Save the chart
-fig.write_html('img/legal_ai_adoption_concerns.html')
+fig.write_html('img/legal_ai_adoption_concerns.svg')
 
 print("Charts generated and saved to the 'img' directory.")
