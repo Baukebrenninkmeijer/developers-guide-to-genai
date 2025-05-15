@@ -1,11 +1,11 @@
 ---
 marp: true
-title: The Developers Guide to GenAI
+title: Hacking with GenAI 101
 html: true
 format:
   revealjs:
     theme: [moon, styles.scss]
-    footer: "The Developers Guide to GenAI • Bauke Brenninkmeijer"
+    footer: "Hacking with GenAI 101 • Bauke Brenninkmeijer"
     width: 1280
     height: 720
     toc: true
@@ -142,16 +142,8 @@ Why are you here? What's your use-case?
 
 ---
 
-## Generate Code {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #2aa198)"}
+## Use AI daily? {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #2aa198)"}
 
-
----
-
-## Generate Images {.chapter-title .center background-gradient="linear-gradient(145deg, #073642, #2aa198)"}
-
----
-
-## Paid for AI tools {.chapter-title .center background-gradient="linear-gradient(155deg, #073642, #2aa198)"}
 
 ---
 
@@ -303,7 +295,7 @@ Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-a
 
 ---
 
-## Why GenAI is different {.chapter-title visibility="hidden"}
+## Why GenAI is different {.chapter-title}
 
 ```{=html}
 <div style="display: flex; justify-content: space-between; margin-bottom: 60px;">
@@ -311,7 +303,7 @@ Source: https://www.wired.com/story/how-software-engineers-coders-actually-use-a
   <div style="width: 45%; border-radius: 15px; padding: 35px;margin-right: 20px;
        background: linear-gradient(135deg, #b58900, #cb4b16);
        color: #fdf6e3; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
-    <h3 style="text-align: center; margin: 0; font-size: 1.8em;">1. Generation vs. Analysis</h3>
+    <h3 style="text-align: center; margin: 0; font-size: 1.8em;">1. Generate vs. Evaluate</h3>
   </div>
 
   <!-- Second box (Multi-modality) -->
@@ -461,7 +453,7 @@ That's 3788x more.
 
 ---
 
-## 🎮 Pick Your LLM!
+## 🎮 Choose Your LLM!
 
 ```{=html}
 <div style="
@@ -734,17 +726,112 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ## {background-image="img/reasoning_models_perf_jump.png" background-size="contain"}
 
+---
+
+##  {background-gradient="linear-gradient(135deg, #073642, #268bd2)"}
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 30px 0;">
+  <div style="width: 90%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+    
+    <!-- Header -->
+    <h3 style="color: #eee8d5; text-align: center; margin: 0 auto 25px; font-size: 1.2em; max-width: 80%; padding-bottom: 10px; border-bottom: 2px solid #2aa198;">
+      <span style="color: #2aa198;">💰</span> What is the cheapest model to use?
+    </h3>
+    
+    <div style="display: flex; flex-direction: column; gap: 25px;">
+      <!-- Free Options Container -->
+      <div style="display: flex; justify-content: space-between; gap: 25px;">
+        
+        <!-- Gemini Card -->
+        <div style="flex: 1; background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); position: relative; overflow: hidden;">
+          <!-- Visual indicator for free -->
+          <div style="position: absolute; top: -25px; right: -25px; width: 90px; height: 90px; background-color: #b58900; transform: rotate(45deg); display: flex; justify-content: center; align-items: flex-end; padding-bottom: 10px;">
+            <span style="color: #002b36; font-size: 0.7em; font-weight: bold; transform: rotate(-45deg);">FREE</span>
+          </div>
+          
+          <h4 style="color: #b58900; margin: 0 0 15px; font-size: 1.1em; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 1.2em;">🌟</span> Gemini
+          </h4>
+          
+          <ul style="color: #eee8d5; padding-left: 15px; list-style-type: none; font-size: 0.6em; margin-bottom: 0;">
+            <li style="margin-bottom: 10px; display: flex; align-items: center;">
+              <span style="color: #b58900; margin-right: 8px;">✓</span> Gemini 2.5 Flash: 
+              <span style="margin-left: auto; color: #93a1a1; white-space: nowrap;">10 calls/min, 250k tokens/day</span>
+            </li>
+            <li style="margin-bottom: 10px; display: flex; align-items: center;">
+              <span style="color: #b58900; margin-right: 8px;">✓</span> Gemini 2.0 Flash: 
+              <span style="margin-left: auto; color: #93a1a1; white-space: nowrap;">15 calls/min, 1M tokens/day</span>
+            </li>
+            <li style="display: flex; align-items: center;">
+              <span style="color: #b58900; margin-right: 8px;">✓</span> Gemini 2.0 Flash Lite: 
+              <span style="margin-left: auto; color: #93a1a1; white-space: nowrap;">30 calls/min, 1M tokens/day</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Nvidia Card -->
+        <div style="flex: 1; background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); position: relative; overflow: hidden;">
+          <!-- Visual indicator for free -->
+          <div style="position: absolute; top: -25px; right: -25px; width: 90px; height: 90px; background-color: #859900; transform: rotate(45deg); display: flex; justify-content: center; align-items: flex-end; padding-bottom: 10px;">
+            <span style="color: #002b36; font-size: 0.7em; font-weight: bold; transform: rotate(-45deg);">FREE</span>
+          </div>
+          
+          <h4 style="color: #859900; margin: 0 0 15px; font-size: 1.1em; display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 1.2em;">⚡</span> Nvidia (build.nvidia.com)
+          </h4>
+          
+          <ul style="color: #eee8d5; padding-left: 15px; list-style-type: none; font-size: 0.6em; margin-bottom: 0;">
+            <li style="margin-bottom: 10px; display: flex; align-items: center;">
+              <span style="color: #859900; margin-right: 8px;">✓</span> OSS models:  <span style="color: #93a1a1; font-size: 0.9em;">(Llama, Mistral, DeepSeek)</span>
+            </li>
+            <li style="margin-bottom: 10px; display: flex; align-items: center;">
+              <span style="color: #859900; margin-right: 8px;">✓</span> Limits: 
+              <span style="margin-left: auto; color: #93a1a1;">40 calls/min, unlimited tokens</span>
+            </li>
+            <li style="display: flex; align-items: center;">
+              <span style="color: #dc322f; margin-right: 8px;">⚠</span> Limited framework integration
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Budget Example -->
+      <div style="background: linear-gradient(135deg, rgba(38, 139, 210, 0.2), rgba(38, 139, 210, 0.1)); padding: 20px; border-radius: 12px; border: 1px solid #268bd2; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 25px;">
+        <div style="min-width: 80px; width: 80px; height: 80px; border-radius: 50%; background: #268bd2; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.3);margin-right:30px;margin-left:30px;">
+          <span style="font-size: 2em; font-weight: bold; color:rgb(225, 233, 242);">€10</span>
+        </div>
+        
+        <div style="flex-grow: 1;">
+          <h4 style="color: #268bd2; margin: 0 0 10px; font-size: 0.7em;">GPT-4.1-mini Budget Example</h4>
+          <div style="display: flex; flex-direction: column; gap: 5px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.6em; color: #eee8d5;">
+              <span>10k input tokens + 1k output tokens</span>
+              <span style="color: #2aa198; font-weight: bold; font-size: 1.1em;">≈ 2000 API calls</span>
+            </div>
+            <div style="font-size: 0.55em; color: #93a1a1; font-style: italic; text-align: right;">
+              Should be sufficient for a hackathon
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+```
+
 
 # The Tools {.center}
 
 ---
 
-## {background-image="img/drowning-warning.png" background-size="contain"}
+## {background-image="img/drowning-warning.png" background-size="contain" visibility="hidden"}
 
 
 ---
 
-## The GenAI Stack {.center style="text-align: center;" .unlisted}
+## The GenAI Stack {.center style="text-align: center;" .unlisted visibility="hidden"}
 
 ```{=html}
 {{< include components/genai-stack.html >}}
@@ -838,7 +925,7 @@ Most model providers offer a range of models, often tiered by capability and cos
       <!-- LangChain -->
       <div style="background: linear-gradient(135deg, #268bd2, #2aa198); padding: 20px; border-radius: 10px; height: 80px; display: flex; align-items: center; box-shadow: 0 0 15px rgba(42, 161, 152, 0.5); border: 2px solidrgb(75, 161, 222);">
         <h3 style="color: #fdf6e3; margin-top: 0; font-size: 1.1em; align-items: center; width: 100%; margin-bottom: 0px;">
-          <span>🔗 LangChain  🚩</span>
+          <span>🔗 LangChain 🚩</span>
           <div>
           <!-- <span style="background-color:rgb(24, 112, 175); color: #fdf6e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8em; font-weight: normal;">Python</span> -->
           <!-- <span style="background-color: #6c71c4; color: #fdf6e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8em; font-weight: normal;">JS</span> -->
@@ -920,21 +1007,89 @@ Most model providers offer a range of models, often tiered by capability and cos
 </div>
 ```
 
+---
+
+##  {.chapter-title .center background-gradient="linear-gradient(180deg, #073642, #268bd2)"}
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
+  <div style="width: 85%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+    
+    <h3 style="color: rgb(209, 170, 51); text-align: center; margin-bottom: 25px; font-size: 2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
+      Could you self-host?
+    </h3>
+    
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 15px;">
+      
+      <!-- MacBook -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; border: 2px solid #2aa198; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 70px; height: 70px; background: #2aa198; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+          <span style="font-size: 2em; color: #002b36;">💻</span>
+        </div>
+        <h3 style="color: #2aa198; font-size: 1.2em; margin-bottom: 10px;">MacBook</h3>
+        <p style="color: #eee8d5; font-size: 1.1em; margin: 0;">Perhaps</p>
+      </div>
+      
+      <!-- Other Laptops -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; border: 2px solid #dc322f; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 70px; height: 70px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+          <span style="font-size: 2em; color: #002b36;">🖥️</span>
+        </div>
+        <h3 style="color: #dc322f; font-size: 1.2em; margin-bottom: 10px;">Other Laptops</h3>
+        <p style="color: #eee8d5; font-size: 1.1em; margin: 0;">Not really</p>
+      </div>
+      
+      <!-- Cloud -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; border: 2px solid #b58900; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 70px; height: 70px; background: #b58900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+          <span style="font-size: 2em; color: #002b36;">☁️</span>
+        </div>
+        <h3 style="color: #b58900; font-size: 1.2em; margin-bottom: 10px;">Cloud</h3>
+        <p style="color: #eee8d5; font-size: 1.1em; margin: 0;">Yes, but not for the hackathon</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+```
 
 ---
 
-Can you self-host? 
+##  {.chapter-title .center background-gradient="linear-gradient(180deg, #073642, #268bd2)"}
 
-If you have a MacBook: Yes.
-Other laptops, not really. 
-In the cloud: yes, but don't do it for the hackathon.
 
----
-
-Should you self-host?
-
-For the hackathon: no.
-If security and privacy are essential for you use-case later on: yes. 
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
+  <div style="width: 85%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+    
+    <h3 style="color:rgb(209, 170, 51); text-align: center; margin-bottom: 25px; font-size: 2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
+      Should you self-host?
+    </h3>
+    
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 15px;">
+      
+      <!-- Hackathon -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; border: 2px solid #dc322f; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 70px; height: 70px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+          <span style="font-size: 2em; color: #002b36;">🏆</span>
+        </div>
+        <h3 style="color: #dc322f; font-size: 1.2em; margin-bottom: 10px;">For the hackathon</h3>
+        <p style="color: #eee8d5; font-size: 1.4em; margin: 0; font-weight: bold;">No</p>
+      </div>
+      
+      <!-- Security & Privacy -->
+      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; border: 2px solid rgb(42, 161, 88); box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 70px; height: 70px; background: rgb(42, 161, 88); border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+          <span style="font-size: 2em; color: #002b36;">🔒</span>
+        </div>
+        <h3 style="color:rgb(42, 161, 88); font-size: 1.2em; margin-bottom: 10px;">Security & Privacy Critical</h3>
+        <p style="color: #eee8d5; font-size: 1.4em; margin: 0; font-weight: bold;">Yes</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+```
 
 ---
 
@@ -951,7 +1106,7 @@ If security and privacy are essential for you use-case later on: yes.
           <span style="font-size: 0.88em; margin-right: 4px;">📝</span> VS Code
         </h3>
         <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
-          <div style="background: rgba(133, 153, 0, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+          <div style="background: linear-gradient(135deg, #268bd2, #2aa198);; border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
             <span style="font-size: 1.2em; color: #859900; display: block; margin-bottom: 6px;">👨‍💻</span>
             <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Github Copilot</span>
           </div>
@@ -972,11 +1127,11 @@ If security and privacy are essential for you use-case later on: yes.
           <span style="font-size: 0.88em; margin-right: 4px;">💻</span> IDE
         </h3>
         <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
-          <div style="background: rgba(42, 161, 152, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+          <div style="background: linear-gradient(135deg, #268bd2, #2aa198); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
             <img src="img/cursor-logo.png" style="height: 1.8em; margin-bottom: 6px; display: block; margin-left: auto; margin-right: auto;">
             <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Cursor</span>
           </div>
-          <div style="background: rgba(42, 161, 152, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
+          <div style="background: linear-gradient(135deg, #268bd2, #2aa198);; border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
             <span style="font-size: 1.2em; color: #2aa198; display: block; margin-bottom: 6px;">🌊</span>
             <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Windsurf</span>
           </div>
@@ -1017,21 +1172,23 @@ If security and privacy are essential for you use-case later on: yes.
   </div>
 </div>
 ```
+---
 
+## Biggest Challenge {.center .chapter-title}
 
 ---
 
-## {background-gradient="linear-gradient(135deg, #073642, #dc322f)"}
+##  {background-gradient="linear-gradient(135deg, #073642)"}
 
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
   <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
 
-    <h2 style="color: #dc322f; text-align: center; margin-bottom: 15px; font-size: 2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Biggest Challenge: Specificity</h2>
+    <h2 style="color:rgb(223, 91, 89); text-align: center; margin-bottom: 15px; font-size: 2.5em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Specificity</h2>
 
     <div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
-      <div style="width: 100px; height: 100px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-        <span style="font-size: 3em; color: #002b36;">⚠️</span>
+      <div style="width: 100px; height: 100px; background:rgb(219, 89, 87); border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+        <span style="font-size: 3em; color: #002b36;">⛰️</span>
       </div>
 
       <div style="max-width: 70%;">
@@ -1055,11 +1212,11 @@ If security and privacy are essential for you use-case later on: yes.
       </div>
     </div>
 
-    <div style="background: rgba(220, 50, 47, 0.2); border-left: 4px solid #dc322f; padding: 15px; border-radius: 0 8px 8px 0; margin-top: 25px;">
+    <!-- <div style="background:rgb(38, 139, 210, 0.3); border-left: 4px solid #268bd2; padding: 15px; border-radius: 0 8px 8px 0; margin-top: 25px;">
       <p style="color: #eee8d5; font-size: 0.9em; margin: 0; font-style: italic; text-align: center;">
         "The quality of your output is directly proportional to the specificity of your input."
       </p>
-    </div>
+    </div> -->
 
   </div>
 </div>
@@ -1082,7 +1239,7 @@ If security and privacy are essential for you use-case later on: yes.
   <div style="width: 50%;">
     <div style="background: linear-gradient(135deg, #073642, #2aa198); padding: 25px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.3);">
       <h3 style="color: #eee8d5; margin-top: 0; margin-bottom: 15px; border-bottom: 2px solid #eee8d5; padding-bottom: 8px; font-size: 1.4em;">
-        Techniques for Effective Prompting
+        Effective Prompting
       </h3>
       <ul style="color: #eee8d5; font-size: 1.1em; list-style-type: none; padding-left: 5px;">
         <li style="margin-bottom: 10px; display: flex; align-items: center;">
@@ -1092,14 +1249,11 @@ If security and privacy are essential for you use-case later on: yes.
           <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Chain of Thought
         </li>
         <li style="margin-bottom: 10px; display: flex; align-items: center;">
-          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Tree of Thought
-        </li>
-        <li style="margin-bottom: 10px; display: flex; align-items: center;">
           <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Self-Consistency
         </li>
-        <li style="display: flex; align-items: center;">
+        <!-- <li style="display: flex; align-items: center;">
           <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> and many more...
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
@@ -1130,71 +1284,42 @@ If security and privacy are essential for you use-case later on: yes.
 </div>
 ```
 
-## {background-gradient="linear-gradient(135deg, #073642, #268bd2)"}
+## Development Approach {background-gradient="linear-gradient(135deg, #073642, #268bd2)"}
 
 ```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px; background-gradient: linear-gradient(135deg, #073642, #268bd2);">
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh;">
   <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+    <h2 style="color: #2aa198; text-align: center; margin-bottom: 15px; font-size: 1.8em;">Steps</h2>
 
-    <h1 style="color: #268bd2; text-align: center; margin-bottom: 30px; font-size: 2.2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Development Patterns</h1>
-
-    <div style="display: grid; grid-template-columns: 67% 30%; gap: 3%; margin-top: 20px;">
-
-      <!-- Greenfield Tips -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h2 style="color: #268bd2; text-align: center; margin-bottom: 20px; font-size: 1.44em;">Greenfield Development</h2>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
-          <!-- Idea Honing -->
-          <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div style="width: 70px; height: 70px; background: #268bd2; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-              <span style="font-size: 2em; color: #002b36;">💡</span>
-            </div>
-            <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.8em;">1. Idea Honing</h3>
-          </div>
-
-          <!-- Task Decomposition -->
-          <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div style="width: 70px; height: 70px; background: #268bd2; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-              <span style="font-size: 2em; color: #002b36;">🧩</span>
-            </div>
-            <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.8em;">2. Task Decomposition</h3>
-          </div>
-
-          <!-- Implementation -->
-          <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div style="width: 70px; height: 70px; background: #268bd2; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-              <span style="font-size: 2em; color: #002b36;">🚀</span>
-            </div>
-            <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.8em;">3. Implementation</h3>
-          </div>
-        </div>
-      </div>
-
-      <!-- Existing Codebases -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; justify-content: center;">
-        <h2 style="color: #859900; text-align: center; margin-bottom: 20px; font-size: 1.44em;">Existing Codebases</h2>
-
+    <!-- Shared Practices -->
+    <div style="margin-top: 20px; background: linear-gradient(135deg, #073642, #002b36); padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+        <!-- Task Decomposition -->
         <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-          <div style="width: 70px; height: 70px; background: #859900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-            <span style="font-size: 2em; color: #002b36;">🔄</span>
+          <div style="width: 60px; height: 60px; background: #2aa198; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <span style="font-size: 1.8em; color: #002b36;">🧩</span>
           </div>
-          <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.96em;">Incremental Iteration</h3>
+          <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.9em;">Task Decomposition</h3>
+        </div>
+        
+        <!-- Implementation -->
+        <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 60px; height: 60px; background: #2aa198; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <span style="font-size: 1.8em; color: #002b36;">🚀</span>
+          </div>
+          <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.9em;">Implementation</h3>
+        </div>
+        
+        <!-- Tests -->
+        <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="width: 60px; height: 60px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+            <span style="font-size: 1.8em; color: #002b36;">🧪</span>
+          </div>
+          <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.9em;">Lots of Tests</h3>
         </div>
       </div>
-
     </div>
-
-    <!-- Common Practice for Both -->
-    <div style="margin-top: 25px; background: linear-gradient(135deg, #073642, #002b36); padding: 15px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); text-align: center;">
-      <div style="display: flex; align-items: center; justify-content: center;">
-        <div style="width: 50px; height: 50px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 15px;">
-          <span style="font-size: 1.8em; color: #002b36;">🧪</span>
-        </div>
-        <h3 style="color: #eee8d5; margin: 0; font-size: 1.12em;">For both: Lots of tests</h3>
-      </div>
-    </div>
-
   </div>
 </div>
 ```
@@ -1202,7 +1327,7 @@ If security and privacy are essential for you use-case later on: yes.
 
 ---
 
-##  {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #6c71c4)"}
+##  {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #6c71c4)" visibility="hidden"}
 
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
@@ -1231,9 +1356,9 @@ If security and privacy are essential for you use-case later on: yes.
       <!-- Roo Code -->
       <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
         <div style="width: 80px; height: 80px; background: #859900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 2.5em; color: #002b36;">🦘</span>
+          <span style="font-size: 2.5em; color: #002b36;">💾</span>
         </div>
-        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Roo Code</h3>
+        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Memory Bank</h3>
       </div>
 
     </div>
@@ -1262,7 +1387,7 @@ If security and privacy are essential for you use-case later on: yes.
       </div>
 
       <!-- Batching -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <div style="background: linear-gradient(135deg, #268bd2, #2aa198); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
         <div style="width: 80px; height: 80px; background: #b58900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
           <span style="font-size: 2.5em; color: #002b36;">📦</span>
         </div>
@@ -1304,7 +1429,7 @@ If security and privacy are essential for you use-case later on: yes.
         width: 90%;
     ">
         <p style="
-            color: #b58900;
+            color:rgb(193, 161, 63);
             font-size: 1em;
             font-style: italic;
             margin-bottom: 10px;
@@ -1328,15 +1453,19 @@ If security and privacy are essential for you use-case later on: yes.
 
 ---
 
-## {background-image="img/mcp_explained.webp" background-size="70%"}
 
+## Recommendation {.center}
+
+::: {.custom-recommendation .center}
+**First check if an MCP server exists already.**
+:::
 
 
 # The Agents
 
 ---
 
-## Agent {.chapter-title .center}
+## Agent {.chapter-title .center visibility="hidden"}
 
 ```{=html}
 <div style="
@@ -1350,7 +1479,7 @@ If security and privacy are essential for you use-case later on: yes.
   <div style="
     flex: 1;
     padding: 1em;
-    background: linear-gradient(135deg, #073642, #002b36);
+    background: linear-gradient(135deg, #eee8d5, #eee8d5);
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 
@@ -1397,7 +1526,7 @@ If security and privacy are essential for you use-case later on: yes.
 
 ---
 
-## Key components of Agents {auto-animate=true}
+## Key components of Agents {auto-animate=true visibility="hidden"}
 
 ```{=html}
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
@@ -1422,7 +1551,7 @@ If security and privacy are essential for you use-case later on: yes.
 ---
 
 
-## Key components of Agents {auto-animate=true}
+## Key components of Agents {auto-animate=true visibility="hidden"}
 
 
 ```{=html}
@@ -1457,21 +1586,31 @@ If security and privacy are essential for you use-case later on: yes.
 
 ---
 
-## Types of Agents: Hierarchical Multi-Agent System
+## Multi Agent Systems
 
 ```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
-  <img src="img/hierarchical_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
-</div>
-```
+<div style="display: flex; justify-content: space-between; align-items: center; max-width: 95%; margin: 40px auto;">
+  <!-- Left side: Hierarchical Multi-Agent System -->
+  <div style="width: 47%; text-align: center;">
+    <div style="height: 50vh; display: flex; justify-content: center; align-items: center;">
+      <!-- <img src="img/hierarchical_agent_system.svg" style="max-width: 100%; max-height: 100%; object-fit: contain;"> -->
+      <img src="img/hierarchical_agent_system.svg" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
 
----
-
-## Types of Agents: Network Multi-Agent System
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
-  <img src="img/multi_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
+    </div>
+    <h3 style="color: #eee8d5; margin-top: 20px; font-size: 1.5em; text-align: center; font-weight: 600;">
+      Hierarchical
+    </h3>
+  </div>
+  
+  <!-- Right side: Questions image -->
+  <div style="width: 47%; text-align: center;">
+    <div style="height: 50vh; display: flex; justify-content: center; align-items: center;">
+      <img src="img/multi_agent_system.svg" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
+    </div>
+    <h3 style="color: #eee8d5; margin-top: 20px; font-size: 1.5em; text-align: center; font-weight: 600;">
+      Group
+    </h3>
+  </div>
 </div>
 ```
 
@@ -1541,7 +1680,7 @@ If security and privacy are essential for you use-case later on: yes.
 
 ```{=html}
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 80vh; padding: 20px; box-sizing: border-box;">
-  <img src="img/agent-decision-diagram.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+  <img src="img/agent-flow-chart.svg" style="max-width: 100%; max-height: 100%; object-fit: contain;">
 </div>
 ```
 
@@ -1549,7 +1688,7 @@ If security and privacy are essential for you use-case later on: yes.
 Source: AI Agents Unleashed Playbook 2025, Hubspot
 :::
 
-#   {background-image="img/octo-future.gif"}
+# {background-image="img/octo-future.gif"}
 
 ---
 
@@ -1562,1013 +1701,19 @@ Source: AI Agents Unleashed Playbook 2025, Hubspot
 
 :::footer
 :::
-
----
-
-
-## {background-image="img/exp-scaled-compute-dark.webp"  background-size="contain" background-color="black"}
-
-
-:::footer
-:::
-
----
-
-## Task Length
-
-```{=html}
-<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin: 20px 0;">
-  <div style="width: 49%;">
-    <img src="img/length-of-tasks-linear.png" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            </div>
-  <div style="width: 49%;">
-    <img src="img/length-of-tasks-log.png" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-  </div>
-</div>
-```
-
----
-
-
-## {background-color="rgba(7, 54, 66, 0.9)"}
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; height: 80vh;">
-    <blockquote style="
-      width: 80%;
-      margin: 0 auto;
-      padding: 40px 50px;
-      border-left: 8px solid #2aa198;
-      background: rgba(0, 43, 54, 0.7);
-        font-family: 'Georgia', serif;
-        position: relative;
-        border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    ">
-        <p style="
-          color: #eee8d5;
-          font-size: 1.5em;
-            font-style: italic;
-          margin-bottom: 25px;
-          text-align: center;
-          line-height: 1.4;
-          text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-      ">"The more it reasons, the more unpredictable it becomes"</p>
-        <footer style="
-          color: #b58900;
-          font-size: 1.4em;
-            text-align: right;
-            font-weight: 500;
-      ">— Ilya Sutskever</footer>
-    </blockquote>
-</div>
-```
-
----
-
-## {background-image="img/mad2024.jpg" style="color:black"}
-
-<h2 style="color:darkblue; text-align: center;">200 --> 2000</h2>
-
-:::footer
-:::
-
----
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh;">
-  <img src="img/drowning-developer.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
-</div>
-```
-
-:::{.notes}
-We didn't have time to talk about
-- Monitoring and evaluation
-- Debugging
-- Guardrails
-- And much more.
-:::
-
----
-
-## Thank You! {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #2aa198)"}
-
-```{=html}
-<div style="display: flex; justify-content: space-between; width: 100%; gap: 25px;">
-  <!-- Left side: Contact info -->
-  <div style="width: 45%; background: rgba(0, 43, 54, 0.7); border-radius: 15px; padding: 25px; box-shadow: 0 6px 15px rgba(0,0,0,0.3); border: 1px solid #2aa198; margin-left: 20px;">
-    <h3 style="color: #b58900; margin-top: 0; border-bottom: 2px solid #b58900; padding-bottom: 8px; font-size: 1.4em; text-align: center;">
-      Let's Connect
-    </h3>
-    <ul style="list-style-type: none; padding-left: 0; margin-top: 0px;">
-      <li style="margin-bottom: 10px; display: flex; align-items: center; padding: 10px; border-radius: 8px;">
-        <span style="color: #2aa198; margin-right: 15px; font-size: 1.1em;">•</span>
-        <span style="color: #eee8d5;">Connect with me on LinkedIn</span>
-      </li>
-      <li style="margin-bottom: 10px; display: flex; align-items: center; padding: 10px; border-radius: 8px;">
-        <span style="color: #2aa198; margin-right: 15px; font-size: 1.1em;">•</span>
-        <span style="color: #eee8d5;">Share your GenAI challenges</span>
-      </li>
-      <li style="margin-bottom: 10px; display: flex; align-items: center; padding: 10px; border-radius: 8px;">
-        <span style="color: #2aa198; margin-right: 15px; font-size: 1.1em;">•</span>
-        <span style="color: #eee8d5;">Discuss implementation strategies</span>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Right side: QR code and questions -->
-  <div style="width: 45%; background: rgba(0, 43, 54, 0.7); border-radius: 15px; padding: 25px; box-shadow: 0 6px 15px rgba(0,0,0,0.3); border: 1px solid #6c71c4; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 20px;">
-    <h2 style="color: #6c71c4; margin-top: 0; border-bottom: 2px solid #6c71c4; padding-bottom: 10px; font-size: 2em; text-align: center; width: 80%;">Questions?</h2>
-    <div style="background: rgba(7, 54, 66, 0.5); padding: 15px; border-radius: 12px; display: flex; justify-content: center; margin-top: 20px; width: 70%;">
-      <img src="img/qr-code.png" style="width: 180px; height: 180px;">
-  </div>
-    <p style="color: #93a1a1; margin-top: 15px; text-align: center; font-style: italic;">Scan to connect</p>
-  </div>
-</div>
-```
-
-:::footer
-:::
-
-::: {.notes}
-- Be ready for technical questions about the GenAI stack, tools, and implementation patterns
-- Consider preparing additional examples for specific use cases
-- Have resources ready to share with attendees
-- Collect contact information for follow-up conversations
-:::
-
-
----
-
-## {background-image="img/pope.jpeg" background-color="black" background-size="contain"}
-
-<!--
-
-### Introduction
-- Brief history of AI to GenAI transition
-- Why GenAI matters specifically for developers
-- How GenAI is different from traditional AI/ML approaches
-
-### Foundational Concepts
-- Large Language Models (LLMs) - how they work at a high level
-- Key terminology: tokens, embeddings, context windows, temperature
-- Different types of models and their capabilities (text, image, code generation, etc.)
-
-### The GenAI Stack for Developers
-- Model providers and APIs (OpenAI, Anthropic, Google, open-source options)
-- Vector databases and embeddings (Pinecone, Weaviate, Qdrant, etc.)
-- Orchestration frameworks (LangChain, LlamaIndex, etc.)
-- Evaluation and monitoring tools
-
-### Practical Implementation Patterns
-- Prompt engineering best practices
-- RAG (Retrieval Augmented Generation) architecture
-- Fine-tuning vs. prompt engineering
-- Function/tool calling
-- Agents and multi-step reasoning
-
-### Developer Tools and Integration
-- GenAI-powered coding assistants (GitHub Copilot, Claude/ChatGPT for coding)
-- Integrating GenAI into existing workflows and applications
-- SDKs and libraries for different programming languages
-- Testing and evaluation of GenAI components
-
-### Technical Challenges and Solutions
-- Managing context windows and token limits
-- Handling hallucinations and improving accuracy
-- Performance optimization and cost management
-- Privacy and data security considerations
-
-### Real-World Use Cases
-- Code generation and documentation
-- Content generation and summarization
-- Search and information retrieval
-- Conversational interfaces
-- Data analysis and insights
-
-### Future Trends and Conclusion
-- Emerging models and capabilities
-- Local model deployment and edge computing
-- Multimodal AI systems
-- Resources for further learning and experimentation
-
- -->
-
-          <h3 style="color: #fdf6e3; margin: 0; font-size: 1.1em; width: 100%;">
-            <span><img src="img/cli-white.png" alt="CLI" style="width: 25px; height: 25px; margin: 10px 5px 4px 0"> Ollama </span>
-          </h3>
-        </div>
-
-        <!-- LlamaIndex -->
-        <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 10px; display: flex; align-items: center;">
-          <h3 style="color: #b58900; margin: 0; font-size: 1.1em; width: 100%;">
-            <span><img src="img/cli-white.png" alt="CLI" style="width: 25px; height: 25px; margin: 10px 5px 4px 0"> vllm </span>
-          </h3>
-        </div>
-
-        <!-- Haystack -->
-        <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 20px; border-radius: 10px; display: flex; align-items: center;">
-          <h3 style="color: #859900; margin: 0; font-size: 1.1em; width: 100%;">
-            <span><img src="img/gui.png" alt="CLI" style="width: 25px; height: 25px; margin: 10px 5px 4px 0"> LM Studio </span>
-          </h3>
-        </div>
-      </div>
-    </div>
-
-    <!-- Right panel with image -->
-    <div style="flex: 2; display: flex; justify-content: center; align-items: center; padding: 1rem;">
-      <img src="img/self-hosting-model.png" alt="Illustration of self-hosted LLM infrastructure" style="max-width: 100%; border-radius: 8px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); max-height:100%">
-    </div>
-  </div>
-</div>
-```
-
-<!-- ```{=html}
-  <div style="width: 95%; display: flex; gap: 20px;">
-    <div style="flex: 1; background: linear-gradient(135deg, #073642, #138ead); padding: 1.0rem; border-radius: 10px; color: #eee8d5; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 35%;">
-      <h3 style="color: #eee8d5; border-bottom: 2px solid #2aa198; padding-bottom: 0.5rem; margin-bottom: 1rem; font-size: 1.2em;">Self-Hosting Options</h3>
-
-      <ul style="list-style-type: none; padding-left: 0.1rem; font-size: 0.8em; line-height: 1.6;">
-        <li style="margin-bottom: 2rem; padding-left: 2rem; position: relative;">
-          <span style="color: #2aa198; font-weight: bold; position: absolute; left: 0;"><img src="img/cli-white.png" alt="CLI" style="width: 20px; height: 20px;"></span>
-          <strong style="color: #fdf6e3;">Ollama</strong> ✅
-        </li>
-        <li style="margin-bottom: 2rem; padding-left: 2rem; position: relative;">
-          <span style="color: #2aa198; font-weight: bold; position: absolute; left: 0;"><img src="img/gui.png" alt="CLI" style="width: 20px; height: 20px;"></span>
-          <strong style="color: #fdf6e3;">LM Studio</strong>
-        </li>
-        <li style="margin-bottom: 2rem; padding-left: 2rem; position: relative;">
-          <span style="color: #2aa198; font-weight: bold; position: absolute; left: 0;"><img src="img/cli-white.png" alt="CLI" style="width: 20px; height: 20px;"></span>
-          <strong style="color: #fdf6e3;">LlamaCpp</strong>
-        </li>
-        <li style="margin-bottom: 2rem; padding-left: 2rem; position: relative;">
-          <span style="color: #2aa198; font-weight: bold; position: absolute; left: 0;"><img src="img/cli-white.png" alt="CLI" style="width: 20px; height: 20px;"></span>
-          <strong style="color: #fdf6e3;">vllm</strong>
-        </li>
-      </ul>
-    </div>
-``` -->
-
----
-
-## Development Tools {.center background-gradient="linear-gradient(135deg, #073642, #2aa198)"}
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 14px;">
-  <div style="width: 95%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 7px;">
-      <!-- VS Code Section -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 14px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #859900; margin-top: 0; border-bottom: 2px solid #859900; padding-bottom: 4px; font-size: 0.96em;">
-          <span style="font-size: 0.88em; margin-right: 4px;">📝</span> VS Code
-        </h3>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
-          <div style="background: rgba(133, 153, 0, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #859900; display: block; margin-bottom: 6px;">👨‍💻</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Github Copilot</span>
-          </div>
-          <div style="background: rgba(133, 153, 0, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #859900; display: block; margin-bottom: 6px;">📊</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Cline</span>
-          </div>
-          <div style="background: rgba(133, 153, 0, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #859900; display: block; margin-bottom: 6px;">🦘</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Roo Code</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- IDE Section -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 14px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #2aa198; margin-top: 0; border-bottom: 2px solid #2aa198; padding-bottom: 4px; font-size: 0.96em;">
-          <span style="font-size: 0.88em; margin-right: 4px;">💻</span> IDE
-        </h3>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
-          <div style="background: rgba(42, 161, 152, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <img src="img/cursor-logo.png" style="height: 1.8em; margin-bottom: 6px; display: block; margin-left: auto; margin-right: auto;">
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Cursor</span>
-          </div>
-          <div style="background: rgba(42, 161, 152, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #2aa198; display: block; margin-bottom: 6px;">🌊</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Windsurf</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- CLI Section -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 14px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #b58900; margin-top: 0; border-bottom: 2px solid #b58900; padding-bottom: 4px; font-size: 0.96em;">
-          <span style="font-size: 0.88em; margin-right: 4px;">⌨️</span> CLI
-        </h3>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;">
-          <div style="background: rgba(181, 137, 0, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #b58900; display: block; margin-bottom: 6px;">🔧</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Aider</span>
-          </div>
-          <div style="background: rgba(181, 137, 0, 0.15); border-radius: 8px; padding: 8px; flex: 1; min-width: 120px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #b58900; display: block; margin-bottom: 0px;">🤖</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Claude coder</span>
-            <span style="color: #93a1a1; font-size: 0.45em; display: block; margin-top: 3px;">⚠️Only Claude Sonnet</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Web Section -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 14px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h3 style="color: #268bd2; margin-top: 0; border-bottom: 2px solid #268bd2; padding-bottom: 4px; font-size: 0.96em;">
-          <span style="font-size: 0.88em; margin-right: 4px;">🌐</span> Web
-        </h3>
-        <div style="display: flex; justify-content: center; margin-top: 8px;">
-          <div style="background: rgba(38, 139, 210, 0.15); border-radius: 8px; padding: 8px; width: 45%; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            <span style="font-size: 1.2em; color: #268bd2; display: block; margin-bottom: 6px;">🔥</span>
-            <span style="color: #eee8d5; font-size: 0.61em; font-weight: bold;">Firebase Studio</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-```
-
-
----
-
-## {background-gradient="linear-gradient(135deg, #073642, #dc322f)"}
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
-  <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-
-    <h2 style="color: #dc322f; text-align: center; margin-bottom: 15px; font-size: 2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Biggest Challenge: Specificity</h2>
-
-    <div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
-      <div style="width: 100px; height: 100px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-        <span style="font-size: 3em; color: #002b36;">⚠️</span>
-      </div>
-
-      <div style="max-width: 70%;">
-        <p style="color: #eee8d5; font-size: 0.9em; margin-bottom: 15px; line-height: 1.5;">
-          GenAI will fail when given tasks that are:
-        </p>
-        <ul style="color: #eee8d5; font-size: 0.9em; list-style-type: none; padding-left: 0;">
-          <li style="margin-bottom: 12px; display: flex; align-items: center;">
-            <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">✘</span> Too complex without breakdown
-          </li>
-          <li style="margin-bottom: 12px; display: flex; align-items: center;">
-            <span style="color: #dc322f; font-weight: bold; margin-right: 10px;">✘</span> Ambiguous in requirements
-          </li>
-          <li style="margin-bottom: 12px; display: flex; align-items: center;">
-            <span style="color: #859900; font-weight: bold; margin-right: 10px;">✓</span> Break down complex tasks
-          </li>
-          <li style="display: flex; align-items: center;">
-            <span style="color: #859900; font-weight: bold; margin-right: 10px;">✓</span> Be specific in instructions
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div style="background: rgba(220, 50, 47, 0.2); border-left: 4px solid #dc322f; padding: 15px; border-radius: 0 8px 8px 0; margin-top: 25px;">
-      <p style="color: #eee8d5; font-size: 0.9em; margin: 0; font-style: italic; text-align: center;">
-        "The quality of your output is directly proportional to the specificity of your input."
-      </p>
-    </div>
-
-  </div>
-</div>
-```
-
-
-# The Patterns
-
----
-
-
-```{=html}
-<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: 20px;">
-  <!-- Left side: Image -->
-  <div style="width: 45%; display: flex; justify-content: center; align-items: center;">
-    <img src="img/prompt.jpg" style="max-width: 90%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
-  </div>
-
-  <!-- Right side: Techniques List -->
-  <div style="width: 50%;">
-    <div style="background: linear-gradient(135deg, #073642, #2aa198); padding: 25px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.3);">
-      <h3 style="color: #eee8d5; margin-top: 0; margin-bottom: 15px; border-bottom: 2px solid #eee8d5; padding-bottom: 8px; font-size: 1.4em;">
-        Techniques for Effective Prompting
-      </h3>
-      <ul style="color: #eee8d5; font-size: 1.1em; list-style-type: none; padding-left: 5px;">
-        <li style="margin-bottom: 10px; display: flex; align-items: center;">
-          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Few-shot prompting
-        </li>
-        <li style="margin-bottom: 10px; display: flex; align-items: center;">
-          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Chain of Thought
-        </li>
-        <li style="margin-bottom: 10px; display: flex; align-items: center;">
-          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Tree of Thought
-        </li>
-        <li style="margin-bottom: 10px; display: flex; align-items: center;">
-          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Self-Consistency
-        </li>
-        <li style="display: flex; align-items: center;">
-          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> and many more...
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-```
-
----
-
-## {.centered-statement .center}
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; height: 50vh; width: 100%; margin: 50px 0;">
-  <div style="background: linear-gradient(135deg, #002b36, #073642);
-              padding: 40px 60px;
-              border-radius: 15px;
-              box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-              text-align: center;
-              border: 3px solid #268bd2;
-              max-width: 80%;">
-    <h1 style="color: #fdf6e3;
-               font-size: 3em;
-               font-weight: 700;
-               margin: 0;
-               text-shadow: 2px 2px 5px rgba(0,0,0,0.3);">
-      Use LLMs to prompt LLMs
-    </h1>
-  </div>
-</div>
-```
-
-## {background-gradient="linear-gradient(135deg, #073642, #268bd2)"}
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px; background-gradient: linear-gradient(135deg, #073642, #268bd2);">
-  <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-
-    <h1 style="color: #268bd2; text-align: center; margin-bottom: 30px; font-size: 2.2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Development Patterns</h1>
-
-    <div style="display: grid; grid-template-columns: 67% 30%; gap: 3%; margin-top: 20px;">
-
-      <!-- Greenfield Tips -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <h2 style="color: #268bd2; text-align: center; margin-bottom: 20px; font-size: 1.44em;">Greenfield Development</h2>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
-          <!-- Idea Honing -->
-          <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div style="width: 70px; height: 70px; background: #268bd2; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-              <span style="font-size: 2em; color: #002b36;">💡</span>
-            </div>
-            <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.8em;">1. Idea Honing</h3>
-          </div>
-
-          <!-- Task Decomposition -->
-          <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div style="width: 70px; height: 70px; background: #268bd2; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-              <span style="font-size: 2em; color: #002b36;">🧩</span>
-            </div>
-            <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.8em;">2. Task Decomposition</h3>
-          </div>
-
-          <!-- Implementation -->
-          <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div style="width: 70px; height: 70px; background: #268bd2; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-              <span style="font-size: 2em; color: #002b36;">🚀</span>
-            </div>
-            <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.8em;">3. Implementation</h3>
-          </div>
-        </div>
-      </div>
-
-      <!-- Existing Codebases -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; justify-content: center;">
-        <h2 style="color: #859900; text-align: center; margin-bottom: 20px; font-size: 1.44em;">Existing Codebases</h2>
-
-        <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-          <div style="width: 70px; height: 70px; background: #859900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-            <span style="font-size: 2em; color: #002b36;">🔄</span>
-          </div>
-          <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.96em;">Incremental Iteration</h3>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Common Practice for Both -->
-    <div style="margin-top: 25px; background: linear-gradient(135deg, #073642, #002b36); padding: 15px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); text-align: center;">
-      <div style="display: flex; align-items: center; justify-content: center;">
-        <div style="width: 50px; height: 50px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 15px;">
-          <span style="font-size: 1.8em; color: #002b36;">🧪</span>
-        </div>
-        <h3 style="color: #eee8d5; margin: 0; font-size: 1.12em;">For both: Lots of tests</h3>
-      </div>
-    </div>
-
-  </div>
-</div>
-```
-
-
----
-
-##  {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #6c71c4)"}
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
-  <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-
-    <h2 style="color: #d33682; text-align: center; margin-bottom: 30px; font-size: 2em;">Task Management Tools</h2>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px; margin-top: 20px;">
-
-      <!-- Task Master AI -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <div style="width: 80px; height: 80px; background: #d33682; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 2.5em; color: #002b36;">✅</span>
-        </div>
-        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Task Master AI</h3>
-      </div>
-
-      <!-- Cursor Rules -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <div style="width: 80px; height: 80px; background: #6c71c4; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 2.5em; color: #002b36;">📋</span>
-        </div>
-        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Cursor Rules</h3>
-      </div>
-
-      <!-- Roo Code -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <div style="width: 80px; height: 80px; background: #859900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 2.5em; color: #002b36;">🦘</span>
-        </div>
-        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Roo Code</h3>
-      </div>
-
-    </div>
-  </div>
-</div>
-```
 
 ---
 
 ## {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #2aa198)"}
 
 ```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 20px;">
-  <div style="width: 80%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-
-    <h2 style="color: #2aa198; text-align: center; margin-bottom: 30px; font-size: 1.6em;">Cost Management Strategies</h2>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px; margin-top: 20px;">
-
-      <!-- Caching -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <div style="width: 80px; height: 80px; background: #2aa198; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 2.5em; color: #002b36;">⚡</span>
-        </div>
-        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Caching</h3>
-      </div>
-
-      <!-- Batching -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <div style="width: 80px; height: 80px; background: #b58900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 2.5em; color: #002b36;">📦</span>
-        </div>
-        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Batching</h3>
-      </div>
-
-      <!-- Cost tracking -->
-      <div style="background: linear-gradient(135deg, #002b36, #073642); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <div style="width: 80px; height: 80px; background: #268bd2; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 2.5em; color: #002b36;">📊</span>
-        </div>
-        <h3 style="color: #eee8d5; margin-bottom: 10px; font-size: 1.5em;">Token Usage</h3>
-      </div>
-
-    </div>
+<div style="display: flex; justify-content: space-between; align-items: center; max-width: 90%; margin: 40px auto;">
+  <!-- Image -->
+  <div style="width: 100%; text-align: center;">
+    <img src="img/questions_time.png" style="max-width: 80%; max-height: 80%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
   </div>
 </div>
 ```
-
-
-
-
----
-
-## MCP: The Protocol That Connects Worlds
-
-```{=html}
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; margin: 30px 0;">
-  <!-- Left side: Quote -->
-  <div style="flex: 1; min-width: 45%;">
-    <blockquote style="
-        margin: 0;
-        padding: 15px 20px;
-        border-left: 5px solid #2aa198;
-        background: rgba(163, 163, 163, 0.2);
-        font-family: 'Georgia', serif;
-        position: relative;
-        border-radius: 10px;
-        width: 90%;
-    ">
-        <p style="
-            color: #b58900;
-            font-size: 1em;
-            font-style: italic;
-            margin-bottom: 10px;
-            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-        ">"MCP is an open protocol that enables seamless integration between LLM applications and external data sources and tools."</p>
-        <footer style="
-            color: #eee8d5;
-            font-size: 0.85em;
-            text-align: right;
-            font-weight: 500;
-        ">— Anthropic</footer>
-    </blockquote>
-  </div>
-
-  <!-- Right side: Image -->
-  <div style="flex: 1; min-width: 60%; display: flex; align-items: center; justify-content: center;">
-    <img src="img/mcp_growth.png" style="max-width: 100%; height: auto;">
-  </div>
-</div>
-```
-
----
-
-## {background-image="img/mcp_explained.webp" background-size="70%"}
-
-
-
-# The Agents
-
----
-
-## Agent {.chapter-title .center}
-
-```{=html}
-<div style="
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1em auto;
-  width: 90%;
-  gap: 2em;
-">
-  <div style="
-    flex: 1;
-    padding: 1em;
-    background: linear-gradient(135deg, #073642, #002b36);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-
-  ">
-    <div style="
-      font-size: 1.4em;
-      color: #2aa198;
-      text-align: center;
-      font-weight: 500;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-      line-height: 1.4;
-    ">
-      Autonomously <span style="color: #b58900;">make decisions</span> and <span style="color: #cb4b16;">take actions</span> to achieve a goal
-    </div>
-  </div>
-
-  <div style="
-    flex: 1;
-    height: 400px;
-    max-height: 60vh;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    overflow: hidden;
-  ">
-    <img src="img/ai-agents-visual.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block;max-width: 100%;max-height: 100%;margin-top:0px">
-  </div>
-</div>
-```
-
-
----
-
-## {background-video="img/introducing_scrapybara_720.mp4" background-vide-muted="false"}
-
----
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 50%; margin: 20px auto;">
-  <div style="background: linear-gradient(135deg,  #073642,rgb(1, 77, 96)); border-radius: 15px; padding: 10%; box-shadow: 0 6px 18px rgba(0,0,0,0.3); max-width: 90%;">
-    <img src="img/agent-diagram.svg" style="max-width: 100%; height: auto; display: block;margin:0">
-  </div>
-</div>
-```
-
----
-
-## Key components of Agents {auto-animate=true}
-
-```{=html}
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
-  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #b58900; margin: 0; text-align: center; font-size: 1.8em;">Reflection</h3>
-  </div>
-
-  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #dc322f; margin: 0; text-align: center; font-size: 1.8em;">Planning</h3>
-  </div>
-
-  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tools</h3>
-  </div>
-
-  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #2aa198; margin: 0; text-align: center; font-size: 1.8em;">Collaboration</h3>
-  </div>
-</div>
-```
-
----
-
-
-## Key components of Agents {auto-animate=true}
-
-
-```{=html}
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
-  <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Reflection</h3>
-  </div>
-
-  <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Planning</h3>
-  </div>
-
-  <div style="background-color: #eee8d5; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #6c71c4; margin: 0; text-align: center; font-size: 1.8em;">Tools</h3>
-  </div>
-
-  <div style="background-color: #b58900; border-radius: 10px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; align-items: center; min-height: 150px;">
-    <h3 style="color: #eee8d5; margin: 0; text-align: center; font-size: 1.8em;">Collaboration</h3>
-  </div>
-</div>
-```
-
----
-
-## Types of Agents: Single Agent System
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
-  <img src="img/single_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
-</div>
-```
-
----
-
-## Types of Agents: Hierarchical Multi-Agent System
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
-  <img src="img/hierarchical_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
-</div>
-```
-
----
-
-## Types of Agents: Network Multi-Agent System
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh; padding: 20px; box-sizing: border-box;">
-  <img src="img/multi_agent_system.svg" style="max-width: 60%; max-height: 80%; object-fit: contain;">
-</div>
-```
-
----
-
-## AI Agents Frameworks {.chapter-title background-gradient="linear-gradient(135deg, #073642, #268bd2)"}
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 15px;">
-  <div style="width: 90%; background: rgba(7, 54, 66, 0.8); border-radius: 15px; padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 0px;">
-
-      <!-- LangGraph -->
-      <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #2aa198; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <div style="width: 70px; height: 70px; background: #2aa198; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 2em; color: #002b36;">🔄</span>
-        </div>
-        <h3 style="color: #eee8d5; font-size: 1em;">LangGraph</h3>
-        <!-- <p style="color: #93a1a1; font-size: 0.5em;">Build stateful, multi-actor systems with LLMs</p> -->
-      </div>
-
-      <!-- CrewAI -->
-      <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #b58900; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <div style="width: 70px; height: 70px; background: #b58900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 1.5em; color: #002b36;">👥</span>
-        </div>
-        <h3 style="color: #eee8d5; font-size: 1em;">CrewAI</h3>
-        <!-- <p style="color: #93a1a1; font-size: 0.5em;">Orchestrate role-based agents in teams</p> -->
-      </div>
-
-      <!-- Autogen -->
-      <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #dc322f; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <div style="width: 70px; height: 70px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 1.5em; color: #002b36;">🤖</span>
-        </div>
-        <h3 style="color: #eee8d5; font-size: 1em;">Autogen</h3>
-        <!-- <p style="color: #93a1a1; font-size: 0.5em;">Multi-agent conversation framework</p> -->
-      </div>
-    </div>
-
-    <!-- Bottom row with centered blocks - now outside the grid for better centering -->
-    <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;">
-      <!-- Agents SDK (OpenAI) -->
-      <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #859900; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; max-width: 30%;">
-        <div style="width: 70px; height: 70px; background: #859900; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 1.5em; color: #002b36;">🧠</span>
-        </div>
-        <h3 style="color: #eee8d5; font-size: 1em;">Agents SDK</h3>
-        <!-- <p style="color: #93a1a1; font-size: 0.5em;">OpenAI's toolkit for assistant applications</p> -->
-      </div>
-
-      <!-- ADK (Google) -->
-      <div style="background: #002b36; padding: 15px; border-radius: 12px; border: 2px solid #6c71c4; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; max-width: 30%;">
-        <div style="width: 70px; height: 70px; background: #6c71c4; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 1.5em; color: #002b36;">🛠️</span>
-        </div>
-        <h3 style="color: #eee8d5; font-size: 1em;">Agent Development Kit</h3>
-        <!-- <p style="color: #93a1a1; font-size: 0.5em;">Google's framework for agent creation</p> -->
-      </div>
-    </div>
-  </div>
-</div>
-```
-
----
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 80vh; padding: 20px; box-sizing: border-box;">
-  <img src="img/agent-decision-diagram.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
-</div>
-```
-
-:::footer
-Source: AI Agents Unleashed Playbook 2025, Hubspot
-:::
-
-#   {background-image="img/octo-future.gif"}
-
----
-
-## Exponential growth {.chapter-title .center background-image="img/blog_exponential_growth_chart.webp" background-opacity="0.5" background-size="contain" background-color="black"}
-
----
-
-## {background-image="img/exponential-growth.png"  background-size="contain" background-color="white"}
-
-
-:::footer
-:::
-
----
-
-
-## {background-image="img/exp-scaled-compute-dark.webp"  background-size="contain" background-color="black"}
-
-
-:::footer
-:::
-
----
-
-## Task Length
-
-```{=html}
-<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin: 20px 0;">
-  <div style="width: 49%;">
-    <img src="img/length-of-tasks-linear.png" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-            </div>
-  <div style="width: 49%;">
-    <img src="img/length-of-tasks-log.png" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-  </div>
-</div>
-```
-
----
-
-
-## {background-color="rgba(7, 54, 66, 0.9)"}
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; height: 80vh;">
-    <blockquote style="
-      width: 80%;
-      margin: 0 auto;
-      padding: 40px 50px;
-      border-left: 8px solid #2aa198;
-      background: rgba(0, 43, 54, 0.7);
-        font-family: 'Georgia', serif;
-        position: relative;
-        border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    ">
-        <p style="
-          color: #eee8d5;
-          font-size: 1.5em;
-            font-style: italic;
-          margin-bottom: 25px;
-          text-align: center;
-          line-height: 1.4;
-          text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-      ">"The more it reasons, the more unpredictable it becomes"</p>
-        <footer style="
-          color: #b58900;
-          font-size: 1.4em;
-            text-align: right;
-            font-weight: 500;
-      ">— Ilya Sutskever</footer>
-    </blockquote>
-</div>
-```
-
----
-
-## {background-image="img/mad2024.jpg" style="color:black"}
-
-<h2 style="color:darkblue; text-align: center;">200 --> 2000</h2>
-
-:::footer
-:::
-
----
-
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh;">
-  <img src="img/drowning-developer.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
-</div>
-```
-
-:::{.notes}
-We didn't have time to talk about
-- Monitoring and evaluation
-- Debugging
-- Guardrails
-- And much more.
-:::
-
----
-
-## Thank You! {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #2aa198)"}
-
-```{=html}
-<div style="display: flex; justify-content: space-between; width: 100%; gap: 25px;">
-  <!-- Left side: Contact info -->
-  <div style="width: 45%; background: rgba(0, 43, 54, 0.7); border-radius: 15px; padding: 25px; box-shadow: 0 6px 15px rgba(0,0,0,0.3); border: 1px solid #2aa198; margin-left: 20px;">
-    <h3 style="color: #b58900; margin-top: 0; border-bottom: 2px solid #b58900; padding-bottom: 8px; font-size: 1.4em; text-align: center;">
-      Let's Connect
-    </h3>
-    <ul style="list-style-type: none; padding-left: 0; margin-top: 0px;">
-      <li style="margin-bottom: 10px; display: flex; align-items: center; padding: 10px; border-radius: 8px;">
-        <span style="color: #2aa198; margin-right: 15px; font-size: 1.1em;">•</span>
-        <span style="color: #eee8d5;">Connect with me on LinkedIn</span>
-      </li>
-      <li style="margin-bottom: 10px; display: flex; align-items: center; padding: 10px; border-radius: 8px;">
-        <span style="color: #2aa198; margin-right: 15px; font-size: 1.1em;">•</span>
-        <span style="color: #eee8d5;">Share your GenAI challenges</span>
-      </li>
-      <li style="margin-bottom: 10px; display: flex; align-items: center; padding: 10px; border-radius: 8px;">
-        <span style="color: #2aa198; margin-right: 15px; font-size: 1.1em;">•</span>
-        <span style="color: #eee8d5;">Discuss implementation strategies</span>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Right side: QR code and questions -->
-  <div style="width: 45%; background: rgba(0, 43, 54, 0.7); border-radius: 15px; padding: 25px; box-shadow: 0 6px 15px rgba(0,0,0,0.3); border: 1px solid #6c71c4; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 20px;">
-    <h2 style="color: #6c71c4; margin-top: 0; border-bottom: 2px solid #6c71c4; padding-bottom: 10px; font-size: 2em; text-align: center; width: 80%;">Questions?</h2>
-    <div style="background: rgba(7, 54, 66, 0.5); padding: 15px; border-radius: 12px; display: flex; justify-content: center; margin-top: 20px; width: 70%;">
-      <img src="img/qr-code.png" style="width: 180px; height: 180px;">
-  </div>
-    <p style="color: #93a1a1; margin-top: 15px; text-align: center; font-style: italic;">Scan to connect</p>
-  </div>
-</div>
-```
-
-:::footer
-:::
-
-::: {.notes}
-- Be ready for technical questions about the GenAI stack, tools, and implementation patterns
-- Consider preparing additional examples for specific use cases
-- Have resources ready to share with attendees
-- Collect contact information for follow-up conversations
-:::
 
 
 ---
@@ -2626,3 +1771,4 @@ We didn't have time to talk about
 - Resources for further learning and experimentation
 
  -->
+
