@@ -1,1 +1,0 @@
-Sitemap: https://baukebrenninkmeijer.github.io/developers-guide-to-genai/sitemap.xml

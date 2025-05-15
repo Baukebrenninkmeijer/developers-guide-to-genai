@@ -289,6 +289,6 @@ fig.update_layout(
 )
 
 # Save the chart
-fig.write_html('img/legal_ai_adoption_concerns.svg')
+fig.write_image('img/legal_ai_adoption_concerns.svg')
 
 print("Charts generated and saved to the 'img' directory.")
