@@ -5,7 +5,7 @@ html: true
 format:
   revealjs:
     theme: [moon, styles.scss]
-    footer: "Hacking with GenAI 101 • Bauke Brenninkmeijer"
+    footer: "GenAI 101 • Bauke Brenninkmeijer"
     width: 1280
     height: 720
     toc: true
@@ -15,7 +15,12 @@ format:
     toc: true
     toc-depth: 1
     show-slide-number: speaker
+
+
+
 ---
+
+# Introduction
 
 ## Who am I
 
@@ -32,10 +37,13 @@ format:
         <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✓</span> 5 Years Data Science @ABN AMRO
       </li>
       <li style="margin-bottom: 12px; display: flex; align-items: center;">
-        <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✓</span> Transitioned to GenAI last year @ING
+        <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✓</span> GenAI last year @ING
+      </li>
+      <li style="margin-bottom: 12px; display: flex; align-items: center;">
+        <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✓</span> Now moving to GenAI startup
       </li>
       <li style="display: flex; align-items: center;">
-        <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✓</span> MLOps Community Chapter Lead Amsterdam
+        <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✓</span> MLOps Community Chapter Org
       </li>
     </ul>
   </div>
@@ -219,7 +227,7 @@ Why are you here? What's your use-case?
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
-- a lot over the next 10 years. 
+- a lot over the next 10 years.
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
@@ -737,52 +745,6 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 ---
 
-```{=html}
-<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh;">
-  <div style="display: flex; width: 100%; height: 100%;">
-
-    <!-- Left Column -->
-    <div style="width: 30%; padding-right: 20px; display: flex; align-items: center;">
-      <div style="
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: linear-gradient(135deg, #073642,rgb(13, 105, 128));
-        border-radius: 15px;
-        padding: 25px;
-        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-        color: #eee8d5;
-        font-size: 1.2em;
-        min-height: 300px;
-      ">
-        <h3 style="color: #2aa198; margin-bottom: 20px; font-size: 1.5em; text-align: center;">Visual AI Frameworks</h3>
-
-        <ul style="list-style-type: none; padding-left: 0; margin: 0; text-align: left;">
-          <li style="margin-bottom: 15px; display: flex; align-items: center;">
-            <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✦</span> LangFlow
-          </li>
-          <li style="margin-bottom: 15px; display: flex; align-items: center;">
-            <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✦</span> FlowiseAI
-          </li>
-          <li style="margin-bottom: 15px; display: flex; align-items: center;">
-            <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✦</span> n8n
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Right Column -->
-    <div style="width: 70%; display: flex; align-items: center; justify-content: center;">
-      <img src="img/n8n_agent_view.webp" style="width: 100%; max-width: 100%; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
-    </div>
-
-  </div>
-</div>
-```
-
----
-
 ## Tools
 
 ```{=html}
@@ -994,6 +956,54 @@ Most model providers offer a range of models, often tiered by capability and cos
   </div>
 </div>
 ```
+
+---
+
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 70vh;">
+  <div style="display: flex; width: 100%; height: 100%;">
+
+    <!-- Left Column -->
+    <div style="width: 30%; padding-right: 20px; display: flex; align-items: center;">
+      <div style="
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(135deg, #073642,rgb(13, 105, 128));
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        color: #eee8d5;
+        font-size: 1.2em;
+        min-height: 300px;
+      ">
+        <h3 style="color: #2aa198; margin-bottom: 20px; font-size: 1.5em; text-align: center;">Visual AI Frameworks</h3>
+
+        <ul style="list-style-type: none; padding-left: 0; margin: 0; text-align: left;">
+          <li style="margin-bottom: 15px; display: flex; align-items: center;">
+            <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✦</span> LangFlow
+          </li>
+          <li style="margin-bottom: 15px; display: flex; align-items: center;">
+            <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✦</span> FlowiseAI
+          </li>
+          <li style="margin-bottom: 15px; display: flex; align-items: center;">
+            <span style="color: #b58900; font-weight: bold; margin-right: 10px;">✦</span> n8n
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div style="width: 70%; display: flex; align-items: center; justify-content: center;">
+      <img src="img/n8n_agent_view.webp" style="width: 100%; max-width: 100%; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.3);">
+    </div>
+
+  </div>
+</div>
+```
+
 ---
 
 ## Biggest Challenge {.center .chapter-title}
@@ -1046,29 +1056,36 @@ Most model providers offer a range of models, often tiered by capability and cos
 
 
 ```{=html}
-<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: 20px;">
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 70vh; width: 100%;">
   <!-- Left side: Image -->
   <!-- <div style="width: 45%; display: flex; justify-content: center; align-items: center;">
     <img src="img/prompt.jpg" style="max-width: 90%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
   </div> -->
 
   <!-- Right side: Techniques List -->
-  <div style="width: 100%;">
-    <div style="background: linear-gradient(135deg, #073642, #2aa198); padding: 25px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.3);">
-      <h3 style="color: #eee8d5; margin-top: 0; margin-bottom: 15px; border-bottom: 2px solid #eee8d5; padding-bottom: 8px; font-size: 1.4em;">
-        Effective Prompting
+  <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+    <div style="background: linear-gradient(135deg, #073642, #2aa198); padding: 25px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.3); width: 100%; max-width: 1100px;">
+      <h3 style="color: #eee8d5; margin-top: 0; margin-bottom: 18px; border-bottom: 2px solid #eee8d5; padding-bottom: 8px; font-size: 1.5em; display: flex; align-items: center; gap: 10px;">
+        <span style="font-size: 1.3em;"></span> Effective Prompting Techniques
       </h3>
-      <ul style="color: #eee8d5; font-size: 1.1em; list-style-type: none; padding-left: 5px;">
-        <li style="margin-bottom: 10px; display: flex; align-items: center;">
-          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Few-shot prompting
-        </li>
-        <li style="margin-bottom: 10px; display: flex; align-items: center;">
-          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Chain of Thought
-        </li>
-        <li style="margin-bottom: 10px; display: flex; align-items: center;">
-          <span style="color: #b58900; font-weight: bold; margin-right: 10px;">•</span> Single responsibility 
-        </li>
-      </ul>
+      <div style="display: flex; gap: 24px; justify-content: space-between;">
+        <!-- Column 1 -->
+        <div style="flex: 1; background: rgba(238,232,213,0.08); border-radius: 8px; padding: 14px; margin-right: 0; min-width: 0;">
+          <div style="font-weight: bold; color: #b58900; margin-bottom: 4px; font-size: 1.0em;">🔢 Few-shot Prompting</div>
+          <div style="color: #eee8d5; font-size: 0.8em;">Show the model a few examples to guide its output and improve accuracy.</div>
+        </div>
+        <!-- Column 2 -->
+        <div style="flex: 1; background: rgba(238,232,213,0.08); border-radius: 8px; padding: 14px; margin-right: 0; min-width: 0;">
+          <div style="font-weight: bold; color: #b58900; margin-bottom: 4px; font-size: 1.0em;">🧠 Chain of Thought</div>
+          <div style="color: #eee8d5; font-size: 0.8em;">Encourage step-by-step reasoning for more complex or logical tasks.</div>
+        </div>
+        <!-- Column 3 -->
+        <div style="flex: 1; background: rgba(238,232,213,0.08); border-radius: 8px; padding: 14px; min-width: 0;">
+          <!-- <div style="font-size: 1.4em; margin-bottom: 7px;">🎯</div> -->
+          <div style="font-weight: bold; color: #b58900; margin-bottom: 4px; font-size: 1.0em;">🎯 Single Responsibility</div>
+          <div style="color: #eee8d5; font-size: 0.8em;">Make each prompt focused on one clear task for best results.</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -1107,7 +1124,7 @@ Most model providers offer a range of models, often tiered by capability and cos
 
     <!-- Shared Practices -->
     <div style="margin-top: 20px; background: linear-gradient(135deg, #073642, #002b36); padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-      
+
       <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
         <!-- Task Decomposition -->
         <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1116,7 +1133,7 @@ Most model providers offer a range of models, often tiered by capability and cos
           </div>
           <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.9em;">Task Decomposition</h3>
         </div>
-        
+
         <!-- Implementation -->
         <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
           <div style="width: 60px; height: 60px; background: #2aa198; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
@@ -1124,7 +1141,7 @@ Most model providers offer a range of models, often tiered by capability and cos
           </div>
           <h3 style="color: #eee8d5; margin-bottom: 5px; font-size: 0.9em;">Implementation</h3>
         </div>
-        
+
         <!-- Tests -->
         <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
           <div style="width: 60px; height: 60px; background: #dc322f; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
@@ -1376,7 +1393,7 @@ Most model providers offer a range of models, often tiered by capability and cos
       Hierarchical
     </h3>
   </div>
-  
+
   <!-- Right side: Questions image -->
   <div style="width: 47%; text-align: center;">
     <div style="height: 50vh; display: flex; justify-content: center; align-items: center;">
@@ -1566,9 +1583,11 @@ Source: AI Agents Unleashed Playbook 2025, Hubspot
 
 ## Counting the OOMs
 
+<u><em>1 OOM = 10x increase</em></u>
+
 We can converge several trendlines:
 
-- Compute increase is 0.5 orders of magnitude per year (OOM)
+- Compute increase is 4-5x per year (0.5 OOM)
 - Algorithmic improvements is 0.5 OOMs
 
 That combines to a 10x (or 1 OOM) increase in effective compute per year.
@@ -1605,7 +1624,23 @@ That combines to a 10x (or 1 OOM) increase in effective compute per year.
 :::footer
 :::
 
+---
+
+## {.chapter-title background-image="img/road.jpg" color="black"}
+<h2 class="chapter-title" style="color: white; border-color: black; padding: 0.5em 0; text-align: center;">From GenAI to AGI</br> Your Journey Starts Now</h2>
+
+:::notes
+The path to AGI is unfolding. By building your skills with GenAI today, you’re equipping yourself for the opportunities and challenges of tomorrow. Don’t wait—use these tools to amplify your impact and future-proof your career.
+:::
 
 ---
 
-## Questions {.chapter-title .center background-gradient="linear-gradient(135deg, #073642, #2aa198)"}
+## Questions {.chapter-title .center}
+
+---
+
+## Resources
+
+- https://artificialanalysis.ai/
+- epoch.ai
+- metr.org

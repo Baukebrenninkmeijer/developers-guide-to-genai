@@ -199,7 +199,8 @@ node_modules/
 # OS specific
 # Task files
 tasks.json
-tasks/ 
+tasks/
 .cursor/mcp.json
 dev-guide-to-genai.pdf
 docs/*
+_site/*
