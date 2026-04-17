@@ -203,5 +203,6 @@ tasks/
 .cursor/mcp.json
 dev-guide-to-genai.pdf
 docs/*.pptx
+!docs/site_libs/**
 _site/*
 **/*.quarto_ipynb
